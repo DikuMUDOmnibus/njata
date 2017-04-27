@@ -1,0 +1,4474 @@
+; dlltool --export-all --output-def smaug.def o/act_comm.o o/act_info.o o/act_move.o o/act_obj.o o/act_wiz.o o/ban.o o/boards.o o/bounty.o o/build.o o/calendar.o o/chess.o o/clans.o o/color.o o/comm.o o/comments.o o/const.o o/db.o o/deity.o o/dns.o o/fight.o o/finger.o o/fish.o o/gboard.o o/handler.o o/hashstr.o o/hint.o o/hotboot.o o/imm_host.o o/interp.o o/liquids.o o/magic.o o/makeobjs.o o/mapout.o o/mapper.o o/mccp.o o/misc.o o/mpxset.o o/mssp.o o/mud_comm.o o/mud_prog.o o/news.o o/njata.o o/planes.o o/player.o o/polymorph.o o/renumber.o o/reset.o o/save.o o/services.o o/sha256.o o/shops.o o/skills.o o/special.o o/tables.o o/track.o o/update.o o/variables.o o/weather.o
+EXPORTS
+	wis_app @ 1 DATA
+	".refptr.MAX_PC_CLASS" @ 2 DATA
+	".refptr.MAX_PC_RACE" @ 3 DATA
+	".refptr.MOBtrigger" @ 4 DATA
+	".refptr._ZTIPKc" @ 5 DATA
+	".refptr._ZTIPc" @ 6 DATA
+	".refptr._ZTIPh" @ 7 DATA
+	".refptr._ZTIPi" @ 8 DATA
+	".refptr._ZTIPv" @ 9 DATA
+	".refptr._timezone" @ 10 DATA
+	".refptr.a_flags" @ 11 DATA
+	".refptr.a_types" @ 12 DATA
+	".refptr.act_flags" @ 13 DATA
+	".refptr.attack_flags" @ 14 DATA
+	".refptr.attack_table" @ 15 DATA
+	".refptr.auction" @ 16 DATA
+	".refptr.boards" @ 17 DATA
+	".refptr.body_shape" @ 18 DATA
+	".refptr.boot_time" @ 19 DATA
+	".refptr.class_table" @ 20 DATA
+	".refptr.cmd_flags" @ 21 DATA
+	".refptr.command_hash" @ 22 DATA
+	".refptr.con_app" @ 23 DATA
+	".refptr.control" @ 24 DATA
+	".refptr.cur_char" @ 25 DATA
+	".refptr.cur_char_died" @ 26 DATA
+	".refptr.cur_obj" @ 27 DATA
+	".refptr.cur_obj_extracted" @ 28 DATA
+	".refptr.cur_obj_serial" @ 29 DATA
+	".refptr.cur_qchars" @ 30 DATA
+	".refptr.cur_qobjs" @ 31 DATA
+	".refptr.cur_room" @ 32 DATA
+	".refptr.current_time" @ 33 DATA
+	".refptr.default_set" @ 34 DATA
+	".refptr.defense_flags" @ 35 DATA
+	".refptr.dex_app" @ 36 DATA
+	".refptr.dir_name" @ 37 DATA
+	".refptr.do_cast" @ 38 DATA
+	".refptr.do_detrap" @ 39 DATA
+	".refptr.do_dig" @ 40 DATA
+	".refptr.do_search" @ 41 DATA
+	".refptr.do_switch" @ 42 DATA
+	".refptr.ex_pair" @ 43 DATA
+	".refptr.ex_pearth" @ 44 DATA
+	".refptr.ex_pfire" @ 45 DATA
+	".refptr.ex_pmisc" @ 46 DATA
+	".refptr.ex_pwater" @ 47 DATA
+	".refptr.extracted_char_queue" @ 48 DATA
+	".refptr.extracted_obj_queue" @ 49 DATA
+	".refptr.fBootDb" @ 50 DATA
+	".refptr.fLogAll" @ 51 DATA
+	".refptr.falling" @ 52 DATA
+	".refptr.first_area" @ 53 DATA
+	".refptr.first_area_name" @ 54 DATA
+	".refptr.first_asort" @ 55 DATA
+	".refptr.first_ban" @ 56 DATA
+	".refptr.first_ban_class" @ 57 DATA
+	".refptr.first_ban_race" @ 58 DATA
+	".refptr.first_bsort" @ 59 DATA
+	".refptr.first_build" @ 60 DATA
+	".refptr.first_char" @ 61 DATA
+	".refptr.first_clan" @ 62 DATA
+	".refptr.first_descriptor" @ 63 DATA
+	".refptr.first_help" @ 64 DATA
+	".refptr.first_lang" @ 65 DATA
+	".refptr.first_object" @ 66 DATA
+	".refptr.first_project" @ 67 DATA
+	".refptr.first_relation" @ 68 DATA
+	".refptr.first_repair" @ 69 DATA
+	".refptr.first_reserved" @ 70 DATA
+	".refptr.first_shop" @ 71 DATA
+	".refptr.first_teleport" @ 72 DATA
+	".refptr.first_watch" @ 73 DATA
+	".refptr.fpArea" @ 74 DATA
+	".refptr.global_objcode" @ 75 DATA
+	".refptr.global_retcode" @ 76 DATA
+	".refptr.gsn_aid" @ 77 DATA
+	".refptr.gsn_archery" @ 78 DATA
+	".refptr.gsn_axes" @ 79 DATA
+	".refptr.gsn_backstab" @ 80 DATA
+	".refptr.gsn_bash" @ 81 DATA
+	".refptr.gsn_bashdoor" @ 82 DATA
+	".refptr.gsn_berserk" @ 83 DATA
+	".refptr.gsn_bite" @ 84 DATA
+	".refptr.gsn_blindness" @ 85 DATA
+	".refptr.gsn_block" @ 86 DATA
+	".refptr.gsn_blowguns" @ 87 DATA
+	".refptr.gsn_brew" @ 88 DATA
+	".refptr.gsn_charm_person" @ 89 DATA
+	".refptr.gsn_circle" @ 90 DATA
+	".refptr.gsn_claw" @ 91 DATA
+	".refptr.gsn_climb" @ 92 DATA
+	".refptr.gsn_cook" @ 93 DATA
+	".refptr.gsn_curse" @ 94 DATA
+	".refptr.gsn_daggers" @ 95 DATA
+	".refptr.gsn_detrap" @ 96 DATA
+	".refptr.gsn_dig" @ 97 DATA
+	".refptr.gsn_disarm" @ 98 DATA
+	".refptr.gsn_dodge" @ 99 DATA
+	".refptr.gsn_dual_wield" @ 100 DATA
+	".refptr.gsn_enhanced_damage" @ 101 DATA
+	".refptr.gsn_fifth_attack" @ 102 DATA
+	".refptr.gsn_fireball" @ 103 DATA
+	".refptr.gsn_flight" @ 104 DATA
+	".refptr.gsn_forage" @ 105 DATA
+	".refptr.gsn_forge" @ 106 DATA
+	".refptr.gsn_fourth_attack" @ 107 DATA
+	".refptr.gsn_gouge" @ 108 DATA
+	".refptr.gsn_grip" @ 109 DATA
+	".refptr.gsn_haggle" @ 110 DATA
+	".refptr.gsn_hand_to_hand" @ 111 DATA
+	".refptr.gsn_hide" @ 112 DATA
+	".refptr.gsn_hitall" @ 113 DATA
+	".refptr.gsn_invis" @ 114 DATA
+	".refptr.gsn_kick" @ 115 DATA
+	".refptr.gsn_maces_hammers" @ 116 DATA
+	".refptr.gsn_mass_invis" @ 117 DATA
+	".refptr.gsn_mount" @ 118 DATA
+	".refptr.gsn_parry" @ 119 DATA
+	".refptr.gsn_peek" @ 120 DATA
+	".refptr.gsn_pick_lock" @ 121 DATA
+	".refptr.gsn_poison" @ 122 DATA
+	".refptr.gsn_poison_weapon" @ 123 DATA
+	".refptr.gsn_polearms" @ 124 DATA
+	".refptr.gsn_possess" @ 125 DATA
+	".refptr.gsn_punch" @ 126 DATA
+	".refptr.gsn_rescue" @ 127 DATA
+	".refptr.gsn_scan" @ 128 DATA
+	".refptr.gsn_scribe" @ 129 DATA
+	".refptr.gsn_search" @ 130 DATA
+	".refptr.gsn_second_attack" @ 131 DATA
+	".refptr.gsn_sleep" @ 132 DATA
+	".refptr.gsn_slice" @ 133 DATA
+	".refptr.gsn_slings" @ 134 DATA
+	".refptr.gsn_sneak" @ 135 DATA
+	".refptr.gsn_spears" @ 136 DATA
+	".refptr.gsn_staves" @ 137 DATA
+	".refptr.gsn_steal" @ 138 DATA
+	".refptr.gsn_sting" @ 139 DATA
+	".refptr.gsn_study" @ 140 DATA
+	".refptr.gsn_stun" @ 141 DATA
+	".refptr.gsn_swords" @ 142 DATA
+	".refptr.gsn_tail" @ 143 DATA
+	".refptr.gsn_third_attack" @ 144 DATA
+	".refptr.gsn_track" @ 145 DATA
+	".refptr.gsn_tumble" @ 146 DATA
+	".refptr.gsn_whips" @ 147 DATA
+	".refptr.help_greeting" @ 148 DATA
+	".refptr.herb_table" @ 149 DATA
+	".refptr.immortal_host_end" @ 150 DATA
+	".refptr.immortal_host_start" @ 151 DATA
+	".refptr.int_app" @ 152 DATA
+	".refptr.item_w_flags" @ 153 DATA
+	".refptr.lang_array" @ 154 DATA
+	".refptr.lang_names" @ 155 DATA
+	".refptr.last_area" @ 156 DATA
+	".refptr.last_area_name" @ 157 DATA
+	".refptr.last_asort" @ 158 DATA
+	".refptr.last_ban" @ 159 DATA
+	".refptr.last_ban_class" @ 160 DATA
+	".refptr.last_ban_race" @ 161 DATA
+	".refptr.last_bsort" @ 162 DATA
+	".refptr.last_build" @ 163 DATA
+	".refptr.last_char" @ 164 DATA
+	".refptr.last_descriptor" @ 165 DATA
+	".refptr.last_help" @ 166 DATA
+	".refptr.last_object" @ 167 DATA
+	".refptr.last_pkroom" @ 168 DATA
+	".refptr.last_project" @ 169 DATA
+	".refptr.last_relation" @ 170 DATA
+	".refptr.last_repair" @ 171 DATA
+	".refptr.last_reserved" @ 172 DATA
+	".refptr.last_restore_all_time" @ 173 DATA
+	".refptr.last_shop" @ 174 DATA
+	".refptr.last_teleport" @ 175 DATA
+	".refptr.last_watch" @ 176 DATA
+	".refptr.lastplayercmd" @ 177 DATA
+	".refptr.liq_table" @ 178 DATA
+	".refptr.loading_char" @ 179 DATA
+	".refptr.mob_act_list" @ 180 DATA
+	".refptr.mob_index_hash" @ 181 DATA
+	".refptr.mob_save_equipment" @ 182 DATA
+	".refptr.mud_down" @ 183 DATA
+	".refptr.mud_start_time" @ 184 DATA
+	".refptr.new_boot_struct" @ 185 DATA
+	".refptr.new_boot_time" @ 186 DATA
+	".refptr.new_boot_time_t" @ 187 DATA
+	".refptr.npc_class" @ 188 DATA
+	".refptr.npc_race" @ 189 DATA
+	".refptr.npc_sex" @ 190 DATA
+	".refptr.num_descriptors" @ 191 DATA
+	".refptr.num_skills" @ 192 DATA
+	".refptr.num_sorted_skills" @ 193 DATA
+	".refptr.nummobsloaded" @ 194 DATA
+	".refptr.numobjsloaded" @ 195 DATA
+	".refptr.o_flags" @ 196 DATA
+	".refptr.o_types" @ 197 DATA
+	".refptr.obj_index_hash" @ 198 DATA
+	".refptr.p_message_table" @ 199 DATA
+	".refptr.part_flags" @ 200 DATA
+	".refptr.pc_flags" @ 201 DATA
+	".refptr.physicalobjects" @ 202 DATA
+	".refptr.plr_flags" @ 203 DATA
+	".refptr.port" @ 204 DATA
+	".refptr.projectiles" @ 205 DATA
+	".refptr.quitting_char" @ 206 DATA
+	".refptr.r_flags" @ 207 DATA
+	".refptr.race_table" @ 208 DATA
+	".refptr.ranged_target_name" @ 209 DATA
+	".refptr.rev_dir" @ 210 DATA
+	".refptr.ris_flags" @ 211 DATA
+	".refptr.room_index_hash" @ 212 DATA
+	".refptr.s_message_table" @ 213 DATA
+	".refptr.save_equipment" @ 214 DATA
+	".refptr.saving_char" @ 215 DATA
+	".refptr.sec_flags" @ 216 DATA
+	".refptr.set_boot_time" @ 217 DATA
+	".refptr.skill_notfound" @ 218 DATA
+	".refptr.skill_table" @ 219 DATA
+	".refptr.skill_table_bytype" @ 220 DATA
+	".refptr.skill_tname" @ 221 DATA
+	".refptr.social_index" @ 222 DATA
+	".refptr.spell_notfound" @ 223 DATA
+	".refptr.spell_null" @ 224 DATA
+	".refptr.spell_possess" @ 225 DATA
+	".refptr.spell_smaug" @ 226 DATA
+	".refptr.strArea" @ 227 DATA
+	".refptr.str_app" @ 228 DATA
+	".refptr.str_boot_time" @ 229 DATA
+	".refptr.supermob" @ 230 DATA
+	".refptr.supermob_obj" @ 231 DATA
+	".refptr.sysdata" @ 232 DATA
+	".refptr.target_name" @ 233 DATA
+	".refptr.time_info" @ 234 DATA
+	".refptr.timechar" @ 235 DATA
+	".refptr.title_table" @ 236 DATA
+	".refptr.top_affect" @ 237 DATA
+	".refptr.top_area" @ 238 DATA
+	".refptr.top_ed" @ 239 DATA
+	".refptr.top_exit" @ 240 DATA
+	".refptr.top_help" @ 241 DATA
+	".refptr.top_herb" @ 242 DATA
+	".refptr.top_mob_index" @ 243 DATA
+	".refptr.top_obj_index" @ 244 DATA
+	".refptr.top_reset" @ 245 DATA
+	".refptr.top_room" @ 246 DATA
+	".refptr.top_vroom" @ 247 DATA
+	".refptr.trap_door" @ 248 DATA
+	".refptr.trap_flags" @ 249 DATA
+	".refptr.w_flags" @ 250 DATA
+	".refptr.weapon_skills" @ 251 DATA
+	".refptr.wear_locs" @ 252 DATA
+	".refptr.where_name" @ 253 DATA
+	".refptr.will_compress2_str" @ 254 DATA
+	DONT_UPPER @ 255 DATA
+	EXA_prog_trigger @ 256 DATA
+	MAX_PC_CLASS @ 257 DATA
+	MAX_PC_RACE @ 258 DATA
+	MOBtrigger @ 259 DATA
+;	RelDestroy(relation_type, void*, void*)
+	_Z10RelDestroy13relation_typePvS0_ @ 260
+;	accept_new(int)
+	_Z10accept_newi @ 261
+;	act_string(char const*, char_data*, char_data*, void const*, void const*, int)
+	_Z10act_stringPKcP9char_dataS2_PKvS4_i @ 262
+;	actiondesc(char_data*, obj_data*)
+	_Z10actiondescP9char_dataP8obj_data @ 263
+;	add_letter(char*, char)
+	_Z10add_letterPcc @ 264
+;	add_roster(clan_data*, char const*, int, int, int, int)
+	_Z10add_rosterP9clan_dataPKciiii @ 265
+;	add_social(social_type*)
+	_Z10add_socialP11social_type @ 266
+;	align_name(int)
+	_Z10align_namei @ 267
+;	can_astral(char_data*, char_data*)
+	_Z10can_astralP9char_dataS0_ @ 268
+;	can_remove(char_data*, board_data*)
+	_Z10can_removeP9char_dataP10board_data @ 269
+;	capitalize(char const*)
+	_Z10capitalizePKc @ 270
+;	carried_by(obj_data*)
+	_Z10carried_byP8obj_data @ 271
+;	catch_fish(fish_data*)
+	_Z10catch_fishP9fish_data @ 272
+;	ch_slookup(char_data*, char const*)
+	_Z10ch_slookupP9char_dataPKc @ 273
+;	char_check()
+	_Z10char_checkv @ 274
+;	check_bans(char_data*, int)
+	_Z10check_bansP9char_datai @ 275
+;	check_grip(char_data*, char_data*)
+	_Z10check_gripP9char_dataS0_ @ 276
+;	check_hash(char const*)
+	_Z10check_hashPKc @ 277
+;	check_save(int, int, char_data*, char_data*)
+	_Z10check_saveiiP9char_dataS0_ @ 278
+;	clean_room(room_index_data*)
+	_Z10clean_roomP15room_index_data @ 279
+;	clear_char(char_data*)
+	_Z10clear_charP9char_data @ 280
+;	clear_room(int, int)
+	_Z10clear_roomii @ 281
+;	close_area(area_data*)
+	_Z10close_areaP9area_data @ 282
+;	copy_morph(morph_data*, morph_data*)
+	_Z10copy_morphP10morph_dataS0_ @ 283
+;	could_dual(char_data*)
+	_Z10could_dualP9char_data @ 284
+;	countlangs(int)
+	_Z10countlangsi @ 285
+;	damage_obj(obj_data*)
+	_Z10damage_objP8obj_data @ 286
+;	delete_mob(mob_index_data*)
+	_Z10delete_mobP14mob_index_data @ 287
+;	delete_obj(obj_index_data*)
+	_Z10delete_objP14obj_index_data @ 288
+;	dice_parse(char_data*, int, char const*, char_data*, int)
+	_Z10dice_parseP9char_dataiPKcS0_i @ 289
+;	do_mpstrew(char_data*, char const*)
+	_Z10do_mpstrewP9char_dataPKc @ 290
+;	do_nremove(char_data*, char const*)
+	_Z10do_nremoveP9char_dataPKc @ 291
+;	do_unmorph(char_data*)
+	_Z10do_unmorphP9char_data @ 292
+;	equip_char(char_data*, obj_data*, int)
+	_Z10equip_charP9char_dataP8obj_datai @ 293
+;	find_board(char_data*)
+	_Z10find_boardP9char_data @ 294
+;	find_fixer(char_data*)
+	_Z10find_fixerP9char_data @ 295
+;	find_fname(char const*)
+	_Z10find_fnamePKc @ 296
+;	find_morph(char_data*, char const*, bool)
+	_Z10find_morphP9char_dataPKcb @ 297
+;	find_quill(char_data*)
+	_Z10find_quillP9char_data @ 298
+;	find_skill(char_data*, char const*, bool)
+	_Z10find_skillP9char_dataPKcb @ 299
+;	find_spell(char_data*, char const*, bool)
+	_Z10find_spellP9char_dataPKcb @ 300
+;	find_whogr(descriptor_data*, whogr_s*)
+	_Z10find_whogrP15descriptor_dataP7whogr_s @ 301
+;	found_prey(char_data*, char_data*)
+	_Z10found_preyP9char_dataS0_ @ 302
+;	fread_cell(__sFILE64*, int, int)
+	_Z10fread_cellP9__sFILE64ii @ 303
+;	fread_char(char_data*, __sFILE64*, bool, bool)
+	_Z10fread_charP9char_dataP9__sFILE64bb @ 304
+;	fread_clan(clan_data*, __sFILE64*)
+	_Z10fread_clanP9clan_dataP9__sFILE64 @ 305
+;	fread_info(wizinfo_data*, __sFILE64*)
+	_Z10fread_infoP12wizinfo_dataP9__sFILE64 @ 306
+;	fread_line(__sFILE64*)
+	_Z10fread_lineP9__sFILE64 @ 307
+;	fread_news(news_data*, __sFILE64*)
+	_Z10fread_newsP9news_dataP9__sFILE64 @ 308
+;	fread_word(__sFILE64*)
+	_Z10fread_wordP9__sFILE64 @ 309
+;	free_board(board_data*)
+	_Z10free_boardP10board_data @ 310
+;	free_clans()
+	_Z10free_clansv @ 311
+;	free_deity(deity_data*)
+	_Z10free_deityP10deity_data @ 312
+;	free_fight(char_data*)
+	_Z10free_fightP9char_data @ 313
+;	free_fname(fname_data*)
+	_Z10free_fnameP10fname_data @ 314
+;	free_helps()
+	_Z10free_helpsv @ 315
+;	free_morph(morph_data*)
+	_Z10free_morphP10morph_data @ 316
+;	free_plane(plane_data*)
+	_Z10free_planeP10plane_data @ 317
+;	free_skill(skill_type*)
+	_Z10free_skillP10skill_type @ 318
+;	fwrite_obj(char_data*, obj_data*, __sFILE64*, int, short, bool)
+	_Z10fwrite_objP9char_dataP8obj_dataP9__sFILE64isb @ 319
+;	get_exflag(char const*)
+	_Z10get_exflagPKc @ 320
+;	get_mpflag(char const*)
+	_Z10get_mpflagPKc @ 321
+;	get_pcflag(char const*)
+	_Z10get_pcflagPKc @ 322
+;	get_sclass(char const*)
+	_Z10get_sclassPKc @ 323
+;	get_spower(char const*)
+	_Z10get_spowerPKc @ 324
+;	group_gain(char_data*, char_data*)
+	_Z10group_gainP9char_dataS0_ @ 325
+;	hash_stats()
+	_Z10hash_statsv @ 326
+;	hide_tilde(char*)
+	_Z10hide_tildePc @ 327
+;	init_chess()
+	_Z10init_chessv @ 328
+;	isDownpour(int)
+	_Z10isDownpouri @ 329
+;	isFreezing(int)
+	_Z10isFreezingi @ 330
+;	isVeryCold(int)
+	_Z10isVeryColdi @ 331
+;	is_fearing(char_data*, char_data*)
+	_Z10is_fearingP9char_dataS0_ @ 332
+;	is_fishing(char_data*)
+	_Z10is_fishingP9char_data @ 333
+;	is_hunting(char_data*, char_data*)
+	_Z10is_huntingP9char_dataS0_ @ 334
+;	is_note_to(char_data*, note_data*)
+	_Z10is_note_toP9char_dataP9note_data @ 335
+;	is_profane(char*)
+	_Z10is_profanePc @ 336
+;	is_trapped(obj_data*)
+	_Z10is_trappedP8obj_data @ 337
+;	legal_loot(char_data*, char_data*)
+	_Z10legal_lootP9char_dataS0_ @ 338
+;	load_board(global_board_data*)
+	_Z10load_boardP17global_board_data @ 339
+;	load_clans()
+	_Z10load_clansv @ 340
+;	load_deity()
+	_Z10load_deityv @ 341
+;	load_flags(area_data*, __sFILE64*)
+	_Z10load_flagsP9area_dataP9__sFILE64 @ 342
+;	load_helps(__sFILE64*)
+	_Z10load_helpsP9__sFILE64 @ 343
+;	load_races()
+	_Z10load_racesv @ 344
+;	load_rooms(area_data*, __sFILE64*)
+	_Z10load_roomsP9area_dataP9__sFILE64 @ 345
+;	load_shops(__sFILE64*)
+	_Z10load_shopsP9__sFILE64 @ 346
+;	load_world()
+	_Z10load_worldv @ 347
+;	log_printf(char const*, ...)
+	_Z10log_printfPKcz @ 348
+;	mail_count(char_data*)
+	_Z10mail_countP9char_data @ 349
+;	make_blood(char_data*)
+	_Z10make_bloodP9char_data @ 350
+;	make_reset(char, int, int, int, int)
+	_Z10make_resetciiii @ 351
+;	mssp_reply(descriptor_data*, char const*, char const*, ...)
+	_Z10mssp_replyP15descriptor_dataPKcS2_z @ 352
+;	mudstrlcat(char*, char const*, unsigned long)
+	_Z10mudstrlcatPcPKcm @ 353
+;	mudstrlcpy(char*, char const*, unsigned long)
+	_Z10mudstrlcpyPcPKcm @ 354
+;	next_board(char_data*)
+	_Z10next_boardP9char_data @ 355
+;	obj_to_obj(obj_data*, obj_data*)
+	_Z10obj_to_objP8obj_dataS0_ @ 356
+;	obj_update()
+	_Z10obj_updatev @ 357
+;	pullorpush(char_data*, obj_data*, bool)
+	_Z10pullorpushP9char_dataP8obj_datab @ 358
+;	quick_link(char const*)
+	_Z10quick_linkPKc @ 359
+;	read_board(__sFILE64*)
+	_Z10read_boardP9__sFILE64 @ 360
+;	read_plane(__sFILE64*)
+	_Z10read_planeP9__sFILE64 @ 361
+;	remove_obj(char_data*, int, bool)
+	_Z10remove_objP9char_dataib @ 362
+;	remove_tag(char_data*, char*, int)
+	_Z10remove_tagP9char_dataPci @ 363
+;	reset_area(area_data*)
+	_Z10reset_areaP9area_data @ 364
+;	reset_room(room_index_data*)
+	_Z10reset_roomP15room_index_data @ 365
+;	ris_damage(char_data*, short, int)
+	_Z10ris_damageP9char_datasi @ 366
+;	save_board(global_board_data*)
+	_Z10save_boardP17global_board_data @ 367
+;	save_deity(deity_data*)
+	_Z10save_deityP10deity_data @ 368
+;	save_notes()
+	_Z10save_notesv @ 369
+;	save_races()
+	_Z10save_racesv @ 370
+;	save_world()
+	_Z10save_worldv @ 371
+;	saves_will(int, char_data*)
+	_Z10saves_williP9char_data @ 372
+;	sec_to_hms(long, char*)
+	_Z10sec_to_hmslPc @ 373
+;	second_hit(char_data*, char_data*, int)
+	_Z10second_hitP9char_dataS0_i @ 374
+;	send_timer(timerset*, char_data*)
+	_Z10send_timerP8timersetP9char_data @ 375
+;	show_stats(descriptor_data*, char_data*)
+	_Z10show_statsP15descriptor_dataP9char_data @ 376
+;	show_tilde(char const*)
+	_Z10show_tildePKc @ 377
+;	show_title(descriptor_data*)
+	_Z10show_titleP15descriptor_data @ 378
+;	show_vnums(char_data*, int, int, bool, bool, char const*, char const*)
+	_Z10show_vnumsP9char_dataiibbPKcS2_ @ 379
+;	showaffect(char_data*, affect_data*)
+	_Z10showaffectP9char_dataP11affect_data @ 380
+;	skill_comp(skill_type**, skill_type**)
+	_Z10skill_compPP10skill_typeS1_ @ 381
+;	sort_exits(room_index_data*)
+	_Z10sort_exitsP15room_index_data @ 382
+;	stamp_time()
+	_Z10stamp_timev @ 383
+;	start_fall()
+	_Z10start_fallv @ 384
+;	stat_bonus(int)
+	_Z10stat_bonusi @ 385
+;	str_prefix(char const*, char const*)
+	_Z10str_prefixPKcS0_ @ 386
+;	str_suffix(char const*, char const*)
+	_Z10str_suffixPKcS0_ @ 387
+;	tail_chain()
+	_Z10tail_chainv @ 388
+;	teleportch(char_data*, room_index_data*, bool)
+	_Z10teleportchP9char_dataP15room_index_datab @ 389
+;	to_channel(char const*, int, char const*, short)
+	_Z10to_channelPKciS0_s @ 390
+;	trvch_next(trv_data*)
+	_Z10trvch_nextP8trv_data @ 391
+;	update_pos(char_data*)
+	_Z10update_posP9char_data @ 392
+;	valid_edge(exit_data*)
+	_Z10valid_edgeP9exit_data @ 393
+;	warn_progs(char_data*, int, int, area_data*, renumber_areas*)
+	_Z10warn_progsP9char_dataiiP9area_dataP14renumber_areas @ 394
+;	write_hint()
+	_Z10write_hintv @ 395
+;	xp_compute(char_data*, char_data*)
+	_Z10xp_computeP9char_dataS0_ @ 396
+;	SHA256_Init(SHA256Context*)
+	_Z11SHA256_InitP13SHA256Context @ 397
+;	add_command(cmd_type*)
+	_Z11add_commandP8cmd_type @ 398
+;	affect_join(char_data*, affect_data*)
+	_Z11affect_joinP9char_dataP11affect_data @ 399
+;	aggr_update()
+	_Z11aggr_updatev @ 400
+;	append_file(char_data*, char const*, char const*)
+	_Z11append_fileP9char_dataPKcS2_ @ 401
+;	append_note(__sFILE64*, note_data*)
+	_Z11append_noteP9__sFILE64P9note_data @ 402
+;	area_update()
+	_Z11area_updatev @ 403
+;	aris_affect(char_data*, affect_data*)
+	_Z11aris_affectP9char_dataP11affect_data @ 404
+;	assign_area(char_data*)
+	_Z11assign_areaP9char_data @ 405
+;	auth_update()
+	_Z11auth_updatev @ 406
+;	bfs_dequeue()
+	_Z11bfs_dequeuev @ 407
+;	bfs_enqueue(room_index_data*, char)
+	_Z11bfs_enqueueP15room_index_datac @ 408
+;	calc_season()
+	_Z11calc_seasonv @ 409
+;	can_carry_n(char_data*)
+	_Z11can_carry_nP9char_data @ 410
+;	can_carry_w(char_data*)
+	_Z11can_carry_wP9char_data @ 411
+;	can_mmodify(char_data*, char_data*)
+	_Z11can_mmodifyP9char_dataS0_ @ 412
+;	can_omodify(char_data*, obj_data*)
+	_Z11can_omodifyP9char_dataP8obj_data @ 413
+;	can_outcast(clan_data*, char_data*, char_data*)
+	_Z11can_outcastP9clan_dataP9char_dataS2_ @ 414
+;	can_rmodify(char_data*, room_index_data*)
+	_Z11can_rmodifyP9char_dataP15room_index_data @ 415
+;	can_see_obj(char_data*, obj_data*)
+	_Z11can_see_objP9char_dataP8obj_data @ 416
+;	char_update()
+	_Z11char_updatev @ 417
+;	check_blind(char_data*)
+	_Z11check_blindP9char_data @ 418
+;	check_block(char_data*, char_data*)
+	_Z11check_blockP9char_dataS0_ @ 419
+;	check_dodge(char_data*, char_data*)
+	_Z11check_dodgeP9char_dataS0_ @ 420
+;	check_parry(char_data*, char_data*)
+	_Z11check_parryP9char_dataS0_ @ 421
+;	check_skill(char_data*, char*, char*)
+	_Z11check_skillP9char_dataPcS1_ @ 422
+;	check_vnums(char_data*, area_data*, renumber_areas*)
+	_Z11check_vnumsP9char_dataP9area_dataP14renumber_areas @ 423
+;	clear_coord(int, int)
+	_Z11clear_coordii @ 424
+;	color_align(char const*, int, int)
+	_Z11color_alignPKcii @ 425
+;	compressEnd(descriptor_data*)
+	_Z11compressEndP15descriptor_data @ 426
+;	copy_buffer(char_data*)
+	_Z11copy_bufferP9char_data @ 427
+;	count_lines(char*)
+	_Z11count_linesPc @ 428
+;	count_users(obj_data*)
+	_Z11count_usersP8obj_data @ 429
+;	create_area()
+	_Z11create_areav @ 430
+;	create_fish(obj_data*)
+	_Z11create_fishP8obj_data @ 431
+;	delete_room(room_index_data*)
+	_Z11delete_roomP15room_index_data @ 432
+;	dispose_ban(ban_data*, int)
+	_Z11dispose_banP8ban_datai @ 433
+;	do_compress(char_data*, char const*)
+	_Z11do_compressP9char_dataPKc @ 434
+;	do_ncatchup(char_data*, char const*)
+	_Z11do_ncatchupP9char_dataPKc @ 435
+;	echo_to_all(short, char const*, short)
+	_Z11echo_to_allsPKcs @ 436
+;	economy_has(area_data*, int)
+	_Z11economy_hasP9area_datai @ 437
+;	edit_buffer(char_data*, char*)
+	_Z11edit_bufferP9char_dataPc @ 438
+;	encumbrance(char_data*, short)
+	_Z11encumbranceP9char_datas @ 439
+;	extract_obj(obj_data*)
+	_Z11extract_objP8obj_data @ 440
+;	figure_type(char const*)
+	_Z11figure_typePKc @ 441
+;	find_keeper(char_data*)
+	_Z11find_keeperP9char_data @ 442
+;	find_oreset(room_index_data*, char const*)
+	_Z11find_oresetP15room_index_dataPKc @ 443
+;	find_social(char const*)
+	_Z11find_socialPKc @ 444
+;	find_tongue(char_data*, char const*, bool)
+	_Z11find_tongueP9char_dataPKcb @ 445
+;	find_weapon(char_data*, char const*, bool)
+	_Z11find_weaponP9char_dataPKcb @ 446
+;	finish_note(global_board_data*, note_data*)
+	_Z11finish_noteP17global_board_dataP9note_data @ 447
+;	flag_string(int, char const* const*)
+	_Z11flag_stringiPKPKc @ 448
+;	fread_deity(deity_data*, __sFILE64*)
+	_Z11fread_deityP10deity_dataP9__sFILE64 @ 449
+;	fread_morph(__sFILE64*)
+	_Z11fread_morphP9__sFILE64 @ 450
+;	fread_skill(__sFILE64*)
+	_Z11fread_skillP9__sFILE64 @ 451
+;	free_boards()
+	_Z11free_boardsv @ 452
+;	free_morphs()
+	_Z11free_morphsv @ 453
+;	free_skills()
+	_Z11free_skillsv @ 454
+;	free_social(social_type*)
+	_Z11free_socialP11social_type @ 455
+;	fwrite_char(char_data*, __sFILE64*)
+	_Z11fwrite_charP9char_dataP9__sFILE64 @ 456
+;	gender_name(int)
+	_Z11gender_namei @ 457
+;	getHumidity(WeatherCell*)
+	_Z11getHumidityP11WeatherCell @ 458
+;	getPressure(WeatherCell*)
+	_Z11getPressureP11WeatherCell @ 459
+;	get_actflag(char const*)
+	_Z11get_actflagPKc @ 460
+;	get_climate(char*)
+	_Z11get_climatePc @ 461
+;	get_cmdflag(char const*)
+	_Z11get_cmdflagPKc @ 462
+;	get_council(char const*)
+	_Z11get_councilPKc @ 463
+;	get_eq_char(char_data*, int)
+	_Z11get_eq_charP9char_datai @ 464
+;	get_eq_hold(char_data*, int)
+	_Z11get_eq_holdP9char_datai @ 465
+;	get_exit_to(room_index_data*, short, int)
+	_Z11get_exit_toP15room_index_datasi @ 466
+;	get_holiday(short, short)
+	_Z11get_holidayss @ 467
+;	get_insight(char_data*)
+	_Z11get_insightP9char_data @ 468
+;	get_langnum(char const*)
+	_Z11get_langnumPKc @ 469
+;	get_npc_sex(char const*)
+	_Z11get_npc_sexPKc @ 470
+;	get_objtype(char_data*, short)
+	_Z11get_objtypeP9char_datas @ 471
+;	get_pc_race(char const*)
+	_Z11get_pc_racePKc @ 472
+;	get_plrflag(char const*)
+	_Z11get_plrflagPKc @ 473
+;	get_risflag(char const*)
+	_Z11get_risflagPKc @ 474
+;	get_saction(char const*)
+	_Z11get_sactionPKc @ 475
+;	get_sdamage(char const*)
+	_Z11get_sdamagePKc @ 476
+;	get_secflag(char const*)
+	_Z11get_secflagPKc @ 477
+;	get_starget(char const*)
+	_Z11get_stargetPKc @ 478
+;	get_wearloc(char const*)
+	_Z11get_wearlocPKc @ 479
+;	herb_lookup(char const*)
+	_Z11herb_lookupPKc @ 480
+;	hint_update()
+	_Z11hint_updatev @ 481
+;	hunt_victim(char_data*)
+	_Z11hunt_victimP9char_data @ 482
+;	init_socket(int)
+	_Z11init_socketi @ 483
+;	interpolate(int, int, int)
+	_Z11interpolateiii @ 484
+;	isCalmWindE(int)
+	_Z11isCalmWindEi @ 485
+;	isCalmWindN(int)
+	_Z11isCalmWindNi @ 486
+;	isCalmWindS(int)
+	_Z11isCalmWindSi @ 487
+;	isCalmWindW(int)
+	_Z11isCalmWindWi @ 488
+;	isDrizzling(int)
+	_Z11isDrizzlingi @ 489
+;	isTemperate(int)
+	_Z11isTemperatei @ 490
+;	is_affected(char_data*, int)
+	_Z11is_affectedP9char_datai @ 491
+;	is_ignoring(char_data*, char_data*)
+	_Z11is_ignoringP9char_dataS0_ @ 492
+;	liq_can_mix(obj_data*, obj_data*)
+	_Z11liq_can_mixP8obj_dataS0_ @ 493
+;	load_author(area_data*, __sFILE64*)
+	_Z11load_authorP9area_dataP9__sFILE64 @ 494
+;	load_boards()
+	_Z11load_boardsv @ 495
+;	load_fnames()
+	_Z11load_fnamesv @ 496
+;	load_mobile(__sFILE64*)
+	_Z11load_mobileP9__sFILE64 @ 497
+;	load_morphs()
+	_Z11load_morphsv @ 498
+;	load_planes()
+	_Z11load_planesv @ 499
+;	load_ranges(area_data*, __sFILE64*)
+	_Z11load_rangesP9area_dataP9__sFILE64 @ 500
+;	load_resets(area_data*, __sFILE64*)
+	_Z11load_resetsP9area_dataP9__sFILE64 @ 501
+;	make_corpse(char_data*, char_data*)
+	_Z11make_corpseP9char_dataS0_ @ 502
+;	make_mobile(int, int, char const*)
+	_Z11make_mobileiiPKc @ 503
+;	make_object(int, int, char const*)
+	_Z11make_objectiiPKc @ 504
+;	make_scraps(obj_data*)
+	_Z11make_scrapsP8obj_data @ 505
+;	mini_c_time(long, int)
+	_Z11mini_c_timeli @ 506
+;	mob_act_add(char_data*)
+	_Z11mob_act_addP9char_data @ 507
+;	mprog_seval(char const*, char const*, char const*, char_data*)
+	_Z11mprog_sevalPKcS0_S0_P9char_data @ 508
+;	mprog_veval(int, char*, int, char_data*)
+	_Z11mprog_vevaliPciP9char_data @ 509
+;	ms_find_obj(char_data*)
+	_Z11ms_find_objP9char_data @ 510
+;	name_expand(char_data*)
+	_Z11name_expandP9char_data @ 511
+;	note_attach(char_data*)
+	_Z11note_attachP9char_data @ 512
+;	note_remove(board_data*, note_data*)
+	_Z11note_removeP10board_dataP9note_data @ 513
+;	number_bits(int)
+	_Z11number_bitsi @ 514
+;	number_door()
+	_Z11number_doorv @ 515
+;	obj_act_add(obj_data*)
+	_Z11obj_act_addP8obj_data @ 516
+;	obj_hitroll(obj_data*)
+	_Z11obj_hitrollP8obj_data @ 517
+;	obj_to_char(obj_data*, char_data*)
+	_Z11obj_to_charP8obj_dataP9char_data @ 518
+;	obj_to_room(obj_data*, room_index_data*)
+	_Z11obj_to_roomP8obj_dataP15room_index_data @ 519
+;	process_dns(descriptor_data*)
+	_Z11process_dnsP15descriptor_data @ 520
+;	race_string(int)
+	_Z11race_stringi @ 521
+;	random_ansi(short)
+	_Z11random_ansis @ 522
+;	remove_fish(fish_data*)
+	_Z11remove_fishP9fish_data @ 523
+;	resolve_dns(descriptor_data*, long)
+	_Z11resolve_dnsP15descriptor_datal @ 524
+;	room_affect(room_index_data*, affect_data*, bool)
+	_Z11room_affectP15room_index_dataP11affect_datab @ 525
+;	room_is_dnd(char_data*, room_index_data*)
+	_Z11room_is_dndP9char_dataP15room_index_data @ 526
+;	save_fnames()
+	_Z11save_fnamesv @ 527
+;	save_mobile(__sFILE64*, char_data*)
+	_Z11save_mobileP9__sFILE64P9char_data @ 528
+;	save_morphs()
+	_Z11save_morphsv @ 529
+;	save_planes()
+	_Z11save_planesv @ 530
+;	set_cur_obj(obj_data*)
+	_Z11set_cur_objP8obj_data @ 531
+;	show_colors(char_data*)
+	_Z11show_colorsP9char_data @ 532
+;	show_skills(descriptor_data*, char_data*)
+	_Z11show_skillsP15descriptor_dataP9char_data @ 533
+;	slot_lookup(int)
+	_Z11slot_lookupi @ 534
+;	smash_tilde(char const*)
+	_Z11smash_tildePKc @ 535
+;	smash_tilde(char*)
+	_Z11smash_tildePc @ 536
+;	smush_tilde(char*)
+	_Z11smush_tildePc @ 537
+;	spec_lookup(char const*)
+	_Z11spec_lookupPKc @ 538
+;	spring_trap(char_data*, obj_data*)
+	_Z11spring_trapP9char_dataP8obj_data @ 539
+;	start_timer(timeval*)
+	_Z11start_timerP7timeval @ 540
+;	stop_hating(char_data*)
+	_Z11stop_hatingP9char_data @ 541
+;	stop_idling(char_data*)
+	_Z11stop_idlingP9char_data @ 542
+;	strip_tilde(char*)
+	_Z11strip_tildePc @ 543
+;	tele_update()
+	_Z11tele_updatev @ 544
+;	time_update()
+	_Z11time_updatev @ 545
+;	trv_dispose(trv_data**)
+	_Z11trv_disposePP8trv_data @ 546
+;	trvch_wnext(trv_world*)
+	_Z11trvch_wnextP9trv_world @ 547
+;	trvobj_next(trv_data*)
+	_Z11trvobj_nextP8trv_data @ 548
+;	unlink_note(global_board_data*, note_data*)
+	_Z11unlink_noteP17global_board_dataP9note_data @ 549
+;	unmorph_all(morph_data*)
+	_Z11unmorph_allP10morph_data @ 550
+;	update_aris(char_data*)
+	_Z11update_arisP9char_data @ 551
+;	update_time(tm*)
+	_Z11update_timeP2tm @ 552
+;	valid_watch(char*)
+	_Z11valid_watchPc @ 553
+;	wipe_resets(room_index_data*)
+	_Z11wipe_resetsP15room_index_data @ 554
+;	write_board(board_data*)
+	_Z11write_boardP10board_data @ 555
+;	DecreaseTemp(WeatherCell*, int)
+	_Z12DecreaseTempP11WeatherCelli @ 556
+;	IncreaseTemp(WeatherCell*, int)
+	_Z12IncreaseTempP11WeatherCelli @ 557
+;	SHA256_Final(unsigned char*, SHA256Context*)
+	_Z12SHA256_FinalPhP13SHA256Context @ 558
+;	add_follower(char_data*, char_data*)
+	_Z12add_followerP9char_dataS0_ @ 559
+;	add_loginmsg(char*, short, char*)
+	_Z12add_loginmsgPcsS_ @ 560
+;	adjust_favor(char_data*, int, int)
+	_Z12adjust_favorP9char_dataii @ 561
+;	affect_strip(char_data*, int)
+	_Z12affect_stripP9char_datai @ 562
+;	appraise_all(char_data*, char_data*, char const*)
+	_Z12appraise_allP9char_dataS0_PKc @ 563
+;	board_lookup(char const*)
+	_Z12board_lookupPKc @ 564
+;	board_number(global_board_data const*)
+	_Z12board_numberPK17global_board_data @ 565
+;	can_drop_obj(char_data*, obj_data*)
+	_Z12can_drop_objP9char_dataP8obj_data @ 566
+;	caught_alarm(int)
+	_Z12caught_alarmi @ 567
+;	char_to_room(char_data*, room_index_data*)
+	_Z12char_to_roomP9char_dataP15room_index_data @ 568
+;	check_expire(ban_data*)
+	_Z12check_expireP8ban_data @ 569
+;	check_killer(char_data*, char_data*)
+	_Z12check_killerP9char_dataS0_ @ 570
+;	check_planes(plane_data*)
+	_Z12check_planesP10plane_data @ 571
+;	check_social(char_data*, char const*, char const*)
+	_Z12check_socialP9char_dataPKcS2_ @ 572
+;	check_switch(char_data*, bool)
+	_Z12check_switchP9char_datab @ 573
+;	check_tumble(char_data*, char_data*)
+	_Z12check_tumbleP9char_dataS0_ @ 574
+;	class_string(int)
+	_Z12class_stringi @ 575
+;	clean_resets(room_index_data*)
+	_Z12clean_resetsP15room_index_data @ 576
+;	clear_vrooms()
+	_Z12clear_vroomsv @ 577
+;	clone_object(obj_data*)
+	_Z12clone_objectP8obj_data @ 578
+;	close_socket(descriptor_data*, bool)
+	_Z12close_socketP15descriptor_datab @ 579
+;	color_strlen(char const*)
+	_Z12color_strlenPKc @ 580
+;	create_money(int)
+	_Z12create_moneyi @ 581
+;	create_whogr(char_data*)
+	_Z12create_whogrP9char_data @ 582
+;	delete_reset(reset_data*)
+	_Z12delete_resetP10reset_data @ 583
+;	delete_vdata(variable_data*)
+	_Z12delete_vdataP13variable_data @ 584
+;	die_follower(char_data*)
+	_Z12die_followerP9char_data @ 585
+;	display_news(char_data*, news_data*, news_type*)
+	_Z12display_newsP9char_dataP9news_dataP9news_type @ 586
+;	drunk_speech(char const*, char_data*)
+	_Z12drunk_speechPKcP9char_data @ 587
+;	echo_to_room(short, room_index_data*, char const*)
+	_Z12echo_to_roomsP15room_index_dataPKc @ 588
+;	ext_has_bits(extended_bitvector*, extended_bitvector*)
+	_Z12ext_has_bitsP18extended_bitvectorS0_ @ 589
+;	ext_is_empty(extended_bitvector*)
+	_Z12ext_is_emptyP18extended_bitvector @ 590
+;	ext_set_bits(extended_bitvector*, extended_bitvector*)
+	_Z12ext_set_bitsP18extended_bitvectorS0_ @ 591
+;	extract_char(char_data*, bool)
+	_Z12extract_charP9char_datab @ 592
+;	extract_exit(room_index_data*, exit_data*)
+	_Z12extract_exitP15room_index_dataP9exit_data @ 593
+;	find_ability(char_data*, char const*, bool)
+	_Z12find_abilityP9char_dataPKcb @ 594
+;	find_command(char*)
+	_Z12find_commandPc @ 595
+;	find_old_age(char_data*)
+	_Z12find_old_ageP9char_data @ 596
+;	flush_buffer(descriptor_data*, bool)
+	_Z12flush_bufferP15descriptor_datab @ 597
+;	fread_fnames(__sFILE64*)
+	_Z12fread_fnamesP9__sFILE64 @ 598
+;	fread_letter(__sFILE64*)
+	_Z12fread_letterP9__sFILE64 @ 599
+;	fread_liquid(__sFILE64*)
+	_Z12fread_liquidP9__sFILE64 @ 600
+;	fread_mobile(__sFILE64*)
+	_Z12fread_mobileP9__sFILE64 @ 601
+;	fread_number(__sFILE64*)
+	_Z12fread_numberP9__sFILE64 @ 602
+;	fread_social(__sFILE64*)
+	_Z12fread_socialP9__sFILE64 @ 603
+;	fread_string(__sFILE64*)
+	_Z12fread_stringP9__sFILE64 @ 604
+;	fread_to_eol(__sFILE64*)
+	_Z12fread_to_eolP9__sFILE64 @ 605
+;	free_command(cmd_type*)
+	_Z12free_commandP8cmd_type @ 606
+;	free_deities()
+	_Z12free_deitiesv @ 607
+;	free_holiday(holiday_data*)
+	_Z12free_holidayP12holiday_data @ 608
+;	free_reserve(reserve_data*)
+	_Z12free_reserveP12reserve_data @ 609
+;	free_socials()
+	_Z12free_socialsv @ 610
+;	free_tongues()
+	_Z12free_tonguesv @ 611
+;	fwrite_langs()
+	_Z12fwrite_langsv @ 612
+;	fwrite_morph(__sFILE64*, morph_data*)
+	_Z12fwrite_morphP9__sFILE64P10morph_data @ 613
+;	fwrite_skill(__sFILE64*, skill_type*)
+	_Z12fwrite_skillP9__sFILE64P10skill_type @ 614
+;	get_area_obj(obj_index_data*)
+	_Z12get_area_objP14obj_index_data @ 615
+;	get_areaflag(char const*)
+	_Z12get_areaflagPKc @ 616
+;	get_curr_cha(char_data*)
+	_Z12get_curr_chaP9char_data @ 617
+;	get_curr_con(char_data*)
+	_Z12get_curr_conP9char_data @ 618
+;	get_curr_dex(char_data*)
+	_Z12get_curr_dexP9char_data @ 619
+;	get_curr_int(char_data*)
+	_Z12get_curr_intP9char_data @ 620
+;	get_curr_lck(char_data*)
+	_Z12get_curr_lckP9char_data @ 621
+;	get_curr_str(char_data*)
+	_Z12get_curr_strP9char_data @ 622
+;	get_curr_wis(char_data*)
+	_Z12get_curr_wisP9char_data @ 623
+;	get_exit_dir(int, int*, int*, int, int)
+	_Z12get_exit_diriPiS_ii @ 624
+;	get_exit_num(room_index_data*, short)
+	_Z12get_exit_numP15room_index_datas @ 625
+;	get_exp_base(char_data*)
+	_Z12get_exp_baseP9char_data @ 626
+;	get_langflag(char const*)
+	_Z12get_langflagPKc @ 627
+;	get_liq_vnum(int)
+	_Z12get_liq_vnumi @ 628
+;	get_npc_race(char const*)
+	_Z12get_npc_racePKc @ 629
+;	get_obj_here(char_data*, char const*)
+	_Z12get_obj_hereP9char_dataPKc @ 630
+;	get_obj_list(char_data*, char*, obj_data*)
+	_Z12get_obj_listP9char_dataPcP8obj_data @ 631
+;	get_obj_room(obj_index_data*, room_index_data*)
+	_Z12get_obj_roomP14obj_index_dataP15room_index_data @ 632
+;	get_obj_type(obj_index_data*)
+	_Z12get_obj_typeP14obj_index_data @ 633
+;	get_obj_vnum(char_data*, int)
+	_Z12get_obj_vnumP9char_datai @ 634
+;	get_obj_wear(char_data*, char const*)
+	_Z12get_obj_wearP9char_dataPKc @ 635
+;	get_partflag(char const*)
+	_Z12get_partflagPKc @ 636
+;	get_pc_class(char const*)
+	_Z12get_pc_classPKc @ 637
+;	get_pulltype(char const*)
+	_Z12get_pulltypePKc @ 638
+;	get_saveflag(char const*)
+	_Z12get_saveflagPKc @ 639
+;	get_subclass(int)
+	_Z12get_subclassi @ 640
+;	get_timerptr(char_data*, short)
+	_Z12get_timerptrP9char_datas @ 641
+;	get_trapflag(char const*)
+	_Z12get_trapflagPKc @ 642
+;	get_trigflag(char const*)
+	_Z12get_trigflagPKc @ 643
+;	group_object(obj_data*, obj_data*)
+	_Z12group_objectP8obj_dataS0_ @ 644
+;	in_dns_cache(char*)
+	_Z12in_dns_cachePc @ 645
+;	indent_whogr(char_data*, whogr_s*, int)
+	_Z12indent_whogrP9char_dataP7whogr_si @ 646
+;	isGustyWindE(int)
+	_Z12isGustyWindEi @ 647
+;	isGustyWindN(int)
+	_Z12isGustyWindNi @ 648
+;	isGustyWindS(int)
+	_Z12isGustyWindSi @ 649
+;	isGustyWindW(int)
+	_Z12isGustyWindWi @ 650
+;	isReallyCold(int)
+	_Z12isReallyColdi @ 651
+;	isWindyWindE(int)
+	_Z12isWindyWindEi @ 652
+;	isWindyWindN(int)
+	_Z12isWindyWindNi @ 653
+;	isWindyWindS(int)
+	_Z12isWindyWindSi @ 654
+;	isWindyWindW(int)
+	_Z12isWindyWindWi @ 655
+;	is_valid_tag(char const*)
+	_Z12is_valid_tagPKc @ 656
+;	load_banlist()
+	_Z12load_banlistv @ 657
+;	load_classes()
+	_Z12load_classesv @ 658
+;	load_climate(area_data*, __sFILE64*)
+	_Z12load_climateP9area_dataP9__sFILE64 @ 659
+;	load_corpses()
+	_Z12load_corpsesv @ 660
+;	load_credits(area_data*, __sFILE64*)
+	_Z12load_creditsP9area_dataP9__sFILE64 @ 661
+;	load_economy(area_data*, __sFILE64*)
+	_Z12load_economyP9area_dataP9__sFILE64 @ 662
+;	load_liquids()
+	_Z12load_liquidsv @ 663
+;	load_mobiles(area_data*, __sFILE64*)
+	_Z12load_mobilesP9area_dataP9__sFILE64 @ 664
+;	load_objects(area_data*, __sFILE64*)
+	_Z12load_objectsP9area_dataP9__sFILE64 @ 665
+;	load_repairs(__sFILE64*)
+	_Z12load_repairsP9__sFILE64 @ 666
+;	load_socials()
+	_Z12load_socialsv @ 667
+;	load_tongues()
+	_Z12load_tonguesv @ 668
+;	load_version(area_data*, __sFILE64*)
+	_Z12load_versionP9area_dataP9__sFILE64 @ 669
+;	make_wizlist()
+	_Z12make_wizlistv @ 670
+;	map_to_rooms(char_data*, map_index_data*)
+	_Z12map_to_roomsP9char_dataP14map_index_data @ 671
+;	modify_skill(char_data*, int, int, bool)
+	_Z12modify_skillP9char_dataiib @ 672
+;	mprog_driver(char const*, char_data*, char_data*, obj_data*, void const*, bool)
+	_Z12mprog_driverPKcP9char_dataS2_P8obj_dataPKvb @ 673
+;	number_fuzzy(int)
+	_Z12number_fuzzyi @ 674
+;	number_range(int, int)
+	_Z12number_rangeii @ 675
+;	obj_from_obj(obj_data*)
+	_Z12obj_from_objP8obj_data @ 676
+;	off_shld_lvl(char_data*, char_data*)
+	_Z12off_shld_lvlP9char_dataS0_ @ 677
+;	one_argument(char const*, char*)
+	_Z12one_argumentPKcPc @ 678
+;	one_argument(char*, char*)
+	_Z12one_argumentPcS_ @ 679
+;	pager_output(descriptor_data*)
+	_Z12pager_outputP15descriptor_data @ 680
+;	pager_printf(char_data*, char const*, ...)
+	_Z12pager_printfP9char_dataPKcz @ 681
+;	paragon_name(int)
+	_Z12paragon_namei @ 682
+;	plane_lookup(char const*)
+	_Z12plane_lookupPKc @ 683
+;	player_count()
+	_Z12player_countv @ 684
+;	read_project(__sFILE64*)
+	_Z12read_projectP9__sFILE64 @ 685
+;	reboot_check(long)
+	_Z12reboot_checkl @ 686
+;	remove_fname(fname_data*)
+	_Z12remove_fnameP10fname_data @ 687
+;	remove_timer(char_data*, short)
+	_Z12remove_timerP9char_datas @ 688
+;	reset_colors(char_data*)
+	_Z12reset_colorsP9char_data @ 689
+;	room_act_add(room_index_data*)
+	_Z12room_act_addP15room_index_data @ 690
+;	room_enqueue(room_index_data*)
+	_Z12room_enqueueP15room_index_data @ 691
+;	room_is_dark(room_index_data*)
+	_Z12room_is_darkP15room_index_data @ 692
+;	save_banlist()
+	_Z12save_banlistv @ 693
+;	save_classes()
+	_Z12save_classesv @ 694
+;	save_council(council_data*)
+	_Z12save_councilP12council_data @ 695
+;	save_liquids()
+	_Z12save_liquidsv @ 696
+;	save_socials()
+	_Z12save_socialsv @ 697
+;	save_sysdata(system_data)
+	_Z12save_sysdata11system_data @ 698
+;	saves_reflex(int, char_data*)
+	_Z12saves_reflexiP9char_data @ 699
+;	send_to_char(char const*, char_data*)
+	_Z12send_to_charPKcP9char_data @ 700
+;	separate_obj(obj_data*)
+	_Z12separate_objP8obj_data @ 701
+;	set_cur_char(char_data*)
+	_Z12set_cur_charP9char_data @ 702
+;	set_fighting(char_data*, char_data*)
+	_Z12set_fightingP9char_dataS0_ @ 703
+;	set_supermob(obj_data*)
+	_Z12set_supermobP8obj_data @ 704
+;	sha256_crypt(char const*)
+	_Z12sha256_cryptPKc @ 705
+;	shutdown_mud(char const*)
+	_Z12shutdown_mudPKc @ 706
+;	skill_lookup(char const*)
+	_Z12skill_lookupPKc @ 707
+;	spell_affect(int, int, char_data*, void*)
+	_Z12spell_affectiiP9char_dataPv @ 708
+;	spell_attack(int, int, char_data*, void*)
+	_Z12spell_attackiiP9char_dataPv @ 709
+;	sprint_reset(reset_data*, short*)
+	_Z12sprint_resetP10reset_dataPs @ 710
+;	start_hating(char_data*, char_data*)
+	_Z12start_hatingP9char_dataS0_ @ 711
+;	start_spring()
+	_Z12start_springv @ 712
+;	start_summer()
+	_Z12start_summerv @ 713
+;	start_winter()
+	_Z12start_winterv @ 714
+;	stop_editing(char_data*)
+	_Z12stop_editingP9char_data @ 715
+;	stop_fearing(char_data*)
+	_Z12stop_fearingP9char_data @ 716
+;	stop_fishing(char_data*)
+	_Z12stop_fishingP9char_data @ 717
+;	stop_hunting(char_data*)
+	_Z12stop_huntingP9char_data @ 718
+;	talk_auction(char*)
+	_Z12talk_auctionPc @ 719
+;	talk_channel(char_data*, char const*, int, char const*)
+	_Z12talk_channelP9char_dataPKciS2_ @ 720
+;	times_killed(char_data*, char_data*)
+	_Z12times_killedP9char_dataS0_ @ 721
+;	trvch_create(char_data*, trv_type)
+	_Z12trvch_createP9char_data8trv_type @ 722
+;	trvobj_wnext(trv_world*)
+	_Z12trvobj_wnextP9trv_world @ 723
+;	tzone_lookup(char const*)
+	_Z12tzone_lookupPKc @ 724
+;	unequip_char(char_data*, obj_data*)
+	_Z12unequip_charP9char_dataP8obj_data @ 725
+;	unread_notes(char_data*, global_board_data*)
+	_Z12unread_notesP9char_dataP17global_board_data @ 726
+;	warn_in_prog(char_data*, int, int, char const*, int, mob_prog_data*, renumber_areas*)
+	_Z12warn_in_progP9char_dataiiPKciP13mob_prog_dataP14renumber_areas @ 727
+;	who_fighting(char_data*)
+	_Z12who_fightingP9char_data @ 728
+;	DecreaseWindX(WeatherCell*, int)
+	_Z13DecreaseWindXP11WeatherCelli @ 729
+;	DecreaseWindY(WeatherCell*, int)
+	_Z13DecreaseWindYP11WeatherCelli @ 730
+;	IncreaseWindX(WeatherCell*, int)
+	_Z13IncreaseWindXP11WeatherCelli @ 731
+;	IncreaseWindY(WeatherCell*, int)
+	_Z13IncreaseWindYP11WeatherCelli @ 732
+;	SHA256_Update(SHA256Context*, unsigned char const*, unsigned long)
+	_Z13SHA256_UpdateP13SHA256ContextPKhm @ 733
+;	UpdateWeather()
+	_Z13UpdateWeatherv @ 734
+;	add_obj_reset(room_index_data*, char, obj_data*, int, int)
+	_Z13add_obj_resetP15room_index_datacP8obj_dataii @ 735
+;	advance_level(char_data*)
+	_Z13advance_levelP9char_data @ 736
+;	affect_modify(char_data*, affect_data*, bool)
+	_Z13affect_modifyP9char_dataP11affect_datab @ 737
+;	affect_remove(char_data*, affect_data*)
+	_Z13affect_removeP9char_dataP11affect_data @ 738
+;	align_compute(char_data*, char_data*)
+	_Z13align_computeP9char_dataS0_ @ 739
+;	boost_economy(area_data*, int)
+	_Z13boost_economyP9area_datai @ 740
+;	build_wizinfo(bool)
+	_Z13build_wizinfob @ 741
+;	calculate_age(char_data*)
+	_Z13calculate_ageP9char_data @ 742
+;	can_use_skill(char_data*, int, int)
+	_Z13can_use_skillP9char_dataii @ 743
+;	chance_attrib(char_data*, short, short)
+	_Z13chance_attribP9char_datass @ 744
+;	check_ability(char_data*, char*, char*)
+	_Z13check_abilityP9char_dataPcS1_ @ 745
+;	check_playing(descriptor_data*, char const*, bool)
+	_Z13check_playingP15descriptor_dataPKcb @ 746
+;	circle_follow(char_data*, char_data*)
+	_Z13circle_followP9char_dataS0_ @ 747
+;	clear_wizinfo(bool)
+	_Z13clear_wizinfob @ 748
+;	compressStart(descriptor_data*)
+	_Z13compressStartP15descriptor_data @ 749
+;	create_mobile(mob_index_data*)
+	_Z13create_mobileP14mob_index_data @ 750
+;	create_object(obj_index_data*, int)
+	_Z13create_objectP14obj_index_datai @ 751
+;	de_equip_char(char_data*)
+	_Z13de_equip_charP9char_data @ 752
+;	decorate_room(room_index_data*)
+	_Z13decorate_roomP15room_index_data @ 753
+;	do_morph_char(char_data*, morph_data*)
+	_Z13do_morph_charP9char_dataP10morph_data @ 754
+;	draw_room_map(char_data*, char const*)
+	_Z13draw_room_mapP9char_dataPKc @ 755
+;	drunk_randoms(char_data*)
+	_Z13drunk_randomsP9char_data @ 756
+;	ext_same_bits(extended_bitvector*, extended_bitvector*)
+	_Z13ext_same_bitsP18extended_bitvectorS0_ @ 757
+;	extract_timer(char_data*, timer_data*)
+	_Z13extract_timerP9char_dataP10timer_data @ 758
+;	find_location(char_data*, char const*)
+	_Z13find_locationP9char_dataPKc @ 759
+;	fread_command(__sFILE64*)
+	_Z13fread_commandP9__sFILE64 @ 760
+;	fread_comment(char_data*, __sFILE64*)
+	_Z13fread_commentP9char_dataP9__sFILE64 @ 761
+;	fread_council(council_data*, __sFILE64*)
+	_Z13fread_councilP12council_dataP9__sFILE64 @ 762
+;	fread_mixture(__sFILE64*)
+	_Z13fread_mixtureP9__sFILE64 @ 763
+;	fread_sysdata(system_data*, __sFILE64*)
+	_Z13fread_sysdataP11system_dataP9__sFILE64 @ 764
+;	free_all_fish()
+	_Z13free_all_fishv @ 765
+;	free_commands()
+	_Z13free_commandsv @ 766
+;	free_councils()
+	_Z13free_councilsv @ 767
+;	free_holidays()
+	_Z13free_holidaysv @ 768
+;	free_one_clan(clan_data*)
+	_Z13free_one_clanP9clan_data @ 769
+;	free_projects()
+	_Z13free_projectsv @ 770
+;	free_specfuns()
+	_Z13free_specfunsv @ 771
+;	fwrite_mobile(__sFILE64*, char_data*)
+	_Z13fwrite_mobileP9__sFILE64P9char_data @ 772
+;	generate_exit(room_index_data*, exit_data**)
+	_Z13generate_exitP15room_index_dataPP9exit_data @ 773
+;	getCloudCover(WeatherCell*)
+	_Z13getCloudCoverP11WeatherCell @ 774
+;	get_char_room(char_data*, char const*)
+	_Z13get_char_roomP9char_dataPKc @ 775
+;	get_ed_number(obj_data*, int)
+	_Z13get_ed_numberP8obj_datai @ 776
+;	get_exp_worth(char_data*)
+	_Z13get_exp_worthP9char_data @ 777
+;	get_fish_name()
+	_Z13get_fish_namev @ 778
+;	get_map_index(int)
+	_Z13get_map_indexi @ 779
+;	get_mob_index(int)
+	_Z13get_mob_indexi @ 780
+;	get_movespeed(char_data*)
+	_Z13get_movespeedP9char_data @ 781
+;	get_npc_class(char const*)
+	_Z13get_npc_classPKc @ 782
+;	get_obj_carry(char_data*, char const*)
+	_Z13get_obj_carryP9char_dataPKc @ 783
+;	get_obj_index(int)
+	_Z13get_obj_indexi @ 784
+;	get_obj_world(char_data*, char const*)
+	_Z13get_obj_worldP9char_dataPKc @ 785
+;	get_skilltype(int)
+	_Z13get_skilltypei @ 786
+;	in_hard_range(char_data*, area_data*)
+	_Z13in_hard_rangeP9char_dataP9area_data @ 787
+;	in_hash_table(char const*)
+	_Z13in_hash_tablePKc @ 788
+;	in_soft_range(char_data*, area_data*)
+	_Z13in_soft_rangeP9char_dataP9area_data @ 789
+;	init_supermob()
+	_Z13init_supermobv @ 790
+;	isBreezyWindE(int)
+	_Z13isBreezyWindEi @ 791
+;	isBreezyWindN(int)
+	_Z13isBreezyWindNi @ 792
+;	isBreezyWindS(int)
+	_Z13isBreezyWindSi @ 793
+;	isBreezyWindW(int)
+	_Z13isBreezyWindWi @ 794
+;	isLowPressure(int)
+	_Z13isLowPressurei @ 795
+;	is_legal_kill(char_data*, char_data*)
+	_Z13is_legal_killP9char_dataS0_ @ 796
+;	is_same_group(char_data*, char_data*)
+	_Z13is_same_groupP9char_dataS0_ @ 797
+;	load_bounties()
+	_Z13load_bountiesv @ 798
+;	load_char_obj(descriptor_data*, char const*, bool, bool)
+	_Z13load_char_objP15descriptor_dataPKcbb @ 799
+;	load_commands()
+	_Z13load_commandsv @ 800
+;	load_councils()
+	_Z13load_councilsv @ 801
+;	load_holidays()
+	_Z13load_holidaysv @ 802
+;	load_imm_host()
+	_Z13load_imm_hostv @ 803
+;	load_loginmsg()
+	_Z13load_loginmsgv @ 804
+;	load_mixtures()
+	_Z13load_mixturesv @ 805
+;	load_neighbor(area_data*, __sFILE64*)
+	_Z13load_neighborP9area_dataP9__sFILE64 @ 806
+;	load_projects()
+	_Z13load_projectsv @ 807
+;	load_reserved()
+	_Z13load_reservedv @ 808
+;	load_resetmsg(area_data*, __sFILE64*)
+	_Z13load_resetmsgP9area_dataP9__sFILE64 @ 809
+;	load_specfuns()
+	_Z13load_specfunsv @ 810
+;	load_specials(__sFILE64*)
+	_Z13load_specialsP9__sFILE64 @ 811
+;	load_timedata()
+	_Z13load_timedatav @ 812
+;	lower_economy(area_data*, int)
+	_Z13lower_economyP9area_datai @ 813
+;	make_variable(char, int, char*)
+	_Z13make_variableciPc @ 814
+;	mobile_update()
+	_Z13mobile_updatev @ 815
+;	nanny_get_age(descriptor_data*, char*)
+	_Z13nanny_get_ageP15descriptor_dataPc @ 816
+;	news_cmd_hook(char_data*, char*, char*)
+	_Z13news_cmd_hookP9char_dataPcS1_ @ 817
+;	nifty_is_name(char const*, char const*)
+	_Z13nifty_is_namePKcS0_ @ 818
+;	obj_extracted(obj_data*)
+	_Z13obj_extractedP8obj_data @ 819
+;	obj_from_char(obj_data*)
+	_Z13obj_from_charP8obj_data @ 820
+;	obj_from_room(obj_data*)
+	_Z13obj_from_roomP8obj_data @ 821
+;	old_fold_area(area_data*, char*, bool)
+	_Z13old_fold_areaP9area_dataPcb @ 822
+;	one_argument2(char const*, char*)
+	_Z13one_argument2PKcPc @ 823
+;	print_compass(char_data*)
+	_Z13print_compassP9char_data @ 824
+;	ranged_attack(char_data*, char const*, obj_data*, obj_data*, short, short)
+	_Z13ranged_attackP9char_dataPKcP8obj_dataS4_ss @ 825
+;	re_equip_char(char_data*)
+	_Z13re_equip_charP9char_data @ 826
+;	read_from_dns(int, char*)
+	_Z13read_from_dnsiPc @ 827
+;	read_obj_file(char*, char*)
+	_Z13read_obj_filePcS_ @ 828
+;	reformat_desc(char*)
+	_Z13reformat_descPc @ 829
+;	remove_portal(obj_data*)
+	_Z13remove_portalP8obj_data @ 830
+;	remove_roster(clan_data*, char const*)
+	_Z13remove_rosterP9clan_dataPKc @ 831
+;	renumber_area(char_data*, area_data*, renumber_areas*, bool, bool)
+	_Z13renumber_areaP9char_dataP9area_dataP14renumber_areasbb @ 832
+;	renumber_news()
+	_Z13renumber_newsv @ 833
+;	rset_supermob(room_index_data*)
+	_Z13rset_supermobP15room_index_data @ 834
+;	save_char_obj(char_data*)
+	_Z13save_char_objP9char_data @ 835
+;	save_commands()
+	_Z13save_commandsv @ 836
+;	save_holidays()
+	_Z13save_holidaysv @ 837
+;	save_loginmsg()
+	_Z13save_loginmsgv @ 838
+;	save_mixtures()
+	_Z13save_mixturesv @ 839
+;	save_reserved()
+	_Z13save_reservedv @ 840
+;	save_timedata()
+	_Z13save_timedatav @ 841
+;	season_update()
+	_Z13season_updatev @ 842
+;	send_to_pager(char const*, char_data*)
+	_Z13send_to_pagerPKcP9char_data @ 843
+;	simple_damage(char_data*, char_data*, int, int)
+	_Z13simple_damageP9char_dataS0_ii @ 844
+;	sort_reserved(reserve_data*)
+	_Z13sort_reservedP12reserve_data @ 845
+;	spell_obj_inv(int, int, char_data*, void*)
+	_Z13spell_obj_inviiP9char_dataPv @ 846
+;	start_editing(char_data*, char const*)
+	_Z13start_editingP9char_dataPKc @ 847
+;	start_fearing(char_data*, char_data*)
+	_Z13start_fearingP9char_dataS0_ @ 848
+;	start_hunting(char_data*, char_data*)
+	_Z13start_huntingP9char_dataS0_ @ 849
+;	stop_fighting(char_data*, bool)
+	_Z13stop_fightingP9char_datab @ 850
+;	stop_follower(char_data*)
+	_Z13stop_followerP9char_data @ 851
+;	transfer_char(char_data*, char_data*, room_index_data*)
+	_Z13transfer_charP9char_dataS0_P15room_index_data @ 852
+;	trvobj_create(obj_data*, trv_type)
+	_Z13trvobj_createP8obj_data8trv_type @ 853
+;	unlink_social(social_type*)
+	_Z13unlink_socialP11social_type @ 854
+;	update_roster(char_data*)
+	_Z13update_rosterP9char_data @ 855
+;	update_timers()
+	_Z13update_timersv @ 856
+;	update_userec(timeval*, timerset*)
+	_Z13update_userecP7timevalP8timerset @ 857
+;	write_corpses(char_data*, char const*, obj_data*)
+	_Z13write_corpsesP9char_dataPKcP8obj_data @ 858
+;	DecreaseEnergy(WeatherCell*, int)
+	_Z14DecreaseEnergyP11WeatherCelli @ 859
+;	DecreasePrecip(WeatherCell*, int)
+	_Z14DecreasePrecipP11WeatherCelli @ 860
+;	DelOExtraProto(obj_index_data*, char const*)
+	_Z14DelOExtraProtoP14obj_index_dataPKc @ 861
+;	IncreaseEnergy(WeatherCell*, int)
+	_Z14IncreaseEnergyP11WeatherCelli @ 862
+;	IncreasePrecip(WeatherCell*, int)
+	_Z14IncreasePrecipP11WeatherCelli @ 863
+;	RandomizeCells()
+	_Z14RandomizeCellsv @ 864
+;	SetOExtraProto(obj_index_data*, char const*)
+	_Z14SetOExtraProtoP14obj_index_dataPKc @ 865
+;	WeatherMessage(char const*, int, int)
+	_Z14WeatherMessagePKcii @ 866
+;	add_to_wizinfo(char*, wizinfo_data*)
+	_Z14add_to_wizinfoPcP12wizinfo_data @ 867
+;	add_to_wizlist(char*, int)
+	_Z14add_to_wizlistPci @ 868
+;	affect_to_char(char_data*, affect_data*)
+	_Z14affect_to_charP9char_dataP11affect_data @ 869
+;	append_to_file(char const*, char const*)
+	_Z14append_to_filePKcS0_ @ 870
+;	auction_update()
+	_Z14auction_updatev @ 871
+;	can_learn_lang(char_data*, int)
+	_Z14can_learn_langP9char_datai @ 872
+;	can_take_proto(char_data*)
+	_Z14can_take_protoP9char_data @ 873
+;	char_from_room(char_data*)
+	_Z14char_from_roomP9char_data @ 874
+;	check_attacker(char_data*, char_data*)
+	_Z14check_attackerP9char_dataS0_ @ 875
+;	check_bad_desc(int)
+	_Z14check_bad_desci @ 876
+;	check_for_trap(char_data*, obj_data*, int)
+	_Z14check_for_trapP9char_dataP8obj_datai @ 877
+;	check_loginmsg(char_data*)
+	_Z14check_loginmsgP9char_data @ 878
+;	check_switches(bool)
+	_Z14check_switchesb @ 879
+;	cleanup_memory()
+	_Z14cleanup_memoryv @ 880
+;	comment_remove(char_data*, note_data*)
+	_Z14comment_removeP9char_dataP9note_data @ 881
+;	count_obj_list(obj_index_data*, obj_data*)
+	_Z14count_obj_listP14obj_index_dataP8obj_data @ 882
+;	default_prompt(char_data*)
+	_Z14default_promptP9char_data @ 883
+;	delete_project(project_data*)
+	_Z14delete_projectP12project_data @ 884
+;	disintigration(char_data*, char_data*, long)
+	_Z14disintigrationP9char_dataS0_l @ 885
+;	dispel_casting(affect_data*, char_data*, char_data*, int, bool)
+	_Z14dispel_castingP11affect_dataP9char_dataS2_ib @ 886
+;	display_prompt(descriptor_data*)
+	_Z14display_promptP15descriptor_data @ 887
+;	displaymixture(char_data*, mixture_list*)
+	_Z14displaymixtureP9char_dataP12mixture_list @ 888
+;	ext_clear_bits(extended_bitvector*)
+	_Z14ext_clear_bitsP18extended_bitvector @ 889
+;	extra_bit_name(extended_bitvector*)
+	_Z14extra_bit_nameP18extended_bitvector @ 890
+;	failed_casting(skill_type*, char_data*, char_data*, obj_data*)
+	_Z14failed_castingP10skill_typeP9char_dataS2_P8obj_data @ 891
+;	fix_area_exits(area_data*)
+	_Z14fix_area_exitsP9area_data @ 892
+;	fread_imm_host(__sFILE64*, immortal_host*)
+	_Z14fread_imm_hostP9__sFILE64P13immortal_host @ 893
+;	fread_loginmsg(__sFILE64*)
+	_Z14fread_loginmsgP9__sFILE64 @ 894
+;	fread_timedata(__sFILE64*)
+	_Z14fread_timedataP9__sFILE64 @ 895
+;	fread_variable(char_data*, __sFILE64*)
+	_Z14fread_variableP9char_dataP9__sFILE64 @ 896
+;	free_mssp_info()
+	_Z14free_mssp_infov @ 897
+;	free_teleports()
+	_Z14free_teleportsv @ 898
+;	free_watchlist()
+	_Z14free_watchlistv @ 899
+;	gain_condition(char_data*, int, int)
+	_Z14gain_conditionP9char_dataii @ 900
+;	getWeatherCell(area_data*)
+	_Z14getWeatherCellP9area_data @ 901
+;	get_attackflag(char const*)
+	_Z14get_attackflagPKc @ 902
+;	get_char_world(char_data*, char const*)
+	_Z14get_char_worldP9char_dataPKc @ 903
+;	get_hemisphere(char*)
+	_Z14get_hemispherePc @ 904
+;	get_morph_vnum(int)
+	_Z14get_morph_vnumi @ 905
+;	get_obj_number(obj_data*)
+	_Z14get_obj_numberP8obj_data @ 906
+;	get_obj_weight(obj_data*)
+	_Z14get_obj_weightP8obj_data @ 907
+;	get_perception(char_data*)
+	_Z14get_perceptionP9char_data @ 908
+;	get_repaircost(char_data*, obj_data*)
+	_Z14get_repaircostP9char_dataP8obj_data @ 909
+;	get_room_index(int)
+	_Z14get_room_indexi @ 910
+;	get_skill_rank(short)
+	_Z14get_skill_ranks @ 911
+;	hallucinations(char_data*)
+	_Z14hallucinationsP9char_data @ 912
+;	immune_casting(skill_type*, char_data*, char_data*, obj_data*)
+	_Z14immune_castingP10skill_typeP9char_dataS2_P8obj_data @ 913
+;	isHighPressure(int)
+	_Z14isHighPressurei @ 914
+;	isMinorlyHumid(int)
+	_Z14isMinorlyHumidi @ 915
+;	isPartlyCloudy(int)
+	_Z14isPartlyCloudyi @ 916
+;	is_name_prefix(char const*, char*)
+	_Z14is_name_prefixPKcPc @ 917
+;	item_type_name(obj_data*)
+	_Z14item_type_nameP8obj_data @ 918
+;	knows_language(char_data*, int, char_data*)
+	_Z14knows_languageP9char_dataiS0_ @ 919
+;	liqobj_can_mix(obj_data*, obj_data*)
+	_Z14liqobj_can_mixP8obj_dataS0_ @ 920
+;	load_area_file(area_data*, char const*)
+	_Z14load_area_fileP9area_dataPKc @ 921
+;	load_buildlist()
+	_Z14load_buildlistv @ 922
+;	load_clan_file(char const*)
+	_Z14load_clan_filePKc @ 923
+;	load_mssp_data()
+	_Z14load_mssp_datav @ 924
+;	load_obj_files()
+	_Z14load_obj_filesv @ 925
+;	load_race_file(char const*)
+	_Z14load_race_filePKc @ 926
+;	load_watchlist()
+	_Z14load_watchlistv @ 927
+;	locate_targets(char_data*, char*, int, char_data**, obj_data**)
+	_Z14locate_targetsP9char_dataPciPS0_PP8obj_data @ 928
+;	magic_bit_name(int)
+	_Z14magic_bit_namei @ 929
+;	morph_defaults(morph_data*)
+	_Z14morph_defaultsP10morph_data @ 930
+;	mpsleep_update()
+	_Z14mpsleep_updatev @ 931
+;	nanny_get_name(descriptor_data*, char*)
+	_Z14nanny_get_nameP15descriptor_dataPc @ 932
+;	new_descriptor(int)
+	_Z14new_descriptori @ 933
+;	number_percent()
+	_Z14number_percentv @ 934
+;	obj_act_update()
+	_Z14obj_act_updatev @ 935
+;	obj_cast_spell(int, int, char_data*, char_data*, obj_data*)
+	_Z14obj_cast_spelliiP9char_dataS0_P8obj_data @ 936
+;	projectile_hit(char_data*, char_data*, obj_data*, obj_data*, short)
+	_Z14projectile_hitP9char_dataS0_P8obj_dataS2_s @ 937
+;	pull_type_name(int)
+	_Z14pull_type_namei @ 938
+;	read_last_file(char_data*, int, char*, int)
+	_Z14read_last_fileP9char_dataiPci @ 939
+;	repair_one_obj(char_data*, char_data*, obj_data*, char const*, int, char const*, char const*)
+	_Z14repair_one_objP9char_dataS0_P8obj_dataPKciS4_S4_ @ 940
+;	save_mssp_info()
+	_Z14save_mssp_infov @ 941
+;	save_watchlist()
+	_Z14save_watchlistv @ 942
+;	send_mssp_data(descriptor_data*)
+	_Z14send_mssp_dataP15descriptor_data @ 943
+;	send_rip_title(char_data*)
+	_Z14send_rip_titleP9char_data @ 944
+;	set_bexit_flag(exit_data*, int)
+	_Z14set_bexit_flagP9exit_datai @ 945
+;	set_char_color(short, char_data*)
+	_Z14set_char_colorsP9char_data @ 946
+;	show_body_line(char_data*, char_data*)
+	_Z14show_body_lineP9char_dataS0_ @ 947
+;	show_condition(char_data*, char_data*)
+	_Z14show_conditionP9char_dataS0_ @ 948
+;	show_high_hash(int)
+	_Z14show_high_hashi @ 949
+;	show_race_line(char_data*, char_data*)
+	_Z14show_race_lineP9char_dataS0_ @ 950
+;	skill_function(char const*)
+	_Z14skill_functionPKc @ 951
+;	spell_function(char const*)
+	_Z14spell_functionPKc @ 952
+;	subtract_times(timeval*, timeval*)
+	_Z14subtract_timesP7timevalS0_ @ 953
+;	trworld_create(trv_type)
+	_Z14trworld_create8trv_type @ 954
+;	unlink_command(cmd_type*)
+	_Z14unlink_commandP8cmd_type @ 955
+;	update_fishing()
+	_Z14update_fishingv @ 956
+;	update_handler()
+	_Z14update_handlerv @ 957
+;	write_projects()
+	_Z14write_projectsv @ 958
+;	write_to_pager(descriptor_data*, char const*, unsigned long)
+	_Z14write_to_pagerP15descriptor_dataPKcm @ 959
+;	add_room_affect(room_index_data*, char_data*, bool, char const*)
+	_Z15add_room_affectP15room_index_dataP9char_databPKc @ 960
+;	affect_bit_name(extended_bitvector*)
+	_Z15affect_bit_nameP18extended_bitvector @ 961
+;	affect_loc_name(int)
+	_Z15affect_loc_namei @ 962
+;	bfs_clear_queue()
+	_Z15bfs_clear_queuev @ 963
+;	ch_printf_color(char_data*, char const*, ...)
+	_Z15ch_printf_colorP9char_dataPKcz @ 964
+;	check_alignment(char_data*)
+	_Z15check_alignmentP9char_data @ 965
+;	check_cmd_flags(char_data*, cmd_type*)
+	_Z15check_cmd_flagsP9char_dataP8cmd_type @ 966
+;	check_reconnect(descriptor_data*, char const*, bool)
+	_Z15check_reconnectP15descriptor_dataPKcb @ 967
+;	clean_obj_queue()
+	_Z15clean_obj_queuev @ 968
+;	close_all_areas()
+	_Z15close_all_areasv @ 969
+;	create_new_race(int, char*)
+	_Z15create_new_raceiPc @ 970
+;	default_fprompt(char_data*)
+	_Z15default_fpromptP9char_data @ 971
+;	delete_variable(variable_data*)
+	_Z15delete_variableP13variable_data @ 972
+;	do_unmorph_char(char_data*)
+	_Z15do_unmorph_charP9char_data @ 973
+;	ext_flag_string(extended_bitvector*, char const* const*)
+	_Z15ext_flag_stringP18extended_bitvectorPKPKc @ 974
+;	ext_remove_bits(extended_bitvector*, extended_bitvector*)
+	_Z15ext_remove_bitsP18extended_bitvectorS0_ @ 975
+;	ext_toggle_bits(extended_bitvector*, extended_bitvector*)
+	_Z15ext_toggle_bitsP18extended_bitvectorS0_ @ 976
+;	find_first_step(room_index_data*, room_index_data*, int)
+	_Z15find_first_stepP15room_index_dataS0_i @ 977
+;	find_projectile(char_data*, int)
+	_Z15find_projectileP9char_datai @ 978
+;	fread_bitvector(__sFILE64*)
+	_Z15fread_bitvectorP9__sFILE64 @ 979
+;	fread_fuss_area(area_data*, __sFILE64*)
+	_Z15fread_fuss_areaP9area_dataP9__sFILE64 @ 980
+;	fread_fuss_exit(__sFILE64*, room_index_data*)
+	_Z15fread_fuss_exitP9__sFILE64P15room_index_data @ 981
+;	fread_fuss_room(__sFILE64*, area_data*)
+	_Z15fread_fuss_roomP9__sFILE64P9area_data @ 982
+;	fread_mssp_info(__sFILE64*)
+	_Z15fread_mssp_infoP9__sFILE64 @ 983
+;	fread_news_type(news_type*, __sFILE64*)
+	_Z15fread_news_typeP9news_typeP9__sFILE64 @ 984
+;	free_all_fnames()
+	_Z15free_all_fnamesv @ 985
+;	free_all_planes()
+	_Z15free_all_planesv @ 986
+;	free_liquiddata()
+	_Z15free_liquiddatav @ 987
+;	fwrite_comments(char_data*, __sFILE64*)
+	_Z15fwrite_commentsP9char_dataP9__sFILE64 @ 988
+;	gather_one_list(short, int, int, int, bool, int*)
+	_Z15gather_one_listsiiibPi @ 989
+;	get_chance_verb(obj_data*)
+	_Z15get_chance_verbP8obj_data @ 990
+;	get_defenseflag(char const*)
+	_Z15get_defenseflagPKc @ 991
+;	get_exit_number(room_index_data*, int)
+	_Z15get_exit_numberP15room_index_datai @ 992
+;	get_extra_descr(char const*, extra_descr_data*)
+	_Z15get_extra_descrPKcP16extra_descr_data @ 993
+;	hotboot_recover()
+	_Z15hotboot_recoverv @ 994
+;	isBlusteryWindE(int)
+	_Z15isBlusteryWindEi @ 995
+;	isBlusteryWindN(int)
+	_Z15isBlusteryWindNi @ 996
+;	isBlusteryWindS(int)
+	_Z15isBlusteryWindSi @ 997
+;	isBlusteryWindW(int)
+	_Z15isBlusteryWindWi @ 998
+;	isExtremelyCold(int)
+	_Z15isExtremelyColdi @ 999
+;	is_name2_prefix(char const*, char const*)
+	_Z15is_name2_prefixPKcS0_ @ 1000
+;	load_class_file(char const*)
+	_Z15load_class_filePKc @ 1001
+;	load_deity_file(char const*)
+	_Z15load_deity_filePKc @ 1002
+;	load_herb_table()
+	_Z15load_herb_tablev @ 1003
+;	load_room_reset(room_index_data*, __sFILE64*)
+	_Z15load_room_resetP15room_index_dataP9__sFILE64 @ 1004
+;	load_systemdata(system_data*)
+	_Z15load_systemdataP11system_data @ 1005
+;	load_weathermap()
+	_Z15load_weathermapv @ 1006
+;	log_printf_plus(short, short, char const*, ...)
+	_Z15log_printf_plusssPKcz @ 1007
+;	log_string_plus(char const*, short, short)
+	_Z15log_string_plusPKcss @ 1008
+;	make_bloodstain(char_data*)
+	_Z15make_bloodstainP9char_data @ 1009
+;	make_char_morph(morph_data*)
+	_Z15make_char_morphP10morph_data @ 1010
+;	mprog_file_read(mob_index_data*, char const*)
+	_Z15mprog_file_readP14mob_index_dataPKc @ 1011
+;	mprog_translate(char, char*, char_data*, char_data*, obj_data*, void const*, char_data*)
+	_Z15mprog_translatecPcP9char_dataS1_P8obj_dataPKvS1_ @ 1012
+;	nanny_get_stats(descriptor_data*, char*)
+	_Z15nanny_get_statsP15descriptor_dataPc @ 1013
+;	nanny_read_motd(descriptor_data*, char const*)
+	_Z15nanny_read_motdP15descriptor_dataPKc @ 1014
+;	new_dam_message(char_data*, char_data*, int, unsigned int, obj_data*)
+	_Z15new_dam_messageP9char_dataS0_ijP8obj_data @ 1015
+;	num_rooms_avail(char_data*)
+	_Z15num_rooms_availP9char_data @ 1016
+;	number_argument(char const*, char*)
+	_Z15number_argumentPKcPc @ 1017
+;	oprog_file_read(obj_index_data*, char const*)
+	_Z15oprog_file_readP14obj_index_dataPKc @ 1018
+;	personal_lookup(char_data*, char const*)
+	_Z15personal_lookupP9char_dataPKc @ 1019
+;	print_bitvector(extended_bitvector*)
+	_Z15print_bitvectorP18extended_bitvector @ 1020
+;	process_sorting(area_data*)
+	_Z15process_sortingP9area_data @ 1021
+;	randomize_exits(room_index_data*, short)
+	_Z15randomize_exitsP15room_index_datas @ 1022
+;	room_act_update()
+	_Z15room_act_updatev @ 1023
+;	room_is_private(room_index_data*)
+	_Z15room_is_privateP15room_index_data @ 1024
+;	rprog_file_read(room_index_data*, char const*)
+	_Z15rprog_file_readP15room_index_dataPKc @ 1025
+;	save_herb_table()
+	_Z15save_herb_tablev @ 1026
+;	save_weathermap()
+	_Z15save_weathermapv @ 1027
+;	saves_fortitude(int, char_data*)
+	_Z15saves_fortitudeiP9char_data @ 1028
+;	scan_for_victim(char_data*, exit_data*, char const*)
+	_Z15scan_for_victimP9char_dataP9exit_dataPKc @ 1029
+;	send_ansi_title(char_data*)
+	_Z15send_ansi_titleP9char_data @ 1030
+;	send_rip_screen(char_data*)
+	_Z15send_rip_screenP9char_data @ 1031
+;	set_pager_color(short, char_data*)
+	_Z15set_pager_colorsP9char_data @ 1032
+;	set_pager_input(descriptor_data*, char*)
+	_Z15set_pager_inputP15descriptor_dataPc @ 1033
+;	translate_exits(char_data*, area_data*, renumber_areas*, bool)
+	_Z15translate_exitsP9char_dataP9area_dataP14renumber_areasb @ 1034
+;	translate_reset(reset_data*, renumber_areas*)
+	_Z15translate_resetP10reset_dataP14renumber_areas @ 1035
+;	trworld_dispose(trv_world**)
+	_Z15trworld_disposePP9trv_world @ 1036
+;	update_calendar()
+	_Z15update_calendarv @ 1037
+;	uphold_supermob(int*, int, room_index_data**, obj_data*)
+	_Z15uphold_supermobPiiPP15room_index_dataP8obj_data @ 1038
+;	violence_update()
+	_Z15violence_updatev @ 1039
+;	write_area_list()
+	_Z15write_area_listv @ 1040
+;	write_clan_list()
+	_Z15write_clan_listv @ 1041
+;	write_last_file(char*, int)
+	_Z15write_last_filePci @ 1042
+;	write_race_file(int)
+	_Z15write_race_filei @ 1043
+;	write_to_buffer(descriptor_data*, char const*, unsigned long)
+	_Z15write_to_bufferP15descriptor_dataPKcm @ 1044
+;	DecreaseHumidity(WeatherCell*, int)
+	_Z16DecreaseHumidityP11WeatherCelli @ 1045
+;	DecreasePressure(WeatherCell*, int)
+	_Z16DecreasePressureP11WeatherCelli @ 1046
+;	ExceedsThreshold(int, int, int)
+	_Z16ExceedsThresholdiii @ 1047
+;	FreezeFreshWater()
+	_Z16FreezeFreshWaterv @ 1048
+;	IncreaseHumidity(WeatherCell*, int)
+	_Z16IncreaseHumidityP11WeatherCelli @ 1049
+;	IncreasePressure(WeatherCell*, int)
+	_Z16IncreasePressureP11WeatherCelli @ 1050
+;	check_illegal_pk(char_data*, char_data*)
+	_Z16check_illegal_pkP9char_dataS0_ @ 1051
+;	check_parse_name(char const*, bool)
+	_Z16check_parse_namePKcb @ 1052
+;	check_total_bans(descriptor_data*)
+	_Z16check_total_bansP15descriptor_data @ 1053
+;	clean_char_queue()
+	_Z16clean_char_queuev @ 1054
+;	clean_room_queue()
+	_Z16clean_room_queuev @ 1055
+;	clear_char_morph(char_morph*)
+	_Z16clear_char_morphP10char_morph @ 1056
+;	create_new_class(int, char const*)
+	_Z16create_new_classiPKc @ 1057
+;	find_translation(int, renumber_data*)
+	_Z16find_translationiP13renumber_data @ 1058
+;	fread_flagstring(__sFILE64*)
+	_Z16fread_flagstringP9__sFILE64 @ 1059
+;	fread_memberlist(clan_data*, __sFILE64*)
+	_Z16fread_memberlistP9clan_dataP9__sFILE64 @ 1060
+;	fread_morph_data(char_data*, __sFILE64*)
+	_Z16fread_morph_dataP9char_dataP9__sFILE64 @ 1061
+;	free_global_note(note_data*)
+	_Z16free_global_noteP9note_data @ 1062
+;	free_one_council(council_data*)
+	_Z16free_one_councilP12council_data @ 1063
+;	fwrite_bitvector(extended_bitvector*, __sFILE64*)
+	_Z16fwrite_bitvectorP18extended_bitvectorP9__sFILE64 @ 1064
+;	fwrite_fuss_exit(__sFILE64*, exit_data*)
+	_Z16fwrite_fuss_exitP9__sFILE64P9exit_data @ 1065
+;	fwrite_fuss_room(__sFILE64*, room_index_data*, bool)
+	_Z16fwrite_fuss_roomP9__sFILE64P15room_index_datab @ 1066
+;	fwrite_variables(char_data*, __sFILE64*)
+	_Z16fwrite_variablesP9char_dataP9__sFILE64 @ 1067
+;	get_actionpoints(char_data*)
+	_Z16get_actionpointsP9char_data @ 1068
+;	get_npc_position(char const*)
+	_Z16get_npc_positionPKc @ 1069
+;	get_obj_list_rev(char_data*, char const*, obj_data*)
+	_Z16get_obj_list_revP9char_dataPKcP8obj_data @ 1070
+;	get_ssave_effect(char const*)
+	_Z16get_ssave_effectPKc @ 1071
+;	get_waiting_desc(char_data*, char*)
+	_Z16get_waiting_descP9char_dataPc @ 1072
+;	isExtremelyHumid(int)
+	_Z16isExtremelyHumidi @ 1073
+;	isGaleForceWindE(int)
+	_Z16isGaleForceWindEi @ 1074
+;	isGaleForceWindN(int)
+	_Z16isGaleForceWindNi @ 1075
+;	isGaleForceWindS(int)
+	_Z16isGaleForceWindSi @ 1076
+;	isGaleForceWindW(int)
+	_Z16isGaleForceWindWi @ 1077
+;	isRainingLightly(int)
+	_Z16isRainingLightlyi @ 1078
+;	isSwelteringHeat(int)
+	_Z16isSwelteringHeati @ 1079
+;	is_reserved_name(char const*)
+	_Z16is_reserved_namePKc @ 1080
+;	load_skill_table()
+	_Z16load_skill_tablev @ 1081
+;	mprog_do_command(char const*, char_data*, char_data*, obj_data*, void const*, char_data*, bool, bool)
+	_Z16mprog_do_commandPKcP9char_dataS2_P8obj_dataPKvS2_bb @ 1082
+;	mprog_do_ifcheck(char const*, char_data*, char_data*, obj_data*, void const*, char_data*)
+	_Z16mprog_do_ifcheckPKcP9char_dataS2_P8obj_dataPKvS2_ @ 1083
+;	mprog_time_check(char_data*, char_data*, obj_data*, void*, int)
+	_Z16mprog_time_checkP9char_dataS0_P8obj_dataPvi @ 1084
+;	mprog_write_prog(__sFILE64*, mob_prog_data*)
+	_Z16mprog_write_progP9__sFILE64P13mob_prog_data @ 1085
+;	name_stamp_stats(char_data*)
+	_Z16name_stamp_statsP9char_data @ 1086
+;	nanny_get_skills(descriptor_data*, char*)
+	_Z16nanny_get_skillsP15descriptor_dataPc @ 1087
+;	personal_message(char const*, char const*, char const*, int, char const*)
+	_Z16personal_messagePKcS0_S0_iS0_ @ 1088
+;	read_char_mobile(char*)
+	_Z16read_char_mobilePc @ 1089
+;	read_from_buffer(descriptor_data*)
+	_Z16read_from_bufferP15descriptor_data @ 1090
+;	release_supermob()
+	_Z16release_supermobv @ 1091
+;	rprog_time_check(char_data*, char_data*, obj_data*, void*, int)
+	_Z16rprog_time_checkP9char_dataS0_P8obj_dataPvi @ 1092
+;	save_reset_level(__sFILE64*, reset_data*, int)
+	_Z16save_reset_levelP9__sFILE64P10reset_datai @ 1093
+;	save_skill_table()
+	_Z16save_skill_tablev @ 1094
+;	send_ascii_title(char_data*)
+	_Z16send_ascii_titleP9char_data @ 1095
+;	setup_morph_vnum()
+	_Z16setup_morph_vnumv @ 1096
+;	show_colorthemes(char_data*)
+	_Z16show_colorthemesP9char_data @ 1097
+;	smash_tilde_copy(char const*)
+	_Z16smash_tilde_copyPKc @ 1098
+;	sort_skill_table()
+	_Z16sort_skill_tablev @ 1099
+;	spell_affectchar(int, int, char_data*, void*)
+	_Z16spell_affectchariiP9char_dataPv @ 1100
+;	spell_create_mob(int, int, char_data*, void*)
+	_Z16spell_create_mobiiP9char_dataPv @ 1101
+;	stop_obj_fishing(obj_data*)
+	_Z16stop_obj_fishingP8obj_data @ 1102
+;	summon_if_hating(char_data*)
+	_Z16summon_if_hatingP9char_data @ 1103
+;	wipe_area_resets(area_data*)
+	_Z16wipe_area_resetsP9area_data @ 1104
+;	write_boards_txt()
+	_Z16write_boards_txtv @ 1105
+;	write_class_file(int)
+	_Z16write_class_filei @ 1106
+;	write_deity_list()
+	_Z16write_deity_listv @ 1107
+;	ApplyDeltaChanges()
+	_Z17ApplyDeltaChangesv @ 1108
+;	build_prime_plane()
+	_Z17build_prime_planev @ 1109
+;	display_news_type(char_data*, news_type*, char*)
+	_Z17display_news_typeP9char_dataP9news_typePc @ 1110
+;	do_write_imm_host()
+	_Z17do_write_imm_hostv @ 1111
+;	economize_mobgold(char_data*)
+	_Z17economize_mobgoldP9char_data @ 1112
+;	fread_fuss_affect(__sFILE64*, char const*)
+	_Z17fread_fuss_affectP9__sFILE64PKc @ 1113
+;	fread_fuss_exdesc(__sFILE64*)
+	_Z17fread_fuss_exdescP9__sFILE64 @ 1114
+;	fread_fuss_mobile(__sFILE64*, area_data*)
+	_Z17fread_fuss_mobileP9__sFILE64P9area_data @ 1115
+;	fread_fuss_object(__sFILE64*, area_data*)
+	_Z17fread_fuss_objectP9__sFILE64P9area_data @ 1116
+;	free_all_reserved()
+	_Z17free_all_reservedv @ 1117
+;	fwrite_memberlist(__sFILE64*, clan_data*)
+	_Z17fwrite_memberlistP9__sFILE64P9clan_data @ 1118
+;	fwrite_morph_data(char_data*, __sFILE64*)
+	_Z17fwrite_morph_dataP9char_dataP9__sFILE64 @ 1119
+;	get_log_by_number(project_data*, int)
+	_Z17get_log_by_numberP12project_datai @ 1120
+;	get_reboot_string()
+	_Z17get_reboot_stringv @ 1121
+;	isExtremelyCloudy(int)
+	_Z17isExtremelyCloudyi @ 1122
+;	isModeratelyHumid(int)
+	_Z17isModeratelyHumidi @ 1123
+;	isRaingingHeavily(int)
+	_Z17isRaingingHeavilyi @ 1124
+;	isRainingSteadily(int)
+	_Z17isRainingSteadilyi @ 1125
+;	is_disintigration(char_data*)
+	_Z17is_disintigrationP9char_data @ 1126
+;	is_valid_filename(char_data*, char const*, char const*)
+	_Z17is_valid_filenameP9char_dataPKcS2_ @ 1127
+;	link_news_to_type(news_data*)
+	_Z17link_news_to_typeP9news_data @ 1128
+;	load_council_file(char const*)
+	_Z17load_council_filePKc @ 1129
+;	mobprog_file_read(mob_index_data*, char const*)
+	_Z17mobprog_file_readP14mob_index_dataPKc @ 1130
+;	mprog_act_trigger(char const*, char_data*, char_data*, obj_data*, void const*)
+	_Z17mprog_act_triggerPKcP9char_dataS2_P8obj_dataPKv @ 1131
+;	nanny_confirm_age(descriptor_data*, char*)
+	_Z17nanny_confirm_ageP15descriptor_dataPc @ 1132
+;	nanny_get_new_sex(descriptor_data*, char*)
+	_Z17nanny_get_new_sexP15descriptor_dataPc @ 1133
+;	nanny_press_enter(descriptor_data*, char const*)
+	_Z17nanny_press_enterP15descriptor_dataPKc @ 1134
+;	objprog_file_read(obj_index_data*, char const*)
+	_Z17objprog_file_readP14obj_index_dataPKc @ 1135
+;	oprog_act_trigger(char const*, obj_data*, char_data*, obj_data*, void const*)
+	_Z17oprog_act_triggerPKcP8obj_dataP9char_dataS2_PKv @ 1136
+;	oprog_get_trigger(char_data*, obj_data*)
+	_Z17oprog_get_triggerP9char_dataP8obj_data @ 1137
+;	oprog_sac_trigger(char_data*, obj_data*)
+	_Z17oprog_sac_triggerP9char_dataP8obj_data @ 1138
+;	oprog_use_trigger(char_data*, obj_data*, char_data*, obj_data*)
+	_Z17oprog_use_triggerP9char_dataP8obj_dataS0_S2_ @ 1139
+;	oprog_zap_trigger(char_data*, obj_data*)
+	_Z17oprog_zap_triggerP9char_dataP8obj_data @ 1140
+;	ranged_got_target(char_data*, char_data*, obj_data*, obj_data*, short, short, char const*, short)
+	_Z17ranged_got_targetP9char_dataS0_P8obj_dataS2_ssPKcs @ 1141
+;	remove_area_names(char const*, char*)
+	_Z17remove_area_namesPKcPc @ 1142
+;	remove_bexit_flag(exit_data*, int)
+	_Z17remove_bexit_flagP9exit_datai @ 1143
+;	rprog_act_trigger(char const*, room_index_data*, char_data*, obj_data*, void const*)
+	_Z17rprog_act_triggerPKcP15room_index_dataP9char_dataP8obj_dataPKv @ 1144
+;	show_char_to_char(char_data*, char_data*)
+	_Z17show_char_to_charP9char_dataS0_ @ 1145
+;	show_list_to_char(obj_data*, char_data*, bool, bool)
+	_Z17show_list_to_charP8obj_dataP9char_databb @ 1146
+;	show_note_to_char(char_data*, note_data*, int)
+	_Z17show_note_to_charP9char_dataP9note_datai @ 1147
+;	skill_comp_bytype(skill_type**, skill_type**)
+	_Z17skill_comp_bytypePP10skill_typeS1_ @ 1148
+;	sort_area_by_name(area_data*)
+	_Z17sort_area_by_nameP9area_data @ 1149
+;	spell_area_attack(int, int, char_data*, void*)
+	_Z17spell_area_attackiiP9char_dataPv @ 1150
+;	toggle_bexit_flag(exit_data*, int)
+	_Z17toggle_bexit_flagP9exit_datai @ 1151
+;	translate_objvals(char_data*, area_data*, renumber_areas*, bool)
+	_Z17translate_objvalsP9char_dataP9area_dataP14renumber_areasb @ 1152
+;	trworld_obj_check(obj_data*)
+	_Z17trworld_obj_checkP8obj_data @ 1153
+;	update_room_reset(char_data*, bool)
+	_Z17update_room_resetP9char_datab @ 1154
+;	validate_spec_fun(char const*)
+	_Z17validate_spec_funPKc @ 1155
+;	write_char_mobile(char_data*, char*)
+	_Z17write_char_mobileP9char_dataPc @ 1156
+;	write_watch_files(char_data*, cmd_type*, char*)
+	_Z17write_watch_filesP9char_dataP8cmd_typePc @ 1157
+;	ClearWeatherDeltas()
+	_Z18ClearWeatherDeltasv @ 1158
+;	DecreaseCloudCover(WeatherCell*, int)
+	_Z18DecreaseCloudCoverP11WeatherCelli @ 1159
+;	IncreaseCloudCover(WeatherCell*, int)
+	_Z18IncreaseCloudCoverP11WeatherCelli @ 1160
+;	copy_buffer_nohash(char_data*)
+	_Z18copy_buffer_nohashP9char_data @ 1161
+;	extract_area_names(char const*, char*)
+	_Z18extract_area_namesPKcPc @ 1162
+;	find_skill_of_type(char_data*, char const*, bool, int)
+	_Z18find_skill_of_typeP9char_dataPKcbi @ 1163
+;	format_obj_to_char(obj_data*, char_data*, bool)
+	_Z18format_obj_to_charP8obj_dataP9char_datab @ 1164
+;	fread_fuss_mobprog(__sFILE64*, mob_prog_data*, mob_index_data*)
+	_Z18fread_fuss_mobprogP9__sFILE64P13mob_prog_dataP14mob_index_data @ 1165
+;	fread_fuss_objprog(__sFILE64*, mob_prog_data*, obj_index_data*)
+	_Z18fread_fuss_objprogP9__sFILE64P13mob_prog_dataP14obj_index_data @ 1166
+;	free_prog_actlists()
+	_Z18free_prog_actlistsv @ 1167
+;	free_renumber_data(renumber_data*)
+	_Z18free_renumber_dataP13renumber_data @ 1168
+;	fwrite_area_header(__sFILE64*, area_data*, bool)
+	_Z18fwrite_area_headerP9__sFILE64P9area_datab @ 1169
+;	fwrite_fuss_affect(__sFILE64*, affect_data*)
+	_Z18fwrite_fuss_affectP9__sFILE64P11affect_data @ 1170
+;	fwrite_fuss_exdesc(__sFILE64*, extra_descr_data*)
+	_Z18fwrite_fuss_exdescP9__sFILE64P16extra_descr_data @ 1171
+;	fwrite_fuss_mobile(__sFILE64*, mob_index_data*, bool)
+	_Z18fwrite_fuss_mobileP9__sFILE64P14mob_index_datab @ 1172
+;	fwrite_fuss_object(__sFILE64*, obj_index_data*, bool)
+	_Z18fwrite_fuss_objectP9__sFILE64P14obj_index_datab @ 1173
+;	generate_itemlevel(area_data*, obj_index_data*)
+	_Z18generate_itemlevelP9area_dataP14obj_index_data @ 1174
+;	get_disintigration(char const*)
+	_Z18get_disintigrationPKc @ 1175
+;	get_obj_resistance(obj_data*)
+	_Z18get_obj_resistanceP8obj_data @ 1176
+;	handle_con_note_to(descriptor_data*, char*)
+	_Z18handle_con_note_toP15descriptor_dataPc @ 1177
+;	in_magic_container(obj_data*)
+	_Z18in_magic_containerP8obj_data @ 1178
+;	initialize_economy()
+	_Z18initialize_economyv @ 1179
+;	isModeratelyCloudy(int)
+	_Z18isModeratelyCloudyi @ 1180
+;	learn_from_failure(char_data*, int)
+	_Z18learn_from_failureP9char_datai @ 1181
+;	learn_from_success(char_data*, int)
+	_Z18learn_from_successP9char_datai @ 1182
+;	load_global_boards()
+	_Z18load_global_boardsv @ 1183
+;	make_new_map_index(int)
+	_Z18make_new_map_indexi @ 1184
+;	mprog_give_trigger(char_data*, char_data*, obj_data*)
+	_Z18mprog_give_triggerP9char_dataS0_P8obj_data @ 1185
+;	mprog_hour_trigger(char_data*)
+	_Z18mprog_hour_triggerP9char_data @ 1186
+;	mprog_name_to_type(char const*)
+	_Z18mprog_name_to_typePKc @ 1187
+;	mprog_next_command(char*)
+	_Z18mprog_next_commandPc @ 1188
+;	mprog_sell_trigger(char_data*, char_data*, obj_data*)
+	_Z18mprog_sell_triggerP9char_dataS0_P8obj_data @ 1189
+;	mprog_tell_trigger(char const*, char_data*)
+	_Z18mprog_tell_triggerPKcP9char_data @ 1190
+;	mprog_time_trigger(char_data*)
+	_Z18mprog_time_triggerP9char_data @ 1191
+;	mprog_type_to_name(int)
+	_Z18mprog_type_to_namei @ 1192
+;	nanny_get_new_race(descriptor_data*, char const*)
+	_Z18nanny_get_new_raceP15descriptor_dataPKc @ 1193
+;	oprog_drop_trigger(char_data*, obj_data*)
+	_Z18oprog_drop_triggerP9char_dataP8obj_data @ 1194
+;	oprog_pull_trigger(char_data*, obj_data*)
+	_Z18oprog_pull_triggerP9char_dataP8obj_data @ 1195
+;	oprog_push_trigger(char_data*, obj_data*)
+	_Z18oprog_push_triggerP9char_dataP8obj_data @ 1196
+;	oprog_wear_trigger(char_data*, obj_data*)
+	_Z18oprog_wear_triggerP9char_dataP8obj_data @ 1197
+;	pager_printf_color(char_data*, char const*, ...)
+	_Z18pager_printf_colorP9char_dataPKcz @ 1198
+;	process_compressed(descriptor_data*)
+	_Z18process_compressedP15descriptor_data @ 1199
+;	remap_slot_numbers()
+	_Z18remap_slot_numbersv @ 1200
+;	remove_all_rosters(clan_data*)
+	_Z18remove_all_rostersP9clan_data @ 1201
+;	remove_room_affect(room_index_data*, char_data*, bool, char const*)
+	_Z18remove_room_affectP15room_index_dataP9char_databPKc @ 1202
+;	roomprog_file_read(room_index_data*, char const*)
+	_Z18roomprog_file_readP15room_index_dataPKc @ 1203
+;	rprog_hour_trigger(char_data*)
+	_Z18rprog_hour_triggerP9char_data @ 1204
+;	rprog_rest_trigger(char_data*)
+	_Z18rprog_rest_triggerP9char_data @ 1205
+;	rprog_time_trigger(char_data*)
+	_Z18rprog_time_triggerP9char_data @ 1206
+;	send_morph_message(char_data*, morph_data*, bool)
+	_Z18send_morph_messageP9char_dataP10morph_datab @ 1207
+;	send_to_char_color(char const*, char_data*)
+	_Z18send_to_char_colorPKcP9char_data @ 1208
+;	send_to_desc_color(char const*, descriptor_data*)
+	_Z18send_to_desc_colorPKcP15descriptor_data @ 1209
+;	successful_casting(skill_type*, char_data*, char_data*, obj_data*)
+	_Z18successful_castingP10skill_typeP9char_dataS2_P8obj_data @ 1210
+;	trworld_char_check(char_data*)
+	_Z18trworld_char_checkP9char_data @ 1211
+;	write_council_list()
+	_Z18write_council_listv @ 1212
+;	DropsBelowThreshold(int, int, int)
+	_Z19DropsBelowThresholdiii @ 1213
+;	add_new_room_to_map(char_data*, char)
+	_Z19add_new_room_to_mapP9char_datac @ 1214
+;	better_mental_state(char_data*, int)
+	_Z19better_mental_stateP9char_datai @ 1215
+;	check_area_conflict(area_data*, int, int)
+	_Z19check_area_conflictP9area_dataii @ 1216
+;	copy_files_contents(__sFILE64*, __sFILE64*)
+	_Z19copy_files_contentsP9__sFILE64S0_ @ 1217
+;	fread_fuss_areadata(__sFILE64*, area_data*)
+	_Z19fread_fuss_areadataP9__sFILE64P9area_data @ 1218
+;	fread_fuss_roomprog(__sFILE64*, mob_prog_data*, room_index_data*)
+	_Z19fread_fuss_roomprogP9__sFILE64P13mob_prog_dataP15room_index_data @ 1219
+;	fread_string_nohash(__sFILE64*)
+	_Z19fread_string_nohashP9__sFILE64 @ 1220
+;	get_real_obj_weight(obj_data*)
+	_Z19get_real_obj_weightP8obj_data @ 1221
+;	hallucinated_object(int, bool)
+	_Z19hallucinated_objectib @ 1222
+;	is_attack_supressed(char_data*)
+	_Z19is_attack_supressedP9char_data @ 1223
+;	load_smaugwiz_reset(room_index_data*, __sFILE64*)
+	_Z19load_smaugwiz_resetP15room_index_dataP9__sFILE64 @ 1224
+;	mprog_bribe_trigger(char_data*, char_data*, int)
+	_Z19mprog_bribe_triggerP9char_dataS0_i @ 1225
+;	mprog_command_check(char const*, char_data*, char_data*, obj_data*, void*, bool)
+	_Z19mprog_command_checkPKcP9char_dataS2_P8obj_dataPvb @ 1226
+;	mprog_death_trigger(char_data*, char_data*)
+	_Z19mprog_death_triggerP9char_dataS0_ @ 1227
+;	mprog_entry_trigger(char_data*)
+	_Z19mprog_entry_triggerP9char_data @ 1228
+;	mprog_fight_trigger(char_data*, char_data*)
+	_Z19mprog_fight_triggerP9char_dataS0_ @ 1229
+;	mprog_greet_trigger(char_data*)
+	_Z19mprog_greet_triggerP9char_data @ 1230
+;	mprog_keyword_check(char const*, char const*)
+	_Z19mprog_keyword_checkPKcS0_ @ 1231
+;	mprog_percent_check(char_data*, char_data*, obj_data*, void*, int)
+	_Z19mprog_percent_checkP9char_dataS0_P8obj_dataPvi @ 1232
+;	mprog_read_programs(__sFILE64*, mob_index_data*)
+	_Z19mprog_read_programsP9__sFILE64P14mob_index_data @ 1233
+;	nanny_confirm_stats(descriptor_data*, char*)
+	_Z19nanny_confirm_statsP15descriptor_dataPc @ 1234
+;	nanny_get_new_class(descriptor_data*, char const*)
+	_Z19nanny_get_new_classP15descriptor_dataPKc @ 1235
+;	oprog_greet_trigger(char_data*)
+	_Z19oprog_greet_triggerP9char_data @ 1236
+;	oprog_percent_check(char_data*, char_data*, obj_data*, void*, int)
+	_Z19oprog_percent_checkP9char_dataS0_P8obj_dataPvi @ 1237
+;	oprog_read_programs(__sFILE64*, obj_index_data*)
+	_Z19oprog_read_programsP9__sFILE64P14obj_index_data @ 1238
+;	queue_extracted_obj(obj_data*)
+	_Z19queue_extracted_objP8obj_data @ 1239
+;	recursive_note_find(obj_data*, char const*)
+	_Z19recursive_note_findP8obj_dataPKc @ 1240
+;	renumber_put_resets(room_index_data*)
+	_Z19renumber_put_resetsP15room_index_data @ 1241
+;	rprog_death_trigger(char_data*)
+	_Z19rprog_death_triggerP9char_data @ 1242
+;	rprog_enter_trigger(char_data*)
+	_Z19rprog_enter_triggerP9char_data @ 1243
+;	rprog_leave_trigger(char_data*)
+	_Z19rprog_leave_triggerP9char_data @ 1244
+;	rprog_percent_check(char_data*, char_data*, obj_data*, void*, int)
+	_Z19rprog_percent_checkP9char_dataS0_P8obj_dataPvi @ 1245
+;	rprog_read_programs(__sFILE64*, room_index_data*)
+	_Z19rprog_read_programsP9__sFILE64P15room_index_data @ 1246
+;	rprog_sleep_trigger(char_data*)
+	_Z19rprog_sleep_triggerP9char_data @ 1247
+;	save_clan_storeroom(char_data*, clan_data*)
+	_Z19save_clan_storeroomP9char_dataP9clan_data @ 1248
+;	send_to_pager_color(char const*, char_data*)
+	_Z19send_to_pager_colorPKcP9char_data @ 1249
+;	show_char_to_char_0(char_data*, char_data*)
+	_Z19show_char_to_char_0P9char_dataS0_ @ 1250
+;	show_char_to_char_1(char_data*, char_data*)
+	_Z19show_char_to_char_1P9char_dataS0_ @ 1251
+;	worsen_mental_state(char_data*, int)
+	_Z19worsen_mental_stateP9char_datai @ 1252
+;	write_to_descriptor(descriptor_data*, char const*, int)
+	_Z19write_to_descriptorP15descriptor_dataPKci @ 1253
+;	InitializeWeatherMap()
+	_Z20InitializeWeatherMapv @ 1254
+;	char_calendar_update()
+	_Z20char_calendar_updatev @ 1255
+;	check_area_conflicts(int, int)
+	_Z20check_area_conflictsii @ 1256
+;	check_illegal_psteal(char_data*, char_data*)
+	_Z20check_illegal_pstealP9char_dataS0_ @ 1257
+;	check_room_for_traps(char_data*, int)
+	_Z20check_room_for_trapsP9char_datai @ 1258
+;	claim_disintigration(char_data*, char_data*)
+	_Z20claim_disintigrationP9char_dataS0_ @ 1259
+;	gather_renumber_data(area_data*, int, bool)
+	_Z20gather_renumber_dataP9area_dataib @ 1260
+;	handle_con_note_text(descriptor_data*, char*)
+	_Z20handle_con_note_textP15descriptor_dataPc @ 1261
+;	isRainingCatsAndDogs(int)
+	_Z20isRainingCatsAndDogsi @ 1262
+;	isTorrentialDownpour(int)
+	_Z20isTorrentialDownpouri @ 1263
+;	is_wielding_poisoned(char_data*)
+	_Z20is_wielding_poisonedP9char_data @ 1264
+;	mprog_random_trigger(char_data*)
+	_Z20mprog_random_triggerP9char_data @ 1265
+;	mprog_script_trigger(char_data*)
+	_Z20mprog_script_triggerP9char_data @ 1266
+;	mprog_speech_trigger(char const*, char_data*)
+	_Z20mprog_speech_triggerPKcP9char_data @ 1267
+;	mprog_wordlist_check(char const*, char_data*, char_data*, obj_data*, void const*, int)
+	_Z20mprog_wordlist_checkPKcP9char_dataS2_P8obj_dataPKvi @ 1268
+;	nanny_confirm_skills(descriptor_data*, char*)
+	_Z20nanny_confirm_skillsP15descriptor_dataPc @ 1269
+;	nifty_is_name_prefix(char const*, char const*)
+	_Z20nifty_is_name_prefixPKcS0_ @ 1270
+;	oprog_damage_trigger(char_data*, obj_data*)
+	_Z20oprog_damage_triggerP9char_dataP8obj_data @ 1271
+;	oprog_random_trigger(obj_data*)
+	_Z20oprog_random_triggerP8obj_data @ 1272
+;	oprog_remove_trigger(char_data*, obj_data*)
+	_Z20oprog_remove_triggerP9char_dataP8obj_data @ 1273
+;	oprog_repair_trigger(char_data*, obj_data*)
+	_Z20oprog_repair_triggerP9char_dataP8obj_data @ 1274
+;	oprog_script_trigger(obj_data*)
+	_Z20oprog_script_triggerP8obj_data @ 1275
+;	oprog_speech_trigger(char const*, char_data*)
+	_Z20oprog_speech_triggerPKcP9char_data @ 1276
+;	oprog_wordlist_check(char const*, char_data*, char_data*, obj_data*, void const*, int, obj_data*)
+	_Z20oprog_wordlist_checkPKcP9char_dataS2_P8obj_dataPKviS4_ @ 1277
+;	prog_command_trigger(char_data*, char const*, bool)
+	_Z20prog_command_triggerP9char_dataPKcb @ 1278
+;	queue_extracted_char(char_data*, bool)
+	_Z20queue_extracted_charP9char_datab @ 1279
+;	read_from_descriptor(descriptor_data*)
+	_Z20read_from_descriptorP15descriptor_data @ 1280
+;	rprog_random_trigger(char_data*)
+	_Z20rprog_random_triggerP9char_data @ 1281
+;	rprog_rfight_trigger(char_data*)
+	_Z20rprog_rfight_triggerP9char_data @ 1282
+;	rprog_script_trigger(room_index_data*)
+	_Z20rprog_script_triggerP15room_index_data @ 1283
+;	rprog_speech_trigger(char const*, char_data*)
+	_Z20rprog_speech_triggerPKcP9char_data @ 1284
+;	rprog_wordlist_check(char const*, char_data*, char_data*, obj_data*, void const*, int, room_index_data*)
+	_Z20rprog_wordlist_checkPKcP9char_dataS2_P8obj_dataPKviP15room_index_data @ 1285
+;	save_disintigrations()
+	_Z20save_disintigrationsv @ 1286
+;	tiny_affect_loc_name(int)
+	_Z20tiny_affect_loc_namei @ 1287
+;	check_immortal_domain(char_data*, char const*)
+	_Z21check_immortal_domainP9char_dataPKc @ 1288
+;	get_project_by_number(int)
+	_Z21get_project_by_numberi @ 1289
+;	mprog_command_trigger(char_data*, char*)
+	_Z21mprog_command_triggerP9char_dataPc @ 1290
+;	oprog_command_trigger(char_data*, char*)
+	_Z21oprog_command_triggerP9char_dataPc @ 1291
+;	oprog_examine_trigger(char_data*, obj_data*)
+	_Z21oprog_examine_triggerP9char_dataP8obj_data @ 1292
+;	remove_disintigration(bounty_data*)
+	_Z21remove_disintigrationP11bounty_data @ 1293
+;	rprog_command_trigger(char_data*, char*)
+	_Z21rprog_command_triggerP9char_dataPc @ 1294
+;	get_exp_worth_by_level(char_data*, int)
+	_Z22get_exp_worth_by_levelP9char_datai @ 1295
+;	handle_con_note_expire(descriptor_data*, char*)
+	_Z22handle_con_note_expireP15descriptor_dataPc @ 1296
+;	handle_con_note_finish(descriptor_data*, char*)
+	_Z22handle_con_note_finishP15descriptor_dataPc @ 1297
+;	loot_coins_from_corpse(char_data*, obj_data*)
+	_Z22loot_coins_from_corpseP9char_dataP8obj_data @ 1298
+;	mprog_hitprcnt_trigger(char_data*, char_data*)
+	_Z22mprog_hitprcnt_triggerP9char_dataS0_ @ 1299
+;	nanny_confirm_new_name(descriptor_data*, char*)
+	_Z22nanny_confirm_new_nameP15descriptor_dataPc @ 1300
+;	nanny_confirm_new_race(descriptor_data*, char*)
+	_Z22nanny_confirm_new_raceP15descriptor_dataPc @ 1301
+;	nanny_get_new_password(descriptor_data*, char*)
+	_Z22nanny_get_new_passwordP15descriptor_dataPc @ 1302
+;	nanny_get_old_password(descriptor_data*, char*)
+	_Z22nanny_get_old_passwordP15descriptor_dataPc @ 1303
+;	handle_con_note_subject(descriptor_data*, char*)
+	_Z23handle_con_note_subjectP15descriptor_dataPc @ 1304
+;	nanny_confirm_new_class(descriptor_data*, char*)
+	_Z23nanny_confirm_new_classP15descriptor_dataPc @ 1305
+;	nanny_get_dryad_subrace(descriptor_data*, char*)
+	_Z23nanny_get_dryad_subraceP15descriptor_dataPc @ 1306
+;	weapon_prof_bonus_check(char_data*, obj_data*, int*)
+	_Z23weapon_prof_bonus_checkP9char_dataP8obj_dataPi @ 1307
+;	write_to_descriptor_old(int, char const*, int)
+	_Z23write_to_descriptor_oldiPKci @ 1308
+;	EnforceClimateConditions()
+	_Z24EnforceClimateConditionsv @ 1309
+;	check_for_area_conflicts(area_data*, int, int)
+	_Z24check_for_area_conflictsP9area_dataii @ 1310
+;	process_spell_components(char_data*, int)
+	_Z24process_spell_componentsP9char_datai @ 1311
+;	show_char_to_char_squint(char_data*, char_data*)
+	_Z24show_char_to_char_squintP9char_dataS0_ @ 1312
+;	CalculateCellToCellChanges()
+	_Z26CalculateCellToCellChangesv @ 1313
+;	ability_learn_from_success(char_data*, int)
+	_Z26ability_learn_from_successP9char_datai @ 1314
+;	nanny_confirm_new_password(descriptor_data*, char*)
+	_Z26nanny_confirm_new_passwordP15descriptor_dataPc @ 1315
+;	write_to_descriptor_printf(descriptor_data*, char const*, ...)
+	_Z26write_to_descriptor_printfP15descriptor_dataPKcz @ 1316
+;	show_visible_affects_to_char(char_data*, char_data*)
+	_Z28show_visible_affects_to_charP9char_dataS0_ @ 1317
+;	act(short, char const*, char_data*, void const*, void const*, int)
+	_Z3actsPKcP9char_dataPKvS4_i @ 1318
+;	bug(char const*, ...)
+	_Z3bugPKcz @ 1319
+;	meb(int)
+	_Z3mebi @ 1320
+;	dice(int, int)
+	_Z4diceii @ 1321
+;	trip(char_data*, char_data*)
+	_Z4tripP9char_dataS0_ @ 1322
+;	umax(int, int)
+	_Z4umaxii @ 1323
+;	umin(int, int)
+	_Z4uminii @ 1324
+;	aoran(char const*)
+	_Z5aoranPKc @ 1325
+;	isHot(int)
+	_Z5isHoti @ 1326
+;	myobj(obj_data*)
+	_Z5myobjP8obj_data @ 1327
+;	nanny(descriptor_data*, char*)
+	_Z5nannyP15descriptor_dataPc @ 1328
+;	paint(short, char_data*, char const*, ...)
+	_Z5paintsP9char_dataPKcz @ 1329
+;	c_time(long, int)
+	_Z6c_timeli @ 1330
+;	chance(char_data*, short)
+	_Z6chanceP9char_datas @ 1331
+;	damage(char_data*, char_data*, int, int)
+	_Z6damageP9char_dataS0_ii @ 1332
+;	disarm(char_data*, char_data*)
+	_Z6disarmP9char_dataS0_ @ 1333
+;	dragon(char_data*, char const*)
+	_Z6dragonP9char_dataPKc @ 1334
+;	format(char const*, ...)
+	_Z6formatPKcz @ 1335
+;	isCold(int)
+	_Z6isColdi @ 1336
+;	isCool(int)
+	_Z6isCooli @ 1337
+;	isWarm(int)
+	_Z6isWarmi @ 1338
+;	mpcopy(mob_prog_data*, mob_prog_data*)
+	_Z6mpcopyP13mob_prog_dataS0_ @ 1339
+;	mpedit(char_data*, mob_prog_data*, int, char const*)
+	_Z6mpeditP9char_dataP13mob_prog_dataiPKc @ 1340
+;	rpedit(char_data*, mob_prog_data*, int, char*)
+	_Z6rpeditP9char_dataP13mob_prog_dataiPc @ 1341
+;	urange(int, int, int)
+	_Z6urangeiii @ 1342
+;	VAMP_AC(char_data*)
+	_Z7VAMP_ACP9char_data @ 1343
+;	add_ban(char_data*, char const*, char const*, int, int)
+	_Z7add_banP9char_dataPKcS2_ii @ 1344
+;	add_dns(char const*, char const*)
+	_Z7add_dnsPKcS0_ @ 1345
+;	advatoi(char*)
+	_Z7advatoiPc @ 1346
+;	boot_db(bool)
+	_Z7boot_dbb @ 1347
+;	can_see(char_data*, char_data*)
+	_Z7can_seeP9char_dataS0_ @ 1348
+;	do_note(char_data*, char const*, bool)
+	_Z7do_noteP9char_dataPKcb @ 1349
+;	getTemp(WeatherCell*)
+	_Z7getTempP11WeatherCell @ 1350
+;	get_dir(char const*)
+	_Z7get_dirPKc @ 1351
+;	get_exp(char_data*)
+	_Z7get_expP9char_data @ 1352
+;	get_liq(char const*)
+	_Z7get_liqPKc @ 1353
+;	get_mix(char const*)
+	_Z7get_mixPKc @ 1354
+;	get_obj(char_data*, obj_data*, obj_data*)
+	_Z7get_objP9char_dataP8obj_dataS2_ @ 1355
+;	get_ref(char_data*)
+	_Z7get_refP9char_data @ 1356
+;	get_tag(char_data*, char*, int)
+	_Z7get_tagP9char_dataPci @ 1357
+;	has_key(char_data*, int)
+	_Z7has_keyP9char_datai @ 1358
+;	init_mm()
+	_Z7init_mmv @ 1359
+;	isHumid(int)
+	_Z7isHumidi @ 1360
+;	is_name(char const*, char const*)
+	_Z7is_namePKcS0_ @ 1361
+;	is_safe(char_data*, char_data*, bool)
+	_Z7is_safeP9char_dataS0_b @ 1362
+;	one_hit(char_data*, char_data*, int)
+	_Z7one_hitP9char_dataS0_i @ 1363
+;	progbug(char const*, char_data*)
+	_Z7progbugPKcP9char_data @ 1364
+;	str_cmp(char const*, char const*)
+	_Z7str_cmpPKcS0_ @ 1365
+;	str_dup(char const*)
+	_Z7str_dupPKc @ 1366
+;	SwapHint(hint_data*, hint_data*)
+	_Z8SwapHintP9hint_dataS0_ @ 1367
+;	add_char(char_data*)
+	_Z8add_charP9char_data @ 1368
+;	add_fish(fish_data*)
+	_Z8add_fishP9fish_data @ 1369
+;	add_help(help_data*)
+	_Z8add_helpP9help_data @ 1370
+;	add_kill(char_data*, char_data*)
+	_Z8add_killP9char_dataS0_ @ 1371
+;	apply_ac(obj_data*, int)
+	_Z8apply_acP8obj_datai @ 1372
+;	boot_log(char const*, ...)
+	_Z8boot_logPKcz @ 1373
+;	can_dual(char_data*)
+	_Z8can_dualP9char_data @ 1374
+;	can_post(char_data*, board_data*)
+	_Z8can_postP9char_dataP10board_data @ 1375
+;	can_read(char_data*, board_data*)
+	_Z8can_readP9char_dataP10board_data @ 1376
+;	colorize(char const*, descriptor_data*)
+	_Z8colorizePKcP15descriptor_data @ 1377
+;	do_morph(char_data*, morph_data*)
+	_Z8do_morphP9char_dataP10morph_data @ 1378
+;	do_nlist(char_data*, char const*)
+	_Z8do_nlistP9char_dataPKc @ 1379
+;	do_nread(char_data*, char const*)
+	_Z8do_nreadP9char_dataPKc @ 1380
+;	find_obj(char_data*, char const*, bool)
+	_Z8find_objP9char_dataPKcb @ 1381
+;	fix_char(char_data*)
+	_Z8fix_charP9char_data @ 1382
+;	free_ban(ban_data*)
+	_Z8free_banP8ban_data @ 1383
+;	free_obj(obj_data*)
+	_Z8free_objP8obj_data @ 1384
+;	gain_exp(char_data*, int)
+	_Z8gain_expP9char_datai @ 1385
+;	getWindX(WeatherCell*)
+	_Z8getWindXP11WeatherCell @ 1386
+;	getWindY(WeatherCell*)
+	_Z8getWindYP11WeatherCell @ 1387
+;	get_area(char*)
+	_Z8get_areaPc @ 1388
+;	get_clan(char const*)
+	_Z8get_clanPKc @ 1389
+;	get_cost(char_data*, char_data*, obj_data*, bool)
+	_Z8get_costP9char_dataS0_P8obj_datab @ 1390
+;	get_door(char const*)
+	_Z8get_doorPKc @ 1391
+;	get_exit(room_index_data*, short)
+	_Z8get_exitP15room_index_datas @ 1392
+;	get_fort(char_data*)
+	_Z8get_fortP9char_data @ 1393
+;	get_help(char_data*, char const*)
+	_Z8get_helpP9char_dataPKc @ 1394
+;	get_hint(int)
+	_Z8get_hinti @ 1395
+;	get_init(char_data*)
+	_Z8get_initP9char_data @ 1396
+;	get_lang(char const*)
+	_Z8get_langPKc @ 1397
+;	get_line(char*, unsigned long)
+	_Z8get_linePcm @ 1398
+;	get_race(char_data*)
+	_Z8get_raceP9char_data @ 1399
+;	get_trap(obj_data*)
+	_Z8get_trapP8obj_data @ 1400
+;	get_will(char_data*)
+	_Z8get_willP9char_data @ 1401
+;	getcolor(char)
+	_Z8getcolorc @ 1402
+;	help_fix(char const*)
+	_Z8help_fixPKc @ 1403
+;	hit_gain(char_data*)
+	_Z8hit_gainP9char_data @ 1404
+;	in_arena(char_data*)
+	_Z8in_arenaP9char_data @ 1405
+;	isChilly(int)
+	_Z8isChillyi @ 1406
+;	isCloudy(int)
+	_Z8isCloudyi @ 1407
+;	isFrosty(int)
+	_Z8isFrostyi @ 1408
+;	isStormy(int)
+	_Z8isStormyi @ 1409
+;	is_name2(char const*, char const*)
+	_Z8is_name2PKcS0_ @ 1410
+;	isavowel(char)
+	_Z8isavowelc @ 1411
+;	load_dns()
+	_Z8load_dnsv @ 1412
+;	look_sky(char_data*)
+	_Z8look_skyP9char_data @ 1413
+;	mob_fire(char_data*, char const*)
+	_Z8mob_fireP9char_dataPKc @ 1414
+;	multimeb(int, ...)
+	_Z8multimebiz @ 1415
+;	new_note()
+	_Z8new_notev @ 1416
+;	obj_fall(obj_data*, bool)
+	_Z8obj_fallP8obj_datab @ 1417
+;	parsebet(int, char*)
+	_Z8parsebetiPc @ 1418
+;	pos_name(int)
+	_Z8pos_namei @ 1419
+;	raw_kill(char_data*, char_data*)
+	_Z8raw_killP9char_dataS0_ @ 1420
+;	rd_parse(char_data*, int, char*, char_data*, int)
+	_Z8rd_parseP9char_dataiPcS0_i @ 1421
+;	read_log(__sFILE64*)
+	_Z8read_logP9__sFILE64 @ 1422
+;	rev_exit(short)
+	_Z8rev_exits @ 1423
+;	ris_save(char_data*, int, int)
+	_Z8ris_saveP9char_dataii @ 1424
+;	roomdesc(char_data*)
+	_Z8roomdescP9char_data @ 1425
+;	save_dns()
+	_Z8save_dnsv @ 1426
+;	scramble(char const*, int)
+	_Z8scramblePKci @ 1427
+;	show_map(char_data*, char*)
+	_Z8show_mapP9char_dataPc @ 1428
+;	str_free(char const*)
+	_Z8str_freePKc @ 1429
+;	strip_cr(char const*)
+	_Z8strip_crPKc @ 1430
+;	strlower(char const*)
+	_Z8strlowerPKc @ 1431
+;	strupper(char const*)
+	_Z8strupperPKc @ 1432
+;	tag_char(char_data*, variable_data*, int)
+	_Z8tag_charP9char_dataP13variable_datai @ 1433
+;	teleport(char_data*, int, int)
+	_Z8teleportP9char_dataii @ 1434
+;	wear_obj(char_data*, obj_data*, bool, short)
+	_Z8wear_objP9char_dataP8obj_databs @ 1435
+;	wordwrap(char*, short)
+	_Z8wordwrapPcs @ 1436
+;	DelOExtra(obj_data*, char const*)
+	_Z9DelOExtraP8obj_dataPKc @ 1437
+;	DelRExtra(room_index_data*, char const*)
+	_Z9DelRExtraP15room_index_dataPKc @ 1438
+;	MORPHNAME(char_data*)
+	_Z9MORPHNAMEP9char_data @ 1439
+;	RelCreate(relation_type, void*, void*)
+	_Z9RelCreate13relation_typePvS0_ @ 1440
+;	SetOExtra(obj_data*, char const*)
+	_Z9SetOExtraP8obj_dataPKc @ 1441
+;	SetRExtra(room_index_data*, char const*)
+	_Z9SetRExtraP15room_index_dataPKc @ 1442
+;	add_fname(fname_data*)
+	_Z9add_fnameP10fname_data @ 1443
+;	add_reset(room_index_data*, char, int, int, int, int)
+	_Z9add_resetP15room_index_dataciiii @ 1444
+;	add_timer(char_data*, short, int, void (*)(char_data*, char const*), int)
+	_Z9add_timerP9char_datasiPFvS0_PKcEi @ 1445
+;	can_charm(char_data*)
+	_Z9can_charmP9char_data @ 1446
+;	can_layer(char_data*, obj_data*, short)
+	_Z9can_layerP9char_dataP8obj_datas @ 1447
+;	can_medit(char_data*, mob_index_data*)
+	_Z9can_meditP9char_dataP14mob_index_data @ 1448
+;	can_morph(char_data*, morph_data*, bool)
+	_Z9can_morphP9char_dataP10morph_datab @ 1449
+;	can_oedit(char_data*, obj_index_data*)
+	_Z9can_oeditP9char_dataP14obj_index_data @ 1450
+;	ch_printf(char_data*, char const*, ...)
+	_Z9ch_printfP9char_dataPKcz @ 1451
+;	char_died(char_data*)
+	_Z9char_diedP9char_data @ 1452
+;	check_dns()
+	_Z9check_dnsv @ 1453
+;	check_pos(char_data*, short)
+	_Z9check_posP9char_datas @ 1454
+;	chk_watch(short, char const*, char const*)
+	_Z9chk_watchsPKcS0_ @ 1455
+;	clean_mob(mob_index_data*)
+	_Z9clean_mobP14mob_index_data @ 1456
+;	clean_obj(obj_index_data*)
+	_Z9clean_objP14obj_index_data @ 1457
+;	color_str(short, char_data*)
+	_Z9color_strsP9char_data @ 1458
+;	colorcode(char const*, char*, descriptor_data*, int, int*)
+	_Z9colorcodePKcPcP15descriptor_dataiPi @ 1459
+;	death_cry(char_data*)
+	_Z9death_cryP9char_data @ 1460
+;	do_nwrite(char_data*, char const*)
+	_Z9do_nwriteP9char_dataPKc @ 1461
+;	do_owhere(char_data*, char const*)
+	_Z9do_owhereP9char_dataPKc @ 1462
+;	do_rpcopy(char_data*, char const*)
+	_Z9do_rpcopyP9char_dataPKc @ 1463
+;	empty_obj(obj_data*, obj_data*, room_index_data*)
+	_Z9empty_objP8obj_dataS0_P15room_index_data @ 1464
+;	end_timer(timeval*)
+	_Z9end_timerP7timeval @ 1465
+;	epic_name(int)
+	_Z9epic_namei @ 1466
+;	exit_comp(exit_data**, exit_data**)
+	_Z9exit_compPP9exit_dataS1_ @ 1467
+;	exp_level(char_data*, short)
+	_Z9exp_levelP9char_datas @ 1468
+;	find_area(char*, bool*)
+	_Z9find_areaPcPb @ 1469
+;	find_door(char_data*, char const*, bool)
+	_Z9find_doorP9char_dataPKcb @ 1470
+;	find_note(char_data*, global_board_data*, int)
+	_Z9find_noteP9char_dataP17global_board_datai @ 1471
+;	fix_exits()
+	_Z9fix_exitsv @ 1472
+;	fold_area(area_data*, char const*, bool)
+	_Z9fold_areaP9area_dataPKcb @ 1473
+;	fread_ban(__sFILE64*, int)
+	_Z9fread_banP9__sFILE64i @ 1474
+;	fread_cnv(__sFILE64*, lcnv_data**, lcnv_data**)
+	_Z9fread_cnvP9__sFILE64PP9lcnv_dataS3_ @ 1475
+;	fread_day(holiday_data*, __sFILE64*)
+	_Z9fread_dayP12holiday_dataP9__sFILE64 @ 1476
+;	fread_dns(dns_data*, __sFILE64*)
+	_Z9fread_dnsP8dns_dataP9__sFILE64 @ 1477
+;	fread_obj(char_data*, __sFILE64*, short)
+	_Z9fread_objP9char_dataP9__sFILE64s @ 1478
+;	free_bans()
+	_Z9free_bansv @ 1479
+;	free_char(char_data*)
+	_Z9free_charP9char_data @ 1480
+;	free_desc(descriptor_data*)
+	_Z9free_descP15descriptor_data @ 1481
+;	free_fish(fish_data*)
+	_Z9free_fishP9fish_data @ 1482
+;	free_game(game_board_data*)
+	_Z9free_gameP15game_board_data @ 1483
+;	free_help(help_data*)
+	_Z9free_helpP9help_data @ 1484
+;	free_note(note_data*)
+	_Z9free_noteP9note_data @ 1485
+;	game_loop()
+	_Z9game_loopv @ 1486
+;	getEnergy(WeatherCell*)
+	_Z9getEnergyP11WeatherCell @ 1487
+;	getPrecip(WeatherCell*)
+	_Z9getPrecipP11WeatherCell @ 1488
+;	get_aflag(char const*)
+	_Z9get_aflagPKc @ 1489
+;	get_atype(char const*)
+	_Z9get_atypePKc @ 1490
+;	get_board(obj_data*)
+	_Z9get_boardP8obj_data @ 1491
+;	get_class(char_data*)
+	_Z9get_classP9char_data @ 1492
+;	get_color(char const*)
+	_Z9get_colorPKc @ 1493
+;	get_deity(char const*)
+	_Z9get_deityPKc @ 1494
+;	get_exits(char_data*)
+	_Z9get_exitsP9char_data @ 1495
+;	get_morph(char const*)
+	_Z9get_morphPKc @ 1496
+;	get_oflag(char const*)
+	_Z9get_oflagPKc @ 1497
+;	get_otype(char const*)
+	_Z9get_otypePKc @ 1498
+;	get_rflag(char const*)
+	_Z9get_rflagPKc @ 1499
+;	get_sflag(char const*)
+	_Z9get_sflagPKc @ 1500
+;	get_skill(char const*)
+	_Z9get_skillPKc @ 1501
+;	get_ssave(char const*)
+	_Z9get_ssavePKc @ 1502
+;	get_timer(char_data*, short)
+	_Z9get_timerP9char_datas @ 1503
+;	get_trust(char_data*)
+	_Z9get_trustP9char_data @ 1504
+;	get_wflag(char const*)
+	_Z9get_wflagPKc @ 1505
+;	grab_news(news_type*, char const*)
+	_Z9grab_newsP9news_typePKc @ 1506
+;	grab_word(char*, char*)
+	_Z9grab_wordPcS_ @ 1507
+;	hash_dump(int)
+	_Z9hash_dumpi @ 1508
+;	instaroom(room_index_data*, bool)
+	_Z9instaroomP15room_index_datab @ 1509
+;	interpret(char_data*, char const*)
+	_Z9interpretP9char_dataPKc @ 1510
+;	interpret(char_data*, char*)
+	_Z9interpretP9char_dataPc @ 1511
+;	isMisting(int)
+	_Z9isMistingi @ 1512
+;	isPouring(int)
+	_Z9isPouringi @ 1513
+;	isRaining(int)
+	_Z9isRainingi @ 1514
+;	isVeryHot(int)
+	_Z9isVeryHoti @ 1515
+;	is_hating(char_data*, char_data*)
+	_Z9is_hatingP9char_dataS0_ @ 1516
+;	is_immune(char_data*, short)
+	_Z9is_immuneP9char_datas @ 1517
+;	is_number(char const*)
+	_Z9is_numberPKc @ 1518
+;	level_exp(char_data*, int)
+	_Z9level_expP9char_datai @ 1519
+;	load_area(__sFILE64*, int)
+	_Z9load_areaP9__sFILE64i @ 1520
+;	load_hint()
+	_Z9load_hintv @ 1521
+;	load_news()
+	_Z9load_newsv @ 1522
+;	make_exit(room_index_data*, room_index_data*, short)
+	_Z9make_exitP15room_index_dataS0_s @ 1523
+;	make_fire(room_index_data*, short)
+	_Z9make_fireP15room_index_datas @ 1524
+;	make_note(char const*, char const*, char const*, char const*, int, char const*)
+	_Z9make_notePKcS0_S0_S0_iS0_ @ 1525
+;	make_room(int, area_data*)
+	_Z9make_roomiP9area_data @ 1526
+;	make_trap(int, int, int, int)
+	_Z9make_trapiiii @ 1527
+;	mana_gain(char_data*)
+	_Z9mana_gainP9char_data @ 1528
+;	map_exits(char_data*, room_index_data*, int, int, int)
+	_Z9map_exitsP9char_dataP15room_index_dataiii @ 1529
+;	map_stats(char_data*, int*, int*, int*)
+	_Z9map_statsP9char_dataPiS1_S1_ @ 1530
+;	move_char(char_data*, exit_data*, int)
+	_Z9move_charP9char_dataP9exit_datai @ 1531
+;	move_gain(char_data*)
+	_Z9move_gainP9char_data @ 1532
+;	multi_hit(char_data*, char_data*, int)
+	_Z9multi_hitP9char_dataS0_i @ 1533
+;	num_punct(int)
+	_Z9num_puncti @ 1534
+;	number_mm()
+	_Z9number_mmv @ 1535
+;	obj_short(obj_data*)
+	_Z9obj_shortP8obj_data @ 1536
+;	parse_var(char const*, char_data*, char_data*, obj_data*, void const*, char_data*)
+	_Z9parse_varPKcP9char_dataS2_P8obj_dataPKvS2_ @ 1537
+;	prune_dns()
+	_Z9prune_dnsv @ 1538
+;	pullcheck(char_data*, int)
+	_Z9pullcheckP9char_datai @ 1539
+;	read_hint(char*, __sFILE64*)
+	_Z9read_hintPcP9__sFILE64 @ 1540
+;	read_note(__sFILE64*)
+	_Z9read_noteP9__sFILE64 @ 1541
+;	save_clan(clan_data*)
+	_Z9save_clanP9clan_data @ 1542
+;	save_news()
+	_Z9save_newsv @ 1543
+;	say_spell(char_data*, int)
+	_Z9say_spellP9char_datai @ 1544
+;	set_alarm(long)
+	_Z9set_alarml @ 1545
+;	set_title(char_data*, char const*)
+	_Z9set_titleP9char_dataPKc @ 1546
+;	show_bans(char_data*, int)
+	_Z9show_bansP9char_datai @ 1547
+;	show_file(char_data*, char const*)
+	_Z9show_fileP9char_dataPKc @ 1548
+;	show_hash(int)
+	_Z9show_hashi @ 1549
+;	show_mssp(char_data*)
+	_Z9show_msspP9char_data @ 1550
+;	sort_area(area_data*, bool)
+	_Z9sort_areaP9area_datab @ 1551
+;	split_obj(obj_data*, int)
+	_Z9split_objP8obj_datai @ 1552
+;	str_alloc(char const*)
+	_Z9str_allocPKc @ 1553
+;	str_infix(char const*, char const*)
+	_Z9str_infixPKcS0_ @ 1554
+;	towizfile(char const*)
+	_Z9towizfilePKc @ 1555
+;	translate(int, char const*, char const*)
+	_Z9translateiPKcS0_ @ 1556
+;	whatColor(char*, char*)
+	_Z9whatColorPcS_ @ 1557
+;	will_fall(char_data*, int)
+	_Z9will_fallP9char_datai @ 1558
+;	typeinfo for board_data
+	_ZTI10board_data @ 1559 DATA
+;	typeinfo for char_morph
+	_ZTI10char_morph @ 1560 DATA
+;	typeinfo for class_type
+	_ZTI10class_type @ 1561 DATA
+;	typeinfo for deity_data
+	_ZTI10deity_data @ 1562 DATA
+;	typeinfo for fname_data
+	_ZTI10fname_data @ 1563 DATA
+;	typeinfo for morph_data
+	_ZTI10morph_data @ 1564 DATA
+;	typeinfo for plane_data
+	_ZTI10plane_data @ 1565 DATA
+;	typeinfo for reset_data
+	_ZTI10reset_data @ 1566 DATA
+;	typeinfo for skill_type
+	_ZTI10skill_type @ 1567 DATA
+;	typeinfo for timer_data
+	_ZTI10timer_data @ 1568 DATA
+;	typeinfo for watch_data
+	_ZTI10watch_data @ 1569 DATA
+;	typeinfo for z_stream_s
+	_ZTI10z_stream_s @ 1570 DATA
+;	typeinfo for affect_data
+	_ZTI11affect_data @ 1571 DATA
+;	typeinfo for bounty_data
+	_ZTI11bounty_data @ 1572 DATA
+;	typeinfo for editor_data
+	_ZTI11editor_data @ 1573 DATA
+;	typeinfo for ignore_data
+	_ZTI11ignore_data @ 1574 DATA
+;	typeinfo for roster_data
+	_ZTI11roster_data @ 1575 DATA
+;	typeinfo for social_type
+	_ZTI11social_type @ 1576 DATA
+;	typeinfo for auction_data
+	_ZTI12auction_data @ 1577 DATA
+;	typeinfo for council_data
+	_ZTI12council_data @ 1578 DATA
+;	typeinfo for holiday_data
+	_ZTI12holiday_data @ 1579 DATA
+;	typeinfo for liquid_table
+	_ZTI12liquid_table @ 1580 DATA
+;	typeinfo for mixture_list
+	_ZTI12mixture_list @ 1581 DATA
+;	typeinfo for mpsleep_data
+	_ZTI12mpsleep_data @ 1582 DATA
+;	typeinfo for project_data
+	_ZTI12project_data @ 1583 DATA
+;	typeinfo for reserve_data
+	_ZTI12reserve_data @ 1584 DATA
+;	typeinfo for smaug_affect
+	_ZTI12smaug_affect @ 1585 DATA
+;	typeinfo for specfun_list
+	_ZTI12specfun_list @ 1586 DATA
+;	typeinfo for wizinfo_data
+	_ZTI12wizinfo_data @ 1587 DATA
+;	typeinfo for act_prog_data
+	_ZTI13act_prog_data @ 1588 DATA
+;	typeinfo for fighting_data
+	_ZTI13fighting_data @ 1589 DATA
+;	typeinfo for immortal_host
+	_ZTI13immortal_host @ 1590 DATA
+;	typeinfo for mob_prog_data
+	_ZTI13mob_prog_data @ 1591 DATA
+;	typeinfo for renumber_data
+	_ZTI13renumber_data @ 1592 DATA
+;	typeinfo for teleport_data
+	_ZTI13teleport_data @ 1593 DATA
+;	typeinfo for variable_data
+	_ZTI13variable_data @ 1594 DATA
+;	typeinfo for hunt_hate_fear
+	_ZTI14hunt_hate_fear @ 1595 DATA
+;	typeinfo for ipcompare_data
+	_ZTI14ipcompare_data @ 1596 DATA
+;	typeinfo for mob_index_data
+	_ZTI14mob_index_data @ 1597 DATA
+;	typeinfo for obj_index_data
+	_ZTI14obj_index_data @ 1598 DATA
+;	typeinfo for renumber_areas
+	_ZTI14renumber_areas @ 1599 DATA
+;	typeinfo for descriptor_data
+	_ZTI15descriptor_data @ 1600 DATA
+;	typeinfo for game_board_data
+	_ZTI15game_board_data @ 1601 DATA
+;	typeinfo for repairshop_data
+	_ZTI15repairshop_data @ 1602 DATA
+;	typeinfo for room_index_data
+	_ZTI15room_index_data @ 1603 DATA
+;	typeinfo for extra_descr_data
+	_ZTI16extra_descr_data @ 1604 DATA
+;	typeinfo for mob_prog_act_list
+	_ZTI17mob_prog_act_list @ 1605 DATA
+;	typeinfo for extracted_char_data
+	_ZTI19extracted_char_data @ 1606 DATA
+;	typeinfo for wizent
+	_ZTI6wizent @ 1607 DATA
+;	typeinfo for pc_data
+	_ZTI7pc_data @ 1608 DATA
+;	typeinfo for whogr_s
+	_ZTI7whogr_s @ 1609 DATA
+;	typeinfo for ban_data
+	_ZTI8ban_data @ 1610 DATA
+;	typeinfo for cmd_type
+	_ZTI8cmd_type @ 1611 DATA
+;	typeinfo for dns_data
+	_ZTI8dns_data @ 1612 DATA
+;	typeinfo for obj_data
+	_ZTI8obj_data @ 1613 DATA
+;	typeinfo for rel_data
+	_ZTI8rel_data @ 1614 DATA
+;	typeinfo for who_data
+	_ZTI8who_data @ 1615 DATA
+;	typeinfo for area_data
+	_ZTI9area_data @ 1616 DATA
+;	typeinfo for char_data
+	_ZTI9char_data @ 1617 DATA
+;	typeinfo for clan_data
+	_ZTI9clan_data @ 1618 DATA
+;	typeinfo for exit_data
+	_ZTI9exit_data @ 1619 DATA
+;	typeinfo for fish_data
+	_ZTI9fish_data @ 1620 DATA
+;	typeinfo for help_data
+	_ZTI9help_data @ 1621 DATA
+;	typeinfo for hint_data
+	_ZTI9hint_data @ 1622 DATA
+;	typeinfo for lang_data
+	_ZTI9lang_data @ 1623 DATA
+;	typeinfo for lcnv_data
+	_ZTI9lcnv_data @ 1624 DATA
+;	typeinfo for lmsg_data
+	_ZTI9lmsg_data @ 1625 DATA
+;	typeinfo for mccp_data
+	_ZTI9mccp_data @ 1626 DATA
+;	typeinfo for mssp_info
+	_ZTI9mssp_info @ 1627 DATA
+;	typeinfo for news_data
+	_ZTI9news_data @ 1628 DATA
+;	typeinfo for news_type
+	_ZTI9news_type @ 1629 DATA
+;	typeinfo for note_data
+	_ZTI9note_data @ 1630 DATA
+;	typeinfo for race_type
+	_ZTI9race_type @ 1631 DATA
+;	typeinfo for shop_data
+	_ZTI9shop_data @ 1632 DATA
+;	typeinfo for board_data*
+	_ZTIP10board_data @ 1633 DATA
+;	typeinfo for char_morph*
+	_ZTIP10char_morph @ 1634 DATA
+;	typeinfo for class_type*
+	_ZTIP10class_type @ 1635 DATA
+;	typeinfo for deity_data*
+	_ZTIP10deity_data @ 1636 DATA
+;	typeinfo for fname_data*
+	_ZTIP10fname_data @ 1637 DATA
+;	typeinfo for morph_data*
+	_ZTIP10morph_data @ 1638 DATA
+;	typeinfo for plane_data*
+	_ZTIP10plane_data @ 1639 DATA
+;	typeinfo for reset_data*
+	_ZTIP10reset_data @ 1640 DATA
+;	typeinfo for skill_type*
+	_ZTIP10skill_type @ 1641 DATA
+;	typeinfo for timer_data*
+	_ZTIP10timer_data @ 1642 DATA
+;	typeinfo for watch_data*
+	_ZTIP10watch_data @ 1643 DATA
+;	typeinfo for z_stream_s*
+	_ZTIP10z_stream_s @ 1644 DATA
+;	typeinfo for affect_data*
+	_ZTIP11affect_data @ 1645 DATA
+;	typeinfo for bounty_data*
+	_ZTIP11bounty_data @ 1646 DATA
+;	typeinfo for editor_data*
+	_ZTIP11editor_data @ 1647 DATA
+;	typeinfo for ignore_data*
+	_ZTIP11ignore_data @ 1648 DATA
+;	typeinfo for roster_data*
+	_ZTIP11roster_data @ 1649 DATA
+;	typeinfo for social_type*
+	_ZTIP11social_type @ 1650 DATA
+;	typeinfo for auction_data*
+	_ZTIP12auction_data @ 1651 DATA
+;	typeinfo for council_data*
+	_ZTIP12council_data @ 1652 DATA
+;	typeinfo for holiday_data*
+	_ZTIP12holiday_data @ 1653 DATA
+;	typeinfo for liquid_table*
+	_ZTIP12liquid_table @ 1654 DATA
+;	typeinfo for mixture_list*
+	_ZTIP12mixture_list @ 1655 DATA
+;	typeinfo for mpsleep_data*
+	_ZTIP12mpsleep_data @ 1656 DATA
+;	typeinfo for project_data*
+	_ZTIP12project_data @ 1657 DATA
+;	typeinfo for reserve_data*
+	_ZTIP12reserve_data @ 1658 DATA
+;	typeinfo for smaug_affect*
+	_ZTIP12smaug_affect @ 1659 DATA
+;	typeinfo for specfun_list*
+	_ZTIP12specfun_list @ 1660 DATA
+;	typeinfo for wizinfo_data*
+	_ZTIP12wizinfo_data @ 1661 DATA
+;	typeinfo for act_prog_data*
+	_ZTIP13act_prog_data @ 1662 DATA
+;	typeinfo for fighting_data*
+	_ZTIP13fighting_data @ 1663 DATA
+;	typeinfo for immortal_host*
+	_ZTIP13immortal_host @ 1664 DATA
+;	typeinfo for mob_prog_data*
+	_ZTIP13mob_prog_data @ 1665 DATA
+;	typeinfo for renumber_data*
+	_ZTIP13renumber_data @ 1666 DATA
+;	typeinfo for teleport_data*
+	_ZTIP13teleport_data @ 1667 DATA
+;	typeinfo for variable_data*
+	_ZTIP13variable_data @ 1668 DATA
+;	typeinfo for hunt_hate_fear*
+	_ZTIP14hunt_hate_fear @ 1669 DATA
+;	typeinfo for ipcompare_data*
+	_ZTIP14ipcompare_data @ 1670 DATA
+;	typeinfo for mob_index_data*
+	_ZTIP14mob_index_data @ 1671 DATA
+;	typeinfo for obj_index_data*
+	_ZTIP14obj_index_data @ 1672 DATA
+;	typeinfo for renumber_areas*
+	_ZTIP14renumber_areas @ 1673 DATA
+;	typeinfo for descriptor_data*
+	_ZTIP15descriptor_data @ 1674 DATA
+;	typeinfo for game_board_data*
+	_ZTIP15game_board_data @ 1675 DATA
+;	typeinfo for repairshop_data*
+	_ZTIP15repairshop_data @ 1676 DATA
+;	typeinfo for room_index_data*
+	_ZTIP15room_index_data @ 1677 DATA
+;	typeinfo for extra_descr_data*
+	_ZTIP16extra_descr_data @ 1678 DATA
+;	typeinfo for mob_prog_act_list*
+	_ZTIP17mob_prog_act_list @ 1679 DATA
+;	typeinfo for extracted_char_data*
+	_ZTIP19extracted_char_data @ 1680 DATA
+;	typeinfo for wizent*
+	_ZTIP6wizent @ 1681 DATA
+;	typeinfo for pc_data*
+	_ZTIP7pc_data @ 1682 DATA
+;	typeinfo for whogr_s*
+	_ZTIP7whogr_s @ 1683 DATA
+;	typeinfo for ban_data*
+	_ZTIP8ban_data @ 1684 DATA
+;	typeinfo for cmd_type*
+	_ZTIP8cmd_type @ 1685 DATA
+;	typeinfo for dns_data*
+	_ZTIP8dns_data @ 1686 DATA
+;	typeinfo for obj_data*
+	_ZTIP8obj_data @ 1687 DATA
+;	typeinfo for rel_data*
+	_ZTIP8rel_data @ 1688 DATA
+;	typeinfo for who_data*
+	_ZTIP8who_data @ 1689 DATA
+;	typeinfo for area_data*
+	_ZTIP9area_data @ 1690 DATA
+;	typeinfo for char_data*
+	_ZTIP9char_data @ 1691 DATA
+;	typeinfo for clan_data*
+	_ZTIP9clan_data @ 1692 DATA
+;	typeinfo for exit_data*
+	_ZTIP9exit_data @ 1693 DATA
+;	typeinfo for fish_data*
+	_ZTIP9fish_data @ 1694 DATA
+;	typeinfo for help_data*
+	_ZTIP9help_data @ 1695 DATA
+;	typeinfo for hint_data*
+	_ZTIP9hint_data @ 1696 DATA
+;	typeinfo for lang_data*
+	_ZTIP9lang_data @ 1697 DATA
+;	typeinfo for lcnv_data*
+	_ZTIP9lcnv_data @ 1698 DATA
+;	typeinfo for lmsg_data*
+	_ZTIP9lmsg_data @ 1699 DATA
+;	typeinfo for mccp_data*
+	_ZTIP9mccp_data @ 1700 DATA
+;	typeinfo for mssp_info*
+	_ZTIP9mssp_info @ 1701 DATA
+;	typeinfo for news_data*
+	_ZTIP9news_data @ 1702 DATA
+;	typeinfo for news_type*
+	_ZTIP9news_type @ 1703 DATA
+;	typeinfo for note_data*
+	_ZTIP9note_data @ 1704 DATA
+;	typeinfo for race_type*
+	_ZTIP9race_type @ 1705 DATA
+;	typeinfo for shop_data*
+	_ZTIP9shop_data @ 1706 DATA
+;	typeinfo for char const**
+	_ZTIPPKc @ 1707 DATA
+;	typeinfo for char**
+	_ZTIPPc @ 1708 DATA
+;	typeinfo name for board_data
+	_ZTS10board_data @ 1709 DATA
+;	typeinfo name for char_morph
+	_ZTS10char_morph @ 1710 DATA
+;	typeinfo name for class_type
+	_ZTS10class_type @ 1711 DATA
+;	typeinfo name for deity_data
+	_ZTS10deity_data @ 1712 DATA
+;	typeinfo name for fname_data
+	_ZTS10fname_data @ 1713 DATA
+;	typeinfo name for morph_data
+	_ZTS10morph_data @ 1714 DATA
+;	typeinfo name for plane_data
+	_ZTS10plane_data @ 1715 DATA
+;	typeinfo name for reset_data
+	_ZTS10reset_data @ 1716 DATA
+;	typeinfo name for skill_type
+	_ZTS10skill_type @ 1717 DATA
+;	typeinfo name for timer_data
+	_ZTS10timer_data @ 1718 DATA
+;	typeinfo name for watch_data
+	_ZTS10watch_data @ 1719 DATA
+;	typeinfo name for z_stream_s
+	_ZTS10z_stream_s @ 1720 DATA
+;	typeinfo name for affect_data
+	_ZTS11affect_data @ 1721 DATA
+;	typeinfo name for bounty_data
+	_ZTS11bounty_data @ 1722 DATA
+;	typeinfo name for editor_data
+	_ZTS11editor_data @ 1723 DATA
+;	typeinfo name for ignore_data
+	_ZTS11ignore_data @ 1724 DATA
+;	typeinfo name for roster_data
+	_ZTS11roster_data @ 1725 DATA
+;	typeinfo name for social_type
+	_ZTS11social_type @ 1726 DATA
+;	typeinfo name for auction_data
+	_ZTS12auction_data @ 1727 DATA
+;	typeinfo name for council_data
+	_ZTS12council_data @ 1728 DATA
+;	typeinfo name for holiday_data
+	_ZTS12holiday_data @ 1729 DATA
+;	typeinfo name for liquid_table
+	_ZTS12liquid_table @ 1730 DATA
+;	typeinfo name for mixture_list
+	_ZTS12mixture_list @ 1731 DATA
+;	typeinfo name for mpsleep_data
+	_ZTS12mpsleep_data @ 1732 DATA
+;	typeinfo name for project_data
+	_ZTS12project_data @ 1733 DATA
+;	typeinfo name for reserve_data
+	_ZTS12reserve_data @ 1734 DATA
+;	typeinfo name for smaug_affect
+	_ZTS12smaug_affect @ 1735 DATA
+;	typeinfo name for specfun_list
+	_ZTS12specfun_list @ 1736 DATA
+;	typeinfo name for wizinfo_data
+	_ZTS12wizinfo_data @ 1737 DATA
+;	typeinfo name for act_prog_data
+	_ZTS13act_prog_data @ 1738 DATA
+;	typeinfo name for fighting_data
+	_ZTS13fighting_data @ 1739 DATA
+;	typeinfo name for immortal_host
+	_ZTS13immortal_host @ 1740 DATA
+;	typeinfo name for mob_prog_data
+	_ZTS13mob_prog_data @ 1741 DATA
+;	typeinfo name for renumber_data
+	_ZTS13renumber_data @ 1742 DATA
+;	typeinfo name for teleport_data
+	_ZTS13teleport_data @ 1743 DATA
+;	typeinfo name for variable_data
+	_ZTS13variable_data @ 1744 DATA
+;	typeinfo name for hunt_hate_fear
+	_ZTS14hunt_hate_fear @ 1745 DATA
+;	typeinfo name for ipcompare_data
+	_ZTS14ipcompare_data @ 1746 DATA
+;	typeinfo name for mob_index_data
+	_ZTS14mob_index_data @ 1747 DATA
+;	typeinfo name for obj_index_data
+	_ZTS14obj_index_data @ 1748 DATA
+;	typeinfo name for renumber_areas
+	_ZTS14renumber_areas @ 1749 DATA
+;	typeinfo name for descriptor_data
+	_ZTS15descriptor_data @ 1750 DATA
+;	typeinfo name for game_board_data
+	_ZTS15game_board_data @ 1751 DATA
+;	typeinfo name for repairshop_data
+	_ZTS15repairshop_data @ 1752 DATA
+;	typeinfo name for room_index_data
+	_ZTS15room_index_data @ 1753 DATA
+;	typeinfo name for extra_descr_data
+	_ZTS16extra_descr_data @ 1754 DATA
+;	typeinfo name for mob_prog_act_list
+	_ZTS17mob_prog_act_list @ 1755 DATA
+;	typeinfo name for extracted_char_data
+	_ZTS19extracted_char_data @ 1756 DATA
+;	typeinfo name for wizent
+	_ZTS6wizent @ 1757 DATA
+;	typeinfo name for pc_data
+	_ZTS7pc_data @ 1758 DATA
+;	typeinfo name for whogr_s
+	_ZTS7whogr_s @ 1759 DATA
+;	typeinfo name for ban_data
+	_ZTS8ban_data @ 1760 DATA
+;	typeinfo name for cmd_type
+	_ZTS8cmd_type @ 1761 DATA
+;	typeinfo name for dns_data
+	_ZTS8dns_data @ 1762 DATA
+;	typeinfo name for obj_data
+	_ZTS8obj_data @ 1763 DATA
+;	typeinfo name for rel_data
+	_ZTS8rel_data @ 1764 DATA
+;	typeinfo name for who_data
+	_ZTS8who_data @ 1765 DATA
+;	typeinfo name for area_data
+	_ZTS9area_data @ 1766 DATA
+;	typeinfo name for char_data
+	_ZTS9char_data @ 1767 DATA
+;	typeinfo name for clan_data
+	_ZTS9clan_data @ 1768 DATA
+;	typeinfo name for exit_data
+	_ZTS9exit_data @ 1769 DATA
+;	typeinfo name for fish_data
+	_ZTS9fish_data @ 1770 DATA
+;	typeinfo name for help_data
+	_ZTS9help_data @ 1771 DATA
+;	typeinfo name for hint_data
+	_ZTS9hint_data @ 1772 DATA
+;	typeinfo name for lang_data
+	_ZTS9lang_data @ 1773 DATA
+;	typeinfo name for lcnv_data
+	_ZTS9lcnv_data @ 1774 DATA
+;	typeinfo name for lmsg_data
+	_ZTS9lmsg_data @ 1775 DATA
+;	typeinfo name for mccp_data
+	_ZTS9mccp_data @ 1776 DATA
+;	typeinfo name for mssp_info
+	_ZTS9mssp_info @ 1777 DATA
+;	typeinfo name for news_data
+	_ZTS9news_data @ 1778 DATA
+;	typeinfo name for news_type
+	_ZTS9news_type @ 1779 DATA
+;	typeinfo name for note_data
+	_ZTS9note_data @ 1780 DATA
+;	typeinfo name for race_type
+	_ZTS9race_type @ 1781 DATA
+;	typeinfo name for shop_data
+	_ZTS9shop_data @ 1782 DATA
+;	typeinfo name for board_data*
+	_ZTSP10board_data @ 1783 DATA
+;	typeinfo name for char_morph*
+	_ZTSP10char_morph @ 1784 DATA
+;	typeinfo name for class_type*
+	_ZTSP10class_type @ 1785 DATA
+;	typeinfo name for deity_data*
+	_ZTSP10deity_data @ 1786 DATA
+;	typeinfo name for fname_data*
+	_ZTSP10fname_data @ 1787 DATA
+;	typeinfo name for morph_data*
+	_ZTSP10morph_data @ 1788 DATA
+;	typeinfo name for plane_data*
+	_ZTSP10plane_data @ 1789 DATA
+;	typeinfo name for reset_data*
+	_ZTSP10reset_data @ 1790 DATA
+;	typeinfo name for skill_type*
+	_ZTSP10skill_type @ 1791 DATA
+;	typeinfo name for timer_data*
+	_ZTSP10timer_data @ 1792 DATA
+;	typeinfo name for watch_data*
+	_ZTSP10watch_data @ 1793 DATA
+;	typeinfo name for z_stream_s*
+	_ZTSP10z_stream_s @ 1794 DATA
+;	typeinfo name for affect_data*
+	_ZTSP11affect_data @ 1795 DATA
+;	typeinfo name for bounty_data*
+	_ZTSP11bounty_data @ 1796 DATA
+;	typeinfo name for editor_data*
+	_ZTSP11editor_data @ 1797 DATA
+;	typeinfo name for ignore_data*
+	_ZTSP11ignore_data @ 1798 DATA
+;	typeinfo name for roster_data*
+	_ZTSP11roster_data @ 1799 DATA
+;	typeinfo name for social_type*
+	_ZTSP11social_type @ 1800 DATA
+;	typeinfo name for auction_data*
+	_ZTSP12auction_data @ 1801 DATA
+;	typeinfo name for council_data*
+	_ZTSP12council_data @ 1802 DATA
+;	typeinfo name for holiday_data*
+	_ZTSP12holiday_data @ 1803 DATA
+;	typeinfo name for liquid_table*
+	_ZTSP12liquid_table @ 1804 DATA
+;	typeinfo name for mixture_list*
+	_ZTSP12mixture_list @ 1805 DATA
+;	typeinfo name for mpsleep_data*
+	_ZTSP12mpsleep_data @ 1806 DATA
+;	typeinfo name for project_data*
+	_ZTSP12project_data @ 1807 DATA
+;	typeinfo name for reserve_data*
+	_ZTSP12reserve_data @ 1808 DATA
+;	typeinfo name for smaug_affect*
+	_ZTSP12smaug_affect @ 1809 DATA
+;	typeinfo name for specfun_list*
+	_ZTSP12specfun_list @ 1810 DATA
+;	typeinfo name for wizinfo_data*
+	_ZTSP12wizinfo_data @ 1811 DATA
+;	typeinfo name for act_prog_data*
+	_ZTSP13act_prog_data @ 1812 DATA
+;	typeinfo name for fighting_data*
+	_ZTSP13fighting_data @ 1813 DATA
+;	typeinfo name for immortal_host*
+	_ZTSP13immortal_host @ 1814 DATA
+;	typeinfo name for mob_prog_data*
+	_ZTSP13mob_prog_data @ 1815 DATA
+;	typeinfo name for renumber_data*
+	_ZTSP13renumber_data @ 1816 DATA
+;	typeinfo name for teleport_data*
+	_ZTSP13teleport_data @ 1817 DATA
+;	typeinfo name for variable_data*
+	_ZTSP13variable_data @ 1818 DATA
+;	typeinfo name for hunt_hate_fear*
+	_ZTSP14hunt_hate_fear @ 1819 DATA
+;	typeinfo name for ipcompare_data*
+	_ZTSP14ipcompare_data @ 1820 DATA
+;	typeinfo name for mob_index_data*
+	_ZTSP14mob_index_data @ 1821 DATA
+;	typeinfo name for obj_index_data*
+	_ZTSP14obj_index_data @ 1822 DATA
+;	typeinfo name for renumber_areas*
+	_ZTSP14renumber_areas @ 1823 DATA
+;	typeinfo name for descriptor_data*
+	_ZTSP15descriptor_data @ 1824 DATA
+;	typeinfo name for game_board_data*
+	_ZTSP15game_board_data @ 1825 DATA
+;	typeinfo name for repairshop_data*
+	_ZTSP15repairshop_data @ 1826 DATA
+;	typeinfo name for room_index_data*
+	_ZTSP15room_index_data @ 1827 DATA
+;	typeinfo name for extra_descr_data*
+	_ZTSP16extra_descr_data @ 1828 DATA
+;	typeinfo name for mob_prog_act_list*
+	_ZTSP17mob_prog_act_list @ 1829 DATA
+;	typeinfo name for extracted_char_data*
+	_ZTSP19extracted_char_data @ 1830 DATA
+;	typeinfo name for wizent*
+	_ZTSP6wizent @ 1831 DATA
+;	typeinfo name for pc_data*
+	_ZTSP7pc_data @ 1832 DATA
+;	typeinfo name for whogr_s*
+	_ZTSP7whogr_s @ 1833 DATA
+;	typeinfo name for ban_data*
+	_ZTSP8ban_data @ 1834 DATA
+;	typeinfo name for cmd_type*
+	_ZTSP8cmd_type @ 1835 DATA
+;	typeinfo name for dns_data*
+	_ZTSP8dns_data @ 1836 DATA
+;	typeinfo name for obj_data*
+	_ZTSP8obj_data @ 1837 DATA
+;	typeinfo name for rel_data*
+	_ZTSP8rel_data @ 1838 DATA
+;	typeinfo name for who_data*
+	_ZTSP8who_data @ 1839 DATA
+;	typeinfo name for area_data*
+	_ZTSP9area_data @ 1840 DATA
+;	typeinfo name for char_data*
+	_ZTSP9char_data @ 1841 DATA
+;	typeinfo name for clan_data*
+	_ZTSP9clan_data @ 1842 DATA
+;	typeinfo name for exit_data*
+	_ZTSP9exit_data @ 1843 DATA
+;	typeinfo name for fish_data*
+	_ZTSP9fish_data @ 1844 DATA
+;	typeinfo name for help_data*
+	_ZTSP9help_data @ 1845 DATA
+;	typeinfo name for hint_data*
+	_ZTSP9hint_data @ 1846 DATA
+;	typeinfo name for lang_data*
+	_ZTSP9lang_data @ 1847 DATA
+;	typeinfo name for lcnv_data*
+	_ZTSP9lcnv_data @ 1848 DATA
+;	typeinfo name for lmsg_data*
+	_ZTSP9lmsg_data @ 1849 DATA
+;	typeinfo name for mccp_data*
+	_ZTSP9mccp_data @ 1850 DATA
+;	typeinfo name for mssp_info*
+	_ZTSP9mssp_info @ 1851 DATA
+;	typeinfo name for news_data*
+	_ZTSP9news_data @ 1852 DATA
+;	typeinfo name for news_type*
+	_ZTSP9news_type @ 1853 DATA
+;	typeinfo name for note_data*
+	_ZTSP9note_data @ 1854 DATA
+;	typeinfo name for race_type*
+	_ZTSP9race_type @ 1855 DATA
+;	typeinfo name for shop_data*
+	_ZTSP9shop_data @ 1856 DATA
+;	typeinfo name for char const**
+	_ZTSPPKc @ 1857 DATA
+;	typeinfo name for char**
+	_ZTSPPc @ 1858 DATA
+	a_flags @ 1859 DATA
+	a_types @ 1860 DATA
+	act_flags @ 1861 DATA
+	alarm_section @ 1862 DATA
+	area_flags @ 1863 DATA
+	attack_flags @ 1864 DATA
+	attack_table @ 1865 DATA
+	attack_table_plural @ 1866 DATA
+	auction @ 1867 DATA
+	big_pieces @ 1868 DATA
+	boards @ 1869 DATA
+	body_shape @ 1870 DATA
+	boot_time @ 1871 DATA
+	cha_app @ 1872 DATA
+	child_exit_status @ 1873 DATA
+	class_table @ 1874 DATA
+	cmd_flag_buf @ 1875 DATA
+	cmd_flags @ 1876 DATA
+	command_hash @ 1877 DATA
+	con_app @ 1878 DATA
+	control @ 1879 DATA
+	corpse_descs @ 1880 DATA
+	cur_char @ 1881 DATA
+	cur_char_died @ 1882 DATA
+	cur_obj @ 1883 DATA
+	cur_obj_extracted @ 1884 DATA
+	cur_obj_serial @ 1885 DATA
+	cur_qchars @ 1886 DATA
+	cur_qobjs @ 1887 DATA
+	cur_room @ 1888 DATA
+	current_mpsleep @ 1889 DATA
+	current_time @ 1890 DATA
+	d_next @ 1891 DATA
+	day_name @ 1892 DATA
+	default_set @ 1893 DATA
+	defense_flags @ 1894 DATA
+	dex_app @ 1895 DATA
+	dir_name @ 1896 DATA
+	disease_table @ 1897 DATA
+	dmap @ 1898 DATA
+	do_4escore @ 1899
+	do_aassign @ 1900
+	do_add_imm_host @ 1901
+	do_addbounty @ 1902
+	do_advance @ 1903
+	do_affected @ 1904
+	do_afk @ 1905
+	do_aid @ 1906
+	do_aim @ 1907
+	do_alinks @ 1908
+	do_allow @ 1909
+	do_ansi @ 1910
+	do_answer @ 1911
+	do_apply @ 1912
+	do_appraise @ 1913
+	do_areas @ 1914
+	do_aset @ 1915
+	do_ask @ 1916
+	do_astat @ 1917
+	do_at @ 1918
+	do_atobj @ 1919
+	do_auction @ 1920
+	do_authorize @ 1921
+	do_backstab @ 1922
+	do_bait @ 1923
+	do_balzhur @ 1924
+	do_bamfin @ 1925
+	do_bamfout @ 1926
+	do_ban @ 1927
+	do_bash @ 1928
+	do_bashdoor @ 1929
+	do_berserk @ 1930
+	do_bestow @ 1931
+	do_bestowarea @ 1932
+	do_bio @ 1933
+	do_bite @ 1934
+	do_boards @ 1935
+	do_bodybag @ 1936
+	do_bolt @ 1937
+	do_bounties @ 1938
+	do_brandish @ 1939
+	do_breathweapon @ 1940
+	do_brew @ 1941
+	do_bset @ 1942
+	do_bstat @ 1943
+	do_buck @ 1944
+	do_bug @ 1945
+	do_bury @ 1946
+	do_buy @ 1947
+	do_cache @ 1948
+	do_cast @ 1949
+	do_cedit @ 1950
+	do_channels @ 1951
+	do_chat @ 1952
+	do_check_vnums @ 1953
+	do_chess @ 1954
+	do_chop @ 1955
+	do_circle @ 1956
+	do_clans @ 1957
+	do_clantalk @ 1958
+	do_claw @ 1959
+	do_climb @ 1960
+	do_close @ 1961
+	do_cmdtable @ 1962
+	do_color @ 1963
+	do_commands @ 1964
+	do_comment @ 1965
+	do_compare @ 1966
+	do_config @ 1967
+	do_consider @ 1968
+	do_cook @ 1969
+	do_council_induct @ 1970
+	do_council_outcast @ 1971
+	do_councils @ 1972
+	do_counciltalk @ 1973
+	do_credits @ 1974
+	do_cset @ 1975
+	do_deities @ 1976
+	do_delay @ 1977
+	do_deny @ 1978
+	do_description @ 1979
+	do_destro @ 1980
+	do_destroy @ 1981
+	do_detrap @ 1982
+	do_devote @ 1983
+	do_dig @ 1984
+	do_disarm @ 1985
+	do_disconnect @ 1986
+	do_dismiss @ 1987
+	do_dismount @ 1988
+	do_dmesg @ 1989
+	do_dnd @ 1990
+	do_down @ 1991
+	do_drag @ 1992
+	do_drink @ 1993
+	do_drop @ 1994
+	do_east @ 1995
+	do_eat @ 1996
+	do_ech @ 1997
+	do_echo @ 1998
+	do_editnews @ 1999
+	do_elevate @ 2000
+	do_email @ 2001
+	do_emote @ 2002
+	do_empty @ 2003
+	do_enter @ 2004
+	do_equipment @ 2005
+	do_examine @ 2006
+	do_exits @ 2007
+	do_eyes @ 2008
+	do_fill @ 2009
+	do_findexit @ 2010
+	do_findnote @ 2011
+	do_finger @ 2012
+	do_fire @ 2013
+	do_fish @ 2014
+	do_fixchar @ 2015
+	do_fixed @ 2016
+	do_flee @ 2017
+	do_fly @ 2018
+	do_fname @ 2019
+	do_foldarea @ 2020
+	do_follow @ 2021
+	do_for @ 2022
+	do_forage @ 2023
+	do_force @ 2024
+	do_forceclose @ 2025
+	do_forge @ 2026
+	do_form_password @ 2027
+	do_fprompt @ 2028
+	do_fquit @ 2029
+	do_freeze @ 2030
+	do_fshow @ 2031
+	do_get @ 2032
+	do_gfighting @ 2033
+	do_give @ 2034
+	do_glance @ 2035
+	do_global_boards @ 2036
+	do_global_note @ 2037
+	do_gold @ 2038
+	do_goto @ 2039
+	do_gouge @ 2040
+	do_group @ 2041
+	do_gtell @ 2042
+	do_guilds @ 2043
+	do_guildtalk @ 2044
+	do_gwhere @ 2045
+	do_hair @ 2046
+	do_hedit @ 2047
+	do_hell @ 2048
+	do_help @ 2049
+	do_hide @ 2050
+	do_hintedit @ 2051
+	do_hitall @ 2052
+	do_hl @ 2053
+	do_hlist @ 2054
+	do_holidays @ 2055
+	do_holylight @ 2056
+	do_homepage @ 2057
+	do_hotboot @ 2058
+	do_hset @ 2059
+	do_ide @ 2060
+	do_idea @ 2061
+	do_ignore @ 2062
+	do_imm_morph @ 2063
+	do_imm_unmorph @ 2064
+	do_immortalize @ 2065
+	do_immtalk @ 2066
+	do_induct @ 2067
+	do_installarea @ 2068
+	do_instaroom @ 2069
+	do_instazone @ 2070
+	do_inventory @ 2071
+	do_invis @ 2072
+	do_ipcompare @ 2073
+	do_khistory @ 2074
+	do_kick @ 2075
+	do_kill @ 2076
+	do_land @ 2077
+	do_landwalk @ 2078
+	do_languages @ 2079
+	do_last @ 2080
+	do_laws @ 2081
+	do_learn @ 2082
+	do_leave @ 2083
+	do_level @ 2084
+	do_lfg @ 2085
+	do_light @ 2086
+	do_list @ 2087
+	do_litterbug @ 2088
+	do_loadarea @ 2089
+	do_loadup @ 2090
+	do_lock @ 2091
+	do_log @ 2092
+	do_look @ 2093
+	do_low_purge @ 2094
+	do_mailroom @ 2095
+	do_make @ 2096
+	do_makeboard @ 2097
+	do_makeclan @ 2098
+	do_makecontainer @ 2099
+	do_makecouncil @ 2100
+	do_makedeity @ 2101
+	do_makefire @ 2102
+	do_makerepair @ 2103
+	do_makeshop @ 2104
+	do_makewizlist @ 2105
+	do_mapout @ 2106
+	do_mcreate @ 2107
+	do_mdelete @ 2108
+	do_memory @ 2109
+	do_mfind @ 2110
+	do_minvoke @ 2111
+	do_mix @ 2112
+	do_mlist @ 2113
+	do_morphcreate @ 2114
+	do_morphdestroy @ 2115
+	do_morphlist @ 2116
+	do_morphset @ 2117
+	do_morphstat @ 2118
+	do_mortalize @ 2119
+	do_mount @ 2120
+	do_mountable @ 2121
+	do_mp_close_passage @ 2122
+	do_mp_damage @ 2123
+	do_mp_deposit @ 2124
+	do_mp_fill_in @ 2125
+	do_mp_log @ 2126
+	do_mp_open_passage @ 2127
+	do_mp_practice @ 2128
+	do_mp_restore @ 2129
+	do_mp_slay @ 2130
+	do_mp_withdraw @ 2131
+	do_mpadvance @ 2132
+	do_mpapply @ 2133
+	do_mpapplyb @ 2134
+	do_mpasound @ 2135
+	do_mpasupress @ 2136
+	do_mpat @ 2137
+	do_mpaward @ 2138
+	do_mpbodybag @ 2139
+	do_mpcontinue @ 2140
+	do_mpcopy @ 2141
+	do_mpdelay @ 2142
+	do_mpdream @ 2143
+	do_mpecho @ 2144
+	do_mpechoaround @ 2145
+	do_mpechoat @ 2146
+	do_mpechozone @ 2147
+	do_mpedit @ 2148
+	do_mpfavor @ 2149
+	do_mpfear @ 2150
+	do_mpflag @ 2151
+	do_mpforce @ 2152
+	do_mpgoto @ 2153
+	do_mphate @ 2154
+	do_mphunt @ 2155
+	do_mpinvis @ 2156
+	do_mpjunk @ 2157
+	do_mpkill @ 2158
+	do_mpmload @ 2159
+	do_mpmorph @ 2160
+	do_mpmset @ 2161
+	do_mpmusic @ 2162
+	do_mpmusicaround @ 2163
+	do_mpmusicat @ 2164
+	do_mpnothing @ 2165
+	do_mpoload @ 2166
+	do_mpoowner @ 2167
+	do_mposet @ 2168
+	do_mppardon @ 2169
+	do_mppeace @ 2170
+	do_mppkset @ 2171
+	do_mppurge @ 2172
+	do_mprmflag @ 2173
+	do_mprmtag @ 2174
+	do_mpscatter @ 2175
+	do_mpsound @ 2176
+	do_mpsoundaround @ 2177
+	do_mpsoundat @ 2178
+	do_mpsset @ 2179
+	do_mpstat @ 2180
+	do_mptag @ 2181
+	do_mptransfer @ 2182
+	do_mpunmorph @ 2183
+	do_mset @ 2184
+	do_mstat @ 2185
+	do_murde @ 2186
+	do_murder @ 2187
+	do_mwhere @ 2188
+	do_name @ 2189
+	do_newbieset @ 2190
+	do_newscore @ 2191
+	do_newzones @ 2192
+	do_noemote @ 2193
+	do_nohelps @ 2194
+	do_noresolve @ 2195
+	do_north @ 2196
+	do_northeast @ 2197
+	do_northwest @ 2198
+	do_notell @ 2199
+	do_noteroom @ 2200
+	do_notitle @ 2201
+	do_oclaim @ 2202
+	do_ocreate @ 2203
+	do_odelete @ 2204
+	do_ofind @ 2205
+	do_oinvoke @ 2206
+	do_olist @ 2207
+	do_oowner @ 2208
+	do_opcopy @ 2209
+	do_opedit @ 2210
+	do_open @ 2211
+	do_opstat @ 2212
+	do_order @ 2213
+	do_orders @ 2214
+	do_ordertalk @ 2215
+	do_oset @ 2216
+	do_ostat @ 2217
+	do_ot @ 2218
+	do_outcast @ 2219
+	do_pager @ 2220
+	do_pardon @ 2221
+	do_password @ 2222
+	do_pcrename @ 2223
+	do_peace @ 2224
+	do_pick @ 2225
+	do_plist @ 2226
+	do_poison_weapon @ 2227
+	do_practice @ 2228
+	do_privacy @ 2229
+	do_proficiencies @ 2230
+	do_project @ 2231
+	do_prompt @ 2232
+	do_pset @ 2233
+	do_pstat @ 2234
+	do_pull @ 2235
+	do_punch @ 2236
+	do_purge @ 2237
+	do_push @ 2238
+	do_put @ 2239
+	do_pvp @ 2240
+	do_pvpflag @ 2241
+	do_qpset @ 2242
+	do_qpstat @ 2243
+	do_quaff @ 2244
+	do_quest @ 2245
+	do_qui @ 2246
+	do_quit @ 2247
+	do_rank @ 2248
+	do_rap @ 2249
+	do_rat @ 2250
+	do_rdelete @ 2251
+	do_rdig @ 2252
+	do_reboo @ 2253
+	do_reboot @ 2254
+	do_recall @ 2255
+	do_recho @ 2256
+	do_recite @ 2257
+	do_redit @ 2258
+	do_regoto @ 2259
+	do_remains @ 2260
+	do_rembounty @ 2261
+	do_remove @ 2262
+	do_rent @ 2263
+	do_renumber @ 2264
+	do_repair @ 2265
+	do_repairset @ 2266
+	do_repairshops @ 2267
+	do_repairstat @ 2268
+	do_repeat @ 2269
+	do_reply @ 2270
+	do_report @ 2271
+	do_rescue @ 2272
+	do_reserve @ 2273
+	do_reset @ 2274
+	do_rest @ 2275
+	do_restore @ 2276
+	do_restoretime @ 2277
+	do_restrict @ 2278
+	do_retell @ 2279
+	do_retire @ 2280
+	do_retran @ 2281
+	do_return @ 2282
+	do_revert @ 2283
+	do_rgrid @ 2284
+	do_rip @ 2285
+	do_rlist @ 2286
+	do_rolldie @ 2287
+	do_roster @ 2288
+	do_rpedit @ 2289
+	do_rpstat @ 2290
+	do_rstat @ 2291
+	do_sacrifice @ 2292
+	do_save @ 2293
+	do_savearea @ 2294
+	do_saveholiday @ 2295
+	do_say @ 2296
+	do_sayto @ 2297
+	do_scan @ 2298
+	do_scatter @ 2299
+	do_score @ 2300
+	do_scribe @ 2301
+	do_search @ 2302
+	do_sedit @ 2303
+	do_sell @ 2304
+	do_set_boot_time @ 2305
+	do_setclan @ 2306
+	do_setclass @ 2307
+	do_setcouncil @ 2308
+	do_setdeity @ 2309
+	do_setholiday @ 2310
+	do_setliquid @ 2311
+	do_setmixture @ 2312
+	do_setmssp @ 2313
+	do_setrace @ 2314
+	do_setweather @ 2315
+	do_shops @ 2316
+	do_shopset @ 2317
+	do_shopstat @ 2318
+	do_shout @ 2319
+	do_shove @ 2320
+	do_showclan @ 2321
+	do_showclass @ 2322
+	do_showcouncil @ 2323
+	do_showdeity @ 2324
+	do_showliquid @ 2325
+	do_showmixture @ 2326
+	do_showrace @ 2327
+	do_showweather @ 2328
+	do_shutdow @ 2329
+	do_shutdown @ 2330
+	do_silence @ 2331
+	do_sing @ 2332
+	do_singto @ 2333
+	do_sip @ 2334
+	do_sit @ 2335
+	do_skills @ 2336
+	do_skin @ 2337
+	do_sla @ 2338
+	do_slay @ 2339
+	do_sleep @ 2340
+	do_slice @ 2341
+	do_slist @ 2342
+	do_slookup @ 2343
+	do_smoke @ 2344
+	do_sneak @ 2345
+	do_snoop @ 2346
+	do_sober @ 2347
+	do_socials @ 2348
+	do_south @ 2349
+	do_southeast @ 2350
+	do_southwest @ 2351
+	do_speak @ 2352
+	do_spells @ 2353
+	do_split @ 2354
+	do_squint @ 2355
+	do_sset @ 2356
+	do_stand @ 2357
+	do_stat @ 2358
+	do_statreport @ 2359
+	do_statshield @ 2360
+	do_steal @ 2361
+	do_sting @ 2362
+	do_strew @ 2363
+	do_strip @ 2364
+	do_study @ 2365
+	do_stun @ 2366
+	do_style @ 2367
+	do_supplicate @ 2368
+	do_switch @ 2369
+	do_tail @ 2370
+	do_tamp @ 2371
+	do_tell @ 2372
+	do_time @ 2373
+	do_timecmd @ 2374
+	do_timezone @ 2375
+	do_title @ 2376
+	do_track @ 2377
+	do_train @ 2378
+	do_transfer @ 2379
+	do_trust @ 2380
+	do_typo @ 2381
+	do_unbolt @ 2382
+	do_unfoldarea @ 2383
+	do_unhell @ 2384
+	do_unlock @ 2385
+	do_unsilence @ 2386
+	do_up @ 2387
+	do_users @ 2388
+	do_value @ 2389
+	do_vassign @ 2390
+	do_version @ 2391
+	do_victories @ 2392
+	do_viewskills @ 2393
+	do_visible @ 2394
+	do_vnums @ 2395
+	do_vsearch @ 2396
+	do_vstat @ 2397
+	do_wake @ 2398
+	do_warn @ 2399
+	do_watch @ 2400
+	do_wear @ 2401
+	do_weather @ 2402
+	do_west @ 2403
+	do_where @ 2404
+	do_whisper @ 2405
+	do_who @ 2406
+	do_whois @ 2407
+	do_wimpy @ 2408
+	do_wizhelp @ 2409
+	do_wizinfo @ 2410
+	do_wizlist @ 2411
+	do_wizlock @ 2412
+	do_worth @ 2413
+	do_yell @ 2414
+	do_zap @ 2415
+	do_zones @ 2416
+	ex_flags @ 2417 DATA
+	ex_pair @ 2418 DATA
+	ex_pearth @ 2419 DATA
+	ex_pfire @ 2420 DATA
+	ex_pmisc @ 2421 DATA
+	ex_pwater @ 2422 DATA
+	exc_set @ 2423 DATA
+	extracted_char_queue @ 2424 DATA
+	extracted_obj_queue @ 2425 DATA
+	fBootDb @ 2426 DATA
+	fLogAll @ 2427 DATA
+	falling @ 2428 DATA
+	fcontinue_after_command @ 2429 DATA
+	file_ver @ 2430 DATA
+	first_area @ 2431 DATA
+	first_area_name @ 2432 DATA
+	first_asort @ 2433 DATA
+	first_ban @ 2434 DATA
+	first_ban_class @ 2435 DATA
+	first_ban_race @ 2436 DATA
+	first_board @ 2437 DATA
+	first_bounty @ 2438 DATA
+	first_bsort @ 2439 DATA
+	first_build @ 2440 DATA
+	first_cache @ 2441 DATA
+	first_char @ 2442 DATA
+	first_clan @ 2443 DATA
+	first_council @ 2444 DATA
+	first_deity @ 2445 DATA
+	first_descriptor @ 2446 DATA
+	first_disintigration @ 2447 DATA
+	first_fish @ 2448 DATA
+	first_fname @ 2449 DATA
+	first_help @ 2450 DATA
+	first_hint @ 2451 DATA
+	first_holiday @ 2452 DATA
+	first_lang @ 2453 DATA
+	first_lmsg @ 2454 DATA
+	first_map @ 2455 DATA
+	first_mixture @ 2456 DATA
+	first_mpsleep @ 2457 DATA
+	first_news_type @ 2458 DATA
+	first_object @ 2459 DATA
+	first_plane @ 2460 DATA
+	first_project @ 2461 DATA
+	first_relation @ 2462 DATA
+	first_repair @ 2463 DATA
+	first_reserved @ 2464 DATA
+	first_shop @ 2465 DATA
+	first_specfun @ 2466 DATA
+	first_teleport @ 2467 DATA
+	first_watch @ 2468 DATA
+	first_whogr @ 2469 DATA
+	first_wiz @ 2470 DATA
+	first_wizinfo @ 2471 DATA
+	fish_update @ 2472 DATA
+	fpArea @ 2473 DATA
+	global_objcode @ 2474 DATA
+	global_retcode @ 2475 DATA
+	gsn_aid @ 2476 DATA
+	gsn_aqua_breath @ 2477 DATA
+	gsn_archery @ 2478 DATA
+	gsn_askravaardi @ 2479 DATA
+	gsn_axes @ 2480 DATA
+	gsn_backstab @ 2481 DATA
+	gsn_bash @ 2482 DATA
+	gsn_bashdoor @ 2483 DATA
+	gsn_berserk @ 2484 DATA
+	gsn_bite @ 2485 DATA
+	gsn_blindness @ 2486 DATA
+	gsn_block @ 2487 DATA
+	gsn_blowguns @ 2488 DATA
+	gsn_brew @ 2489 DATA
+	gsn_caolidan @ 2490 DATA
+	gsn_charm_person @ 2491 DATA
+	gsn_chill_touch @ 2492 DATA
+	gsn_chya @ 2493 DATA
+	gsn_circle @ 2494 DATA
+	gsn_claw @ 2495 DATA
+	gsn_climb @ 2496 DATA
+	gsn_colistani @ 2497 DATA
+	gsn_cook @ 2498 DATA
+	gsn_corustenya @ 2499 DATA
+	gsn_curse @ 2500 DATA
+	gsn_daggers @ 2501 DATA
+	gsn_dardi @ 2502 DATA
+	gsn_detrap @ 2503 DATA
+	gsn_dig @ 2504 DATA
+	gsn_disarm @ 2505 DATA
+	gsn_dodge @ 2506 DATA
+	gsn_dorish @ 2507 DATA
+	gsn_dual_wield @ 2508 DATA
+	gsn_enhanced_damage @ 2509 DATA
+	gsn_fahn @ 2510 DATA
+	gsn_fenradya @ 2511 DATA
+	gsn_fifth_attack @ 2512 DATA
+	gsn_fireball @ 2513 DATA
+	gsn_flight @ 2514 DATA
+	gsn_forage @ 2515 DATA
+	gsn_forge @ 2516 DATA
+	gsn_fourth_attack @ 2517 DATA
+	gsn_ftaghn @ 2518 DATA
+	gsn_gouge @ 2519 DATA
+	gsn_grega @ 2520 DATA
+	gsn_grip @ 2521 DATA
+	gsn_haggle @ 2522 DATA
+	gsn_hand_to_hand @ 2523 DATA
+	gsn_hide @ 2524 DATA
+	gsn_hitall @ 2525 DATA
+	gsn_invis @ 2526 DATA
+	gsn_kick @ 2527 DATA
+	gsn_lavandai @ 2528 DATA
+	gsn_lightning_bolt @ 2529 DATA
+	gsn_maces_hammers @ 2530 DATA
+	gsn_mass_invis @ 2531 DATA
+	gsn_mij @ 2532 DATA
+	gsn_mount @ 2533 DATA
+	gsn_parry @ 2534 DATA
+	gsn_peek @ 2535 DATA
+	gsn_pick_lock @ 2536 DATA
+	gsn_poison @ 2537 DATA
+	gsn_poison_weapon @ 2538 DATA
+	gsn_polearms @ 2539 DATA
+	gsn_possess @ 2540 DATA
+	gsn_punch @ 2541 DATA
+	gsn_rescue @ 2542 DATA
+	gsn_russa @ 2543 DATA
+	gsn_sauloon @ 2544 DATA
+	gsn_scan @ 2545 DATA
+	gsn_scribe @ 2546 DATA
+	gsn_search @ 2547 DATA
+	gsn_second_attack @ 2548 DATA
+	gsn_simgh @ 2549 DATA
+	gsn_siru @ 2550 DATA
+	gsn_sleep @ 2551 DATA
+	gsn_slice @ 2552 DATA
+	gsn_slings @ 2553 DATA
+	gsn_sneak @ 2554 DATA
+	gsn_solese @ 2555 DATA
+	gsn_spears @ 2556 DATA
+	gsn_staves @ 2557 DATA
+	gsn_steal @ 2558 DATA
+	gsn_sting @ 2559 DATA
+	gsn_study @ 2560 DATA
+	gsn_stun @ 2561 DATA
+	gsn_swords @ 2562 DATA
+	gsn_tail @ 2563 DATA
+	gsn_third_attack @ 2564 DATA
+	gsn_track @ 2565 DATA
+	gsn_tumble @ 2566 DATA
+	gsn_valao @ 2567 DATA
+	gsn_vaolumin @ 2568 DATA
+	gsn_vedric @ 2569 DATA
+	gsn_whips @ 2570 DATA
+	gsn_wildtongue @ 2571 DATA
+	gsn_wolof @ 2572 DATA
+	gsn_yranib @ 2573 DATA
+	help_greeting @ 2574 DATA
+	herb_table @ 2575 DATA
+	immortal_host_end @ 2576 DATA
+	immortal_host_start @ 2577 DATA
+	in_set @ 2578 DATA
+	int_app @ 2579 DATA
+	item_w_flags @ 2580 DATA
+	lang_array @ 2581 DATA
+	lang_names @ 2582 DATA
+	last_area @ 2583 DATA
+	last_area_name @ 2584 DATA
+	last_asort @ 2585 DATA
+	last_ban @ 2586 DATA
+	last_ban_class @ 2587 DATA
+	last_ban_race @ 2588 DATA
+	last_board @ 2589 DATA
+	last_bounty @ 2590 DATA
+	last_bsort @ 2591 DATA
+	last_build @ 2592 DATA
+	last_cache @ 2593 DATA
+	last_char @ 2594 DATA
+	last_clan @ 2595 DATA
+	last_council @ 2596 DATA
+	last_deity @ 2597 DATA
+	last_descriptor @ 2598 DATA
+	last_disintigration @ 2599 DATA
+	last_fish @ 2600 DATA
+	last_fname @ 2601 DATA
+	last_help @ 2602 DATA
+	last_hint @ 2603 DATA
+	last_holiday @ 2604 DATA
+	last_lang @ 2605 DATA
+	last_lmsg @ 2606 DATA
+	last_mixture @ 2607 DATA
+	last_mpsleep @ 2608 DATA
+	last_news_type @ 2609 DATA
+	last_note_stamp @ 2610 DATA
+	last_object @ 2611 DATA
+	last_pkroom @ 2612 DATA
+	last_plane @ 2613 DATA
+	last_project @ 2614 DATA
+	last_relation @ 2615 DATA
+	last_repair @ 2616 DATA
+	last_reserved @ 2617 DATA
+	last_restore_all_time @ 2618 DATA
+	last_shop @ 2619 DATA
+	last_specfun @ 2620 DATA
+	last_teleport @ 2621 DATA
+	last_watch @ 2622 DATA
+	last_whogr @ 2623 DATA
+	last_wiz @ 2624 DATA
+	last_wizinfo @ 2625 DATA
+	lastplayercmd @ 2626 DATA
+	lck_app @ 2627 DATA
+	liq_count @ 2628 DATA
+	liq_table @ 2629 DATA
+	liquid_table @ 2630 DATA
+	loading_char @ 2631 DATA
+	main @ 2632
+	maxdesc @ 2633 DATA
+	mob_act_list @ 2634 DATA
+	mob_index_hash @ 2635 DATA
+	mob_save_equipment @ 2636 DATA
+	month_name @ 2637 DATA
+	moon_map @ 2638 DATA
+	morph_end @ 2639 DATA
+	morph_start @ 2640 DATA
+	morph_vnum @ 2641 DATA
+	movement_loss @ 2642 DATA
+	mssp_info @ 2643 DATA
+	mud_down @ 2644 DATA
+	mud_start_time @ 2645 DATA
+	new_boot_struct @ 2646 DATA
+	new_boot_time @ 2647 DATA
+	new_boot_time_t @ 2648 DATA
+	newdesc @ 2649 DATA
+	news_command_table @ 2650 DATA
+	note_free @ 2651 DATA
+	npc_class @ 2652 DATA
+	npc_position @ 2653 DATA
+	npc_race @ 2654 DATA
+	npc_sex @ 2655 DATA
+	num_descriptors @ 2656 DATA
+	num_skills @ 2657 DATA
+	num_sorted_skills @ 2658 DATA
+	nummobsloaded @ 2659 DATA
+	numobjsloaded @ 2660 DATA
+	o_flags @ 2661 DATA
+	o_types @ 2662 DATA
+	obj_act_list @ 2663 DATA
+	obj_index_hash @ 2664 DATA
+	out_set @ 2665 DATA
+	pAbort @ 2666 DATA
+	p_blade_messages @ 2667 DATA
+	p_blunt_messages @ 2668 DATA
+	p_generic_messages @ 2669 DATA
+	p_message_table @ 2670 DATA
+	part_flags @ 2671 DATA
+	part_messages @ 2672 DATA
+	part_vnums @ 2673 DATA
+	pc_flags @ 2674 DATA
+	physicalobjects @ 2675 DATA
+	plr_flags @ 2676 DATA
+	port @ 2677 DATA
+	precip_msg @ 2678 DATA
+	precip_settings @ 2679 DATA
+	preciptemp_msg @ 2680 DATA
+	projectiles @ 2681 DATA
+	quitting_char @ 2682 DATA
+	r_flags @ 2683 DATA
+	race_table @ 2684 DATA
+	ranged_target_name @ 2685 DATA
+	reboot_time @ 2686 DATA
+	rev_dir @ 2687 DATA
+	ris_flags @ 2688 DATA
+	room_act_list @ 2689 DATA
+	room_index_hash @ 2690 DATA
+	s_blade_messages @ 2691 DATA
+	s_blunt_messages @ 2692 DATA
+	s_generic_messages @ 2693 DATA
+	s_message_table @ 2694 DATA
+	save_equipment @ 2695 DATA
+	saving_char @ 2696 DATA
+	season_name @ 2697 DATA
+	sec_flags @ 2698 DATA
+	service_shut_down @ 2699 DATA
+	set_boot_time @ 2700 DATA
+	set_boot_time_struct @ 2701 DATA
+	silence_locate_targets @ 2702 DATA
+	skill_notfound @ 2703
+	skill_table @ 2704 DATA
+	skill_table_bytype @ 2705 DATA
+	skill_tname @ 2706 DATA
+	social_index @ 2707 DATA
+	spec_breath_acid @ 2708
+	spec_breath_any @ 2709
+	spec_breath_fire @ 2710
+	spec_breath_frost @ 2711
+	spec_breath_gas @ 2712
+	spec_breath_lightning @ 2713
+	spec_cast_adept @ 2714
+	spec_cast_cleric @ 2715
+	spec_cast_mage @ 2716
+	spec_cast_undead @ 2717
+	spec_executioner @ 2718
+	spec_fido @ 2719
+	spec_guard @ 2720
+	spec_janitor @ 2721
+	spec_mayor @ 2722
+	spec_poison @ 2723
+	spec_thief @ 2724
+	spec_wanderer @ 2725
+	spell_acetum_primus @ 2726
+	spell_acid_blast @ 2727
+	spell_acid_breath @ 2728
+	spell_animate_dead @ 2729
+	spell_astral_walk @ 2730
+	spell_bethsaidean_touch @ 2731
+	spell_black_fist @ 2732
+	spell_black_hand @ 2733
+	spell_black_lightning @ 2734
+	spell_blindness @ 2735
+	spell_burning_hands @ 2736
+	spell_call_lightning @ 2737
+	spell_cause_critical @ 2738
+	spell_cause_light @ 2739
+	spell_cause_serious @ 2740
+	spell_caustic_fount @ 2741
+	spell_change_sex @ 2742
+	spell_charm_person @ 2743
+	spell_chill_touch @ 2744
+	spell_colour_spray @ 2745
+	spell_control_weather @ 2746
+	spell_create_food @ 2747
+	spell_create_obj @ 2748
+	spell_create_water @ 2749
+	spell_cure_blindness @ 2750
+	spell_cure_poison @ 2751
+	spell_curse @ 2752
+	spell_detect_poison @ 2753
+	spell_disenchant_weapon @ 2754
+	spell_dispel_evil @ 2755
+	spell_dispel_magic @ 2756
+	spell_disruption @ 2757
+	spell_dream @ 2758
+	spell_earthquake @ 2759
+	spell_enchant_weapon @ 2760
+	spell_energy_drain @ 2761
+	spell_ethereal_fist @ 2762
+	spell_expurgation @ 2763
+	spell_faerie_fire @ 2764
+	spell_faerie_fog @ 2765
+	spell_farsight @ 2766
+	spell_fire_breath @ 2767
+	spell_fireball @ 2768
+	spell_flamestrike @ 2769
+	spell_frost_breath @ 2770
+	spell_galvanic_whip @ 2771
+	spell_gas_breath @ 2772
+	spell_gate @ 2773
+	spell_hand_of_chaos @ 2774
+	spell_harm @ 2775
+	spell_helical_flow @ 2776
+	spell_identify @ 2777
+	spell_invis @ 2778
+	spell_knock @ 2779
+	spell_know_alignment @ 2780
+	spell_lightning_bolt @ 2781
+	spell_lightning_breath @ 2782
+	spell_locate_object @ 2783
+	spell_magic_missile @ 2784
+	spell_magnetic_thrust @ 2785
+	spell_midas_touch @ 2786
+	spell_mind_wrack @ 2787
+	spell_mind_wrench @ 2788
+	spell_mist_walk @ 2789
+	spell_notfound @ 2790
+	spell_null @ 2791
+	spell_pass_door @ 2792
+	spell_plant_pass @ 2793
+	spell_poison @ 2794
+	spell_polymorph @ 2795
+	spell_portal @ 2796
+	spell_possess @ 2797
+	spell_quantum_spike @ 2798
+	spell_recharge @ 2799
+	spell_remove_curse @ 2800
+	spell_remove_invis @ 2801
+	spell_remove_trap @ 2802
+	spell_revive @ 2803
+	spell_sacral_divinity @ 2804
+	spell_scorching_surge @ 2805
+	spell_shocking_grasp @ 2806
+	spell_shrink @ 2807
+	spell_sleep @ 2808
+	spell_smaug @ 2809
+	spell_solar_flight @ 2810
+	spell_sonic_resonance @ 2811
+	spell_spectral_furor @ 2812
+	spell_spiral_blast @ 2813
+	spell_sulfurous_spray @ 2814
+	spell_summon @ 2815
+	spell_teleport @ 2816
+	spell_transport @ 2817
+	spell_ventriloquate @ 2818
+	spell_weaken @ 2819
+	spell_word_of_recall @ 2820
+	star_map @ 2821 DATA
+	start_compress2_str @ 2822 DATA
+	strArea @ 2823 DATA
+	str_app @ 2824 DATA
+	str_boot_time @ 2825 DATA
+	string_hash @ 2826 DATA
+	sun_map @ 2827 DATA
+	supermob @ 2828 DATA
+	supermob_obj @ 2829 DATA
+	sysdata @ 2830 DATA
+	szFinishPrompt @ 2831 DATA
+	target_name @ 2832 DATA
+	temp_settings @ 2833 DATA
+	text_map @ 2834 DATA
+	time_info @ 2835 DATA
+	timechar @ 2836 DATA
+	title_table @ 2837 DATA
+	top_affect @ 2838 DATA
+	top_area @ 2839 DATA
+	top_ed @ 2840 DATA
+	top_exit @ 2841 DATA
+	top_help @ 2842 DATA
+	top_herb @ 2843 DATA
+	top_liquid @ 2844 DATA
+	top_mob_index @ 2845 DATA
+	top_news_type @ 2846 DATA
+	top_obj_index @ 2847 DATA
+	top_repair @ 2848 DATA
+	top_reset @ 2849 DATA
+	top_room @ 2850 DATA
+	top_shop @ 2851 DATA
+	top_vroom @ 2852 DATA
+	trap_door @ 2853 DATA
+	trap_flags @ 2854 DATA
+	trig_flags @ 2855 DATA
+	trw_heap @ 2856 DATA
+	trw_loops @ 2857 DATA
+	tzone_table @ 2858 DATA
+	used_weapon @ 2859 DATA
+	version @ 2860 DATA
+	vroom_hash @ 2861 DATA
+	w_flags @ 2862 DATA
+	weapon_skills @ 2863 DATA
+	wear_locs @ 2864 DATA
+	weatherDelta @ 2865 DATA
+	weatherMap @ 2866 DATA
+	where_name @ 2867 DATA
+	will_compress2_str @ 2868 DATA
+	wind_msg @ 2869 DATA
+	wind_settings @ 2870 DATA
+	windtemp_msg @ 2871 DATA
+	winter_freeze @ 2872 DATA
+	".refptr.DONT_UPPER" @ 2873 DATA
